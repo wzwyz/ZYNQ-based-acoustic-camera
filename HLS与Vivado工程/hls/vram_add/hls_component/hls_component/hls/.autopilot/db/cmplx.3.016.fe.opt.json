@@ -1,0 +1,11 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "vram_add.cpp",
+    "fileloc": 8,
+    "instructions": 10,
+    "name": "vram_add",
+    "total_instructions": 10
+  }
+}

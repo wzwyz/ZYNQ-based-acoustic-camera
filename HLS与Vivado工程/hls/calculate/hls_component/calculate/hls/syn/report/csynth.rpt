@@ -1,0 +1,162 @@
+
+
+================================================================
+== Synthesis Summary Report of 'calculate'
+================================================================
++ General Information: 
+    * Date:           Mon Nov 25 20:39:01 2024
+    * Version:        2024.1 (Build 5069499 on May 21 2024)
+    * Project:        calculate
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------+--------+-------+---------+--------+----------+---------+------+----------+------+--------+-----------+-----------+-----+
+    |   Modules   |  Issue |       | Latency | Latency| Iteration|         | Trip |          |      |        |           |           |     |
+    |   & Loops   |  Type  | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |     FF    |    LUT    | URAM|
+    +-------------+--------+-------+---------+--------+----------+---------+------+----------+------+--------+-----------+-----------+-----+
+    |+ calculate  |  Timing|  -2.90|       18|  85.050|         -|        1|     -|       yes|     -|  6 (2%)|  3717 (3%)|  2054 (3%)|    -|
+    +-------------+--------+-------+---------+--------+----------+---------+------+----------+------+--------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++-----------+---------+-----------+----------+
+| Port      | Mode    | Direction | Bitwidth |
++-----------+---------+-----------+----------+
+| ap_return |         | out       | 55       |
+| data_new  | ap_none | in        | 384      |
+| data_old  | ap_none | in        | 384      |
++-----------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_clk    | clock        | ap_clk |
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------+
+| Argument | Direction | Datatype     |
++----------+-----------+--------------+
+| data_new | in        | ap_uint<384> |
+| data_old | in        | ap_uint<384> |
+| return   | out       | ap_int<55>   |
++----------+-----------+--------------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| data_new | data_new     | port    |
+| data_old | data_old     | port    |
+| return   | ap_return    | port    |
++----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------+-----+--------+---------------------+--------+-----------+---------+
+| Name                                 | DSP | Pragma | Variable            | Op     | Impl      | Latency |
++--------------------------------------+-----+--------+---------------------+--------+-----------+---------+
+| + calculate                          | 6   |        |                     |        |           |         |
+|   add01_fu_300_p2                    |     |        | add01               | add    | fabric    | 0       |
+|   add23_fu_314_p2                    |     |        | add23               | add    | fabric    | 0       |
+|   add45_fu_328_p2                    |     |        | add45               | add    | fabric    | 0       |
+|   add67_fu_342_p2                    |     |        | add67               | add    | fabric    | 0       |
+|   add89_fu_356_p2                    |     |        | add89               | add    | fabric    | 0       |
+|   addAB_fu_370_p2                    |     |        | addAB               | add    | fabric    | 0       |
+|   addCD_fu_384_p2                    |     |        | addCD               | add    | fabric    | 0       |
+|   addEF_fu_398_p2                    |     |        | addEF               | add    | fabric    | 0       |
+|   add03_fu_676_p2                    |     |        | add03               | add    | fabric    | 0       |
+|   add47_fu_688_p2                    |     |        | add47               | add    | fabric    | 0       |
+|   add8B_fu_700_p2                    |     |        | add8B               | add    | fabric    | 0       |
+|   addCF_fu_712_p2                    |     |        | addCF               | add    | fabric    | 0       |
+|   add07_fu_772_p2                    |     |        | add07               | add    | fabric    | 0       |
+|   add8F_fu_784_p2                    |     |        | add8F               | add    | fabric    | 0       |
+|   add_ln53_fu_820_p2                 |     |        | add_ln53            | add    | fabric    | 0       |
+|   add0F_fu_826_p2                    |     |        | add0F               | add    | fabric    | 0       |
+|   add01_1_fu_566_p2                  |     |        | add01_1             | add    | fabric    | 0       |
+|   add23_1_fu_580_p2                  |     |        | add23_1             | add    | fabric    | 0       |
+|   add45_1_fu_594_p2                  |     |        | add45_1             | add    | fabric    | 0       |
+|   add67_1_fu_608_p2                  |     |        | add67_1             | add    | fabric    | 0       |
+|   add89_1_fu_622_p2                  |     |        | add89_1             | add    | fabric    | 0       |
+|   addAB_1_fu_636_p2                  |     |        | addAB_1             | add    | fabric    | 0       |
+|   addCD_1_fu_650_p2                  |     |        | addCD_1             | add    | fabric    | 0       |
+|   addEF_1_fu_664_p2                  |     |        | addEF_1             | add    | fabric    | 0       |
+|   add03_1_fu_724_p2                  |     |        | add03_1             | add    | fabric    | 0       |
+|   add47_1_fu_736_p2                  |     |        | add47_1             | add    | fabric    | 0       |
+|   add8B_1_fu_748_p2                  |     |        | add8B_1             | add    | fabric    | 0       |
+|   addCF_1_fu_760_p2                  |     |        | addCF_1             | add    | fabric    | 0       |
+|   add07_1_fu_796_p2                  |     |        | add07_1             | add    | fabric    | 0       |
+|   add8F_1_fu_808_p2                  |     |        | add8F_1             | add    | fabric    | 0       |
+|   add_ln53_3_fu_836_p2               |     |        | add_ln53_3          | add    | fabric    | 0       |
+|   add0F_1_fu_842_p2                  |     |        | add0F_1             | add    | fabric    | 0       |
+|   sub_ln61_fu_862_p2                 |     |        | sub_ln61            | sub    | fabric    | 0       |
+|   abs_new_0_in_fu_872_p3             |     |        | abs_new_0_in        | select | auto_sel  | 0       |
+|   sub_ln61_1_fu_867_p2               |     |        | sub_ln61_1          | sub    | fabric    | 0       |
+|   abs_old_0_in_fu_877_p3             |     |        | abs_old_0_in        | select | auto_sel  | 0       |
+|   mul_9ns_9ns_18_5_1_U1              |     |        | h2                  | mul    | auto      | 4       |
+|   mac_muladd_9ns_9ns_19ns_20_4_1_U12 | 1   |        | m2                  | mul    | dsp_slice | 3       |
+|   mac_muladd_9ns_9ns_28ns_28_4_1_U13 | 1   |        | l2                  | mul    | dsp_slice | 3       |
+|   mac_muladd_9ns_9ns_26ns_26_4_1_U14 | 1   |        | hm                  | mul    | dsp_slice | 3       |
+|   mul_9ns_9ns_18_5_1_U2              |     |        | hl                  | mul    | auto      | 4       |
+|   mul_9ns_9ns_18_5_1_U3              |     |        | ml                  | mul    | auto      | 4       |
+|   mac_muladd_9ns_9ns_26ns_26_4_1_U14 | 1   |        | zext_ln82           | zext   | dsp_slice | 3       |
+|   mac_muladd_9ns_9ns_26ns_26_4_1_U14 | 1   |        | h2_hm               | add    | dsp_slice | 3       |
+|   mac_muladd_9ns_9ns_19ns_20_4_1_U12 | 1   |        | zext_ln83_1         | zext   | dsp_slice | 3       |
+|   mac_muladd_9ns_9ns_19ns_20_4_1_U12 | 1   |        | m2_hl               | add    | dsp_slice | 3       |
+|   mac_muladd_9ns_9ns_28ns_28_4_1_U13 | 1   |        | zext_ln84           | zext   | dsp_slice | 3       |
+|   mac_muladd_9ns_9ns_28ns_28_4_1_U13 | 1   |        | l2_ml               | add    | dsp_slice | 3       |
+|   add_38ns_38ns_38_2_1_U7            |     |        | m2_hl_l2_ml         | add    | fabric    | 1       |
+|   add_54ns_54ns_54_2_1_U9            |     |        | h2_hm_m2_hl_l2_ml   | add    | fabric    | 1       |
+|   mul_9ns_9ns_18_5_1_U4              |     |        | h2_1                | mul    | auto      | 4       |
+|   mac_muladd_9ns_9ns_19ns_20_4_1_U15 | 1   |        | m2_1                | mul    | dsp_slice | 3       |
+|   mac_muladd_9ns_9ns_28ns_28_4_1_U16 | 1   |        | l2_1                | mul    | dsp_slice | 3       |
+|   mac_muladd_9ns_9ns_26ns_26_4_1_U17 | 1   |        | hm_1                | mul    | dsp_slice | 3       |
+|   mul_9ns_9ns_18_5_1_U5              |     |        | hl_1                | mul    | auto      | 4       |
+|   mul_9ns_9ns_18_5_1_U6              |     |        | ml_1                | mul    | auto      | 4       |
+|   mac_muladd_9ns_9ns_26ns_26_4_1_U17 | 1   |        | zext_ln82_1         | zext   | dsp_slice | 3       |
+|   mac_muladd_9ns_9ns_26ns_26_4_1_U17 | 1   |        | h2_hm_1             | add    | dsp_slice | 3       |
+|   mac_muladd_9ns_9ns_19ns_20_4_1_U15 | 1   |        | zext_ln83_3         | zext   | dsp_slice | 3       |
+|   mac_muladd_9ns_9ns_19ns_20_4_1_U15 | 1   |        | m2_hl_1             | add    | dsp_slice | 3       |
+|   mac_muladd_9ns_9ns_28ns_28_4_1_U16 | 1   |        | zext_ln84_1         | zext   | dsp_slice | 3       |
+|   mac_muladd_9ns_9ns_28ns_28_4_1_U16 | 1   |        | l2_ml_1             | add    | dsp_slice | 3       |
+|   add_38ns_38ns_38_2_1_U8            |     |        | m2_hl_l2_ml_1       | add    | fabric    | 1       |
+|   add_54ns_54ns_54_2_1_U10           |     |        | h2_hm_m2_hl_l2_ml_1 | add    | fabric    | 1       |
+|   sub_55ns_55ns_55_2_1_U11           |     |        | sub                 | sub    | fabric    | 1       |
++--------------------------------------+-----+--------+---------------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-------------------------------+---------------------------------------------+
+| Type      | Options                       | Location                                    |
++-----------+-------------------------------+---------------------------------------------+
+| pipeline  |                               | ../src/calculate.cpp:5 in calculate         |
+| interface | mode=ap_ctrl_none port=return | ../src/calculate.cpp:6 in calculate, return |
+| unroll    |                               | ../src/calculate.cpp:33 in calculate_add    |
++-----------+-------------------------------+---------------------------------------------+
+
+

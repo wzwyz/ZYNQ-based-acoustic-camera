@@ -1,0 +1,37 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Sun Nov 10 15:17:30 2024
+| Host         : ban running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/inter_utilization_hierarchical_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------------------------------------------------+-------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|                         Instance                        |                            Module                           | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++---------------------------------------------------------+-------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper                                            |                                                       (top) |         99 |         99 |       0 |    0 | 193 |      0 |      0 |          2 |
+|   bd_0_i                                                |                                                        bd_0 |         99 |         99 |       0 |    0 | 193 |      0 |      0 |          2 |
+|     hls_inst                                            |                                             bd_0_hls_inst_0 |         99 |         99 |       0 |    0 | 193 |      0 |      0 |          2 |
+|       inst                                              |                                       bd_0_hls_inst_0_inter |         99 |         99 |       0 |    0 | 193 |      0 |      0 |          2 |
+|         (inst)                                          |                                       bd_0_hls_inst_0_inter |          0 |          0 |       0 |    0 | 117 |      0 |      0 |          0 |
+|         grp_round_fixed_29_24_s_fu_74                   |                   bd_0_hls_inst_0_inter_round_fixed_29_24_s |         99 |         99 |       0 |    0 |  76 |      0 |      0 |          0 |
+|         mac_muladd_24s_5ns_29s_29_4_1_U3                |         bd_0_hls_inst_0_inter_mac_muladd_24s_5ns_29s_29_4_1 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          1 |
+|           inter_mac_muladd_24s_5ns_29s_29_4_1_DSP48_0_U | bd_0_hls_inst_0_inter_mac_muladd_24s_5ns_29s_29_4_1_DSP48_0 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          1 |
+|         mul_24s_6ns_29_5_1_U2                           |                    bd_0_hls_inst_0_inter_mul_24s_6ns_29_5_1 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          1 |
++---------------------------------------------------------+-------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

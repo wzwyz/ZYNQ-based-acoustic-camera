@@ -1,0 +1,109 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate\calculate.hlsrun_csim_summary, at 11/07/24 20:13:05
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate -config C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg -cmdlineconfig C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Nov  7 20:13:07 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source D:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'ban' on host 'ban' (Windows NT_amd64 version 10.0) on Thu Nov 07 20:13:07 +0800 2024
+INFO: [HLS 200-10] In directory 'C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component'
+INFO: [HLS 200-2005] Using work_dir C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/liboh/Desktop/mvdr/hls/calculate/src/calculate.cpp' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr/hls/calculate/src/calculate.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/liboh/Desktop/mvdr/hls/calculate/src/calculate.h' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr/hls/calculate/src/calculate.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/liboh/Desktop/mvdr/hls/calculate/src/tb_calculate.cpp' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/liboh/Desktop/mvdr/hls/calculate/src/tb_calculate.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=calculate' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-2' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1465] Applying ini 'clock=180MHz' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(11)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5.556ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../src/tb_calculate.cpp in debug mode
+   Compiling ../../../../../src/calculate.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../../src/tb_calculate.cpp:1:
+In file included from ../../../../../src/calculate.h:4:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/ap_int.h:10:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../src/calculate.cpp:1:
+In file included from ../../../../../src/calculate.h:4:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/ap_int.h:10:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+Cycle 0: Writing datas...
+New datas: 
+1602211 3699363 5796515 7893667 -6786397 -4689245 -2592093 -494941 
+Old datas: 
+-8388608 -8388607 -8388606 -8388605 -8388604 -8388603 -8388602 -8388601 
+Result: -4483979119628496
+
+Cycle 1: Writing datas...
+New datas: 
+0 1 2 3 4 5 6 7 
+Old datas: 
+8388600 8388601 8388602 8388603 8388604 8388605 8388606 8388607 
+Result: -4503594795532800
+
+Cycle 2: Writing datas...
+New datas: 
+-8 -7 -6 -5 -4 -3 -2 -1 
+Old datas: 
+-8 -7 -6 -5 -4 -3 -2 -1 
+Result: 0
+
+Cycle 3: Writing datas...
+New datas: 
+8388600 8388601 8388602 8388603 8388604 8388605 8388606 8388607 
+Old datas: 
+0 1 2 3 4 5 6 7 
+Result: 4503594795532800
+
+Cycle 4: Writing datas...
+New datas: 
+-8388608 -8388607 -8388606 -8388605 -8388604 -8388603 -8388602 -8388601 
+Old datas: 
+1602211 3699363 5796515 7893667 -6786397 -4689245 -2592093 -494941 
+Result: 4483979119628496
+
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.017 seconds; peak allocated memory: 246.547 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 10s

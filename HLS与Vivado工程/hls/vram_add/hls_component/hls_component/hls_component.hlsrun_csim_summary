@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\vram_add\\hls_component\\hls_component\\hls_component.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "11/10/24 19:57:06",
+ "timestampMillis": "368006056",
+ "buildStep": {
+  "cmdId": "9b99328a-a060-4acd-b8e0-74b4e74e9804",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\vram_add\\hls_component\\hls_component\\logs\\hls_component.steps.log",
+  "commandLine": "D:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\vram_add\\hls_component\\hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\vram_add\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\vram_add\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 19:57:06",
+ "timestampMillis": "368006056",
+ "status": {
+  "cmdId": "9b99328a-a060-4acd-b8e0-74b4e74e9804",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "11/10/24 19:57:10",
+ "timestampMillis": "368009882",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\vram_add\\hls_component\\vram_add.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "11/10/24 19:57:10",
+ "timestampMillis": "368009883",
+ "buildStep": {
+  "cmdId": "cd954892-f0c0-4e8a-91fa-1f4fb17b91a4",
+  "name": "csim_design",
+  "logFile": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\vram_add\\hls_component\\hls_component\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\vram_add\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 19:57:10",
+ "timestampMillis": "368009884",
+ "status": {
+  "cmdId": "cd954892-f0c0-4e8a-91fa-1f4fb17b91a4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 19:57:13",
+ "timestampMillis": "368012910",
+ "status": {
+  "cmdId": "cd954892-f0c0-4e8a-91fa-1f4fb17b91a4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 19:57:13",
+ "timestampMillis": "368013046",
+ "status": {
+  "cmdId": "9b99328a-a060-4acd-b8e0-74b4e74e9804",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 19:57:13",
+ "timestampMillis": "368013046",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 19:57:13",
+ "timestampMillis": "368013047",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

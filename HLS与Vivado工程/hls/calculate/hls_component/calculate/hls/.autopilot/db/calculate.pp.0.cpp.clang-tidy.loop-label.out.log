@@ -1,0 +1,30 @@
+C:\Users\liboh\Desktop\mvdr\hls\calculate\hls_component\calculate\hls\.autopilot\db\calculate.pp.0.cpp:1444:7: warning: Added loop label VITIS_LOOP_1223_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1223_1: 
+C:\Users\liboh\Desktop\mvdr\hls\calculate\hls_component\calculate\hls\.autopilot\db\calculate.pp.0.cpp:1444:7: note: FIX-IT applied suggested code changes
+C:\Users\liboh\Desktop\mvdr\hls\calculate\hls_component\calculate\hls\.autopilot\db\calculate.pp.0.cpp:2418:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Users\liboh\Desktop\mvdr\hls\calculate\hls_component\calculate\hls\.autopilot\db\calculate.pp.0.cpp:2418:5: note: FIX-IT applied suggested code changes
+C:\Users\liboh\Desktop\mvdr\hls\calculate\hls_component\calculate\hls\.autopilot\db\calculate.pp.0.cpp:2432:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Users\liboh\Desktop\mvdr\hls\calculate\hls_component\calculate\hls\.autopilot\db\calculate.pp.0.cpp:2432:5: note: FIX-IT applied suggested code changes
+C:\Users\liboh\Desktop\mvdr\hls\calculate\hls_component\calculate\hls\.autopilot\db\calculate.pp.0.cpp:2446:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Users\liboh\Desktop\mvdr\hls\calculate\hls_component\calculate\hls\.autopilot\db\calculate.pp.0.cpp:2446:5: note: FIX-IT applied suggested code changes
+C:\Users\liboh\Desktop\mvdr\hls\calculate\hls_component\calculate\hls\.autopilot\db\calculate.pp.0.cpp:4075:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+C:\Users\liboh\Desktop\mvdr\hls\calculate\hls_component\calculate\hls\.autopilot\db\calculate.pp.0.cpp:4075:7: note: FIX-IT applied suggested code changes
+C:\Users\liboh\Desktop\mvdr\hls\calculate\hls_component\calculate\hls\.autopilot\db\calculate.pp.0.cpp:5891:5: warning: Added loop label VITIS_LOOP_32_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 16; i++)
+    ^~~
+    VITIS_LOOP_32_1: 
+C:\Users\liboh\Desktop\mvdr\hls\calculate\hls_component\calculate\hls\.autopilot\db\calculate.pp.0.cpp:5891:5: note: FIX-IT applied suggested code changes

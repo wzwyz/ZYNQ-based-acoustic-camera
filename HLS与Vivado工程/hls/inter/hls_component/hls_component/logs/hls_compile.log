@@ -1,0 +1,121 @@
+INFO: [v++ 60-1548] Creating build summary session with primary output C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component\hls_component.hlscompile_summary, at 11/10/24 15:12:52
+INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component -config C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg -cmdlineconfig C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sun Nov 10 15:12:54 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source D:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'ban' on host 'ban' (Windows NT_amd64 version 10.0) on Sun Nov 10 15:12:54 +0800 2024
+INFO: [HLS 200-10] In directory 'C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component'
+INFO: [HLS 200-2005] Using work_dir C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/liboh/Desktop/mvdr0/hls/inter/src/inter.cpp' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr0/hls/inter/src/inter.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/liboh/Desktop/mvdr0/hls/inter/src/tb_inter.cpp' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/liboh/Desktop/mvdr0/hls/inter/src/tb_inter.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=inter' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-2' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1465] Applying ini 'clock=240MHz' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(8)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.167ns.
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=all' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=1' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.445 seconds; current allocated memory: 246.148 MB.
+INFO: [HLS 200-10] Analyzing design file '../src/inter.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 18.368 seconds; current allocated memory: 253.289 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 1,890 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 171 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 83 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 83 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 74 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 60 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 60 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 60 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 60 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 60 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 60 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 60 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 60 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 60 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 65 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 66 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'ap_fixed<29, 24, (ap_q_mode)5, (ap_o_mode)3, 0> fabs_fixed<29, 24>(ap_fixed<29, 24, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'ap_fixed<29, 24, (ap_q_mode)5, (ap_o_mode)3, 0> round_fixed<29, 24>(ap_fixed<29, 24, (ap_q_mode)5, (ap_o_mode)3, 0>)' (D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_round_copysign_apfixed.h:176:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<29, 24, (ap_q_mode)5, (ap_o_mode)3, 0> hls::round<29, 24>(ap_fixed<29, 24, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'inter(ap_int<24>, ap_uint<5>, ap_int<24>, ap_uint<6>)' (../src/inter.cpp:6:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.804 seconds; current allocated memory: 254.332 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 254.332 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 258.480 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 260.059 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../src/inter.cpp:15:1) in function 'inter'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 281.285 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 283.453 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'inter' ...
+WARNING: [SYN 201-103] Legalizing function name 'round_fixed<29, 24>' to 'round_fixed_29_24_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'round_fixed_29_24_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'round_fixed<29, 24>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, function 'round_fixed<29, 24>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.068 seconds; current allocated memory: 287.414 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 288.551 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'inter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=tmp2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'inter'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 11, function 'inter'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 288.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.736 seconds; current allocated memory: 288.891 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'round_fixed_29_24_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'round_fixed_29_24_s' pipeline 'round_fixed<29, 24>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'round_fixed_29_24_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 290.309 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'inter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'inter/data_left' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inter/rate_left' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inter/data_right' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inter/rate_right' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'inter' to 'ap_ctrl_none'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'inter' pipeline 'inter' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_24s_5ns_29s_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_24s_6ns_29_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'inter'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.097 seconds; current allocated memory: 291.672 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.244 seconds; current allocated memory: 294.703 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.417 seconds; current allocated memory: 296.598 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for inter.
+INFO: [VLOG 209-307] Generating Verilog RTL for inter.
+INFO: [HLS 200-789] **** Estimated Fmax: 354.99 MHz
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 32.432 seconds; peak allocated memory: 296.914 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 36s

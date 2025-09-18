@@ -1,0 +1,68 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Nov 25 20:42:32 2024
+| Host         : ban running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/calculate_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------------------------------+---------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                           Instance                           |                                   Module                                  | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------------------------------+---------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| bd_0_wrapper                                                 |                                                                     (top) |       1114 |       1023 |       0 |   91 | 1484 |      0 |      0 |         12 |
+|   bd_0_i                                                     |                                                                      bd_0 |       1114 |       1023 |       0 |   91 | 1484 |      0 |      0 |         12 |
+|     hls_inst                                                 |                                                           bd_0_hls_inst_0 |       1114 |       1023 |       0 |   91 | 1484 |      0 |      0 |         12 |
+|       (hls_inst)                                             |                                                           bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|       inst                                                   |                                                 bd_0_hls_inst_0_calculate |       1114 |       1023 |       0 |   91 | 1484 |      0 |      0 |         12 |
+|         (inst)                                               |                                                 bd_0_hls_inst_0_calculate |        955 |        902 |       0 |   53 | 1251 |      0 |      0 |          0 |
+|         add_38ns_38ns_38_2_1_U7                              |                            bd_0_hls_inst_0_calculate_add_38ns_38ns_38_2_1 |         10 |         10 |       0 |    0 |   31 |      0 |      0 |          0 |
+|           (add_38ns_38ns_38_2_1_U7)                          |                            bd_0_hls_inst_0_calculate_add_38ns_38ns_38_2_1 |          0 |          0 |       0 |    0 |   31 |      0 |      0 |          0 |
+|           u1                                                 |              bd_0_hls_inst_0_calculate_add_38ns_38ns_38_2_1_comb_adder_15 |          1 |          1 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           u2                                                 |              bd_0_hls_inst_0_calculate_add_38ns_38ns_38_2_1_comb_adder_16 |          9 |          9 |       0 |    0 |    0 |      0 |      0 |          0 |
+|         add_38ns_38ns_38_2_1_U8                              |                          bd_0_hls_inst_0_calculate_add_38ns_38ns_38_2_1_0 |         10 |         10 |       0 |    0 |   31 |      0 |      0 |          0 |
+|           (add_38ns_38ns_38_2_1_U8)                          |                          bd_0_hls_inst_0_calculate_add_38ns_38ns_38_2_1_0 |          0 |          0 |       0 |    0 |   31 |      0 |      0 |          0 |
+|           u1                                                 |                 bd_0_hls_inst_0_calculate_add_38ns_38ns_38_2_1_comb_adder |          1 |          1 |       0 |    0 |    0 |      0 |      0 |          0 |
+|           u2                                                 |              bd_0_hls_inst_0_calculate_add_38ns_38ns_38_2_1_comb_adder_14 |          9 |          9 |       0 |    0 |    0 |      0 |      0 |          0 |
+|         add_54ns_54ns_54_2_1_U10                             |                            bd_0_hls_inst_0_calculate_add_54ns_54ns_54_2_1 |         29 |         10 |       0 |   19 |   45 |      0 |      0 |          0 |
+|           (add_54ns_54ns_54_2_1_U10)                         |                            bd_0_hls_inst_0_calculate_add_54ns_54ns_54_2_1 |         19 |          0 |       0 |   19 |   45 |      0 |      0 |          0 |
+|           u2                                                 |              bd_0_hls_inst_0_calculate_add_54ns_54ns_54_2_1_comb_adder_13 |         10 |         10 |       0 |    0 |    0 |      0 |      0 |          0 |
+|         add_54ns_54ns_54_2_1_U9                              |                          bd_0_hls_inst_0_calculate_add_54ns_54ns_54_2_1_1 |         29 |         10 |       0 |   19 |   44 |      0 |      0 |          0 |
+|           (add_54ns_54ns_54_2_1_U9)                          |                          bd_0_hls_inst_0_calculate_add_54ns_54ns_54_2_1_1 |         19 |          0 |       0 |   19 |   44 |      0 |      0 |          0 |
+|           u2                                                 |                 bd_0_hls_inst_0_calculate_add_54ns_54ns_54_2_1_comb_adder |         10 |         10 |       0 |    0 |    0 |      0 |      0 |          0 |
+|         mac_muladd_9ns_9ns_19ns_20_4_1_U12                   |                  bd_0_hls_inst_0_calculate_mac_muladd_9ns_9ns_19ns_20_4_1 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U |       bd_0_hls_inst_0_calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_12 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9ns_9ns_19ns_20_4_1_U15                   |                bd_0_hls_inst_0_calculate_mac_muladd_9ns_9ns_19ns_20_4_1_2 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U |          bd_0_hls_inst_0_calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9ns_9ns_26ns_26_4_1_U14                   |                  bd_0_hls_inst_0_calculate_mac_muladd_9ns_9ns_26ns_26_4_1 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U |       bd_0_hls_inst_0_calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_11 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9ns_9ns_26ns_26_4_1_U17                   |                bd_0_hls_inst_0_calculate_mac_muladd_9ns_9ns_26ns_26_4_1_3 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U |          bd_0_hls_inst_0_calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9ns_9ns_28ns_28_4_1_U13                   |                  bd_0_hls_inst_0_calculate_mac_muladd_9ns_9ns_28ns_28_4_1 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U |       bd_0_hls_inst_0_calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_10 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9ns_9ns_28ns_28_4_1_U16                   |                bd_0_hls_inst_0_calculate_mac_muladd_9ns_9ns_28ns_28_4_1_4 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U |          bd_0_hls_inst_0_calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mul_9ns_9ns_18_5_1_U1                                |                              bd_0_hls_inst_0_calculate_mul_9ns_9ns_18_5_1 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mul_9ns_9ns_18_5_1_U2                                |                            bd_0_hls_inst_0_calculate_mul_9ns_9ns_18_5_1_5 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mul_9ns_9ns_18_5_1_U3                                |                            bd_0_hls_inst_0_calculate_mul_9ns_9ns_18_5_1_6 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mul_9ns_9ns_18_5_1_U4                                |                            bd_0_hls_inst_0_calculate_mul_9ns_9ns_18_5_1_7 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mul_9ns_9ns_18_5_1_U5                                |                            bd_0_hls_inst_0_calculate_mul_9ns_9ns_18_5_1_8 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mul_9ns_9ns_18_5_1_U6                                |                            bd_0_hls_inst_0_calculate_mul_9ns_9ns_18_5_1_9 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         sub_55ns_55ns_55_2_1_U11                             |                            bd_0_hls_inst_0_calculate_sub_55ns_55ns_55_2_1 |         81 |         81 |       0 |    0 |   82 |      0 |      0 |          0 |
+|           (sub_55ns_55ns_55_2_1_U11)                         |                            bd_0_hls_inst_0_calculate_sub_55ns_55ns_55_2_1 |         54 |         54 |       0 |    0 |   82 |      0 |      0 |          0 |
+|           u2                                                 | bd_0_hls_inst_0_calculate_sub_55ns_55ns_55_2_1_comb_adder__parameterized0 |         27 |         27 |       0 |    0 |    0 |      0 |      0 |          0 |
++--------------------------------------------------------------+---------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

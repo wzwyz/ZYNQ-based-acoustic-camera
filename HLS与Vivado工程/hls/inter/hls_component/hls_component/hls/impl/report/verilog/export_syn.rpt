@@ -1,0 +1,374 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Sun Nov 10 15:17:34 +0800 2024
+    * Version:         2024.1 (Build 5069499 on May 21 2024)
+    * Project:         hls_component
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z020-clg400-2
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  4.167 ns
+    * C-Synthesis target clock:    4.167 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              99
+FF:               193
+DSP:              2
+BRAM:             0
+URAM:             0
+SRL:              0
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 4.167       |
+| Post-Synthesis | 3.025       |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                               | LUT | FF  | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                               | 99  | 193 | 2   |      |      |     |        |      |         |          |        |
+|   (inst)                           |     | 117 |     |      |      |     |        |      |         |          |        |
+|   grp_round_fixed_29_24_s_fu_74    | 99  | 76  |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_24s_5ns_29s_29_4_1_U3 |     |     | 1   |      |      |     |        |      |         |          |        |
+|   mul_24s_6ns_29_5_1_U2            |     |     | 1   |      |      |     |        |      |         |          |        |
++------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 0.19%  | OK     |
+| FD                                                        | 50%       | 0.18%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.00%  | OK     |
+| MUXF7                                                     | 15%       | 0.00%  | OK     |
+| DSP                                                       | 80%       | 0.91%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 0.91%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 998       | 3      | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 1.23   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.500ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.350ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+-------+------------------------------------------------------------+----------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                             | ENDPOINT PIN               | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                            |                            |              |            |                |          DELAY |        DELAY |
++-------+-------+------------------------------------------------------------+----------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 1.142 | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]/C | tmp1_reg_196_reg[20]/D     |            7 |          2 |          3.022 |          1.986 |        1.036 |
+| Path2 | 1.242 | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]/C | tmp1_reg_196_reg[16]/D     |            6 |          2 |          2.922 |          1.886 |        1.036 |
+| Path3 | 1.281 | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]/C | ref_tmp7_reg_191_reg[28]/D |            8 |          2 |          2.883 |          2.017 |        0.866 |
+| Path4 | 1.334 | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]/C | tmp1_reg_196_reg[22]/D     |            8 |          2 |          2.830 |          2.073 |        0.757 |
+| Path5 | 1.342 | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]/C | tmp1_reg_196_reg[12]/D     |            5 |          2 |          2.822 |          1.786 |        1.036 |
++-------+-------+------------------------------------------------------------+----------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                | Primitive Type       |
+    +------------------------------------------------------------+----------------------+
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[20]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[20]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[20]                                       | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[16]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[16]                                       | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[20]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/ref_tmp7_reg_191_reg[28]_i_2 | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/ref_tmp7_reg_191[28]_i_1     | LUT.others.LUT3      |
+    | ref_tmp7_reg_191_reg[28]                                   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[20]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/ref_tmp7_reg_191_reg[28]_i_2 | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[22]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[22]                                       | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[12]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[12]                                       | FLOP_LATCH.flop.FDRE |
+    +------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                | Primitive Type       |
+    +------------------------------------------------------------+----------------------+
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[20]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[20]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[20]                                       | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[16]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[16]                                       | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[20]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/ref_tmp7_reg_191_reg[28]_i_2 | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/ref_tmp7_reg_191[28]_i_1     | LUT.others.LUT3      |
+    | ref_tmp7_reg_191_reg[28]                                   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[20]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/ref_tmp7_reg_191_reg[28]_i_2 | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[22]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[22]                                       | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[12]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[12]                                       | FLOP_LATCH.flop.FDRE |
+    +------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                | Primitive Type       |
+    +------------------------------------------------------------+----------------------+
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[20]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[20]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[20]                                       | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[16]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[16]                                       | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[20]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/ref_tmp7_reg_191_reg[28]_i_2 | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/ref_tmp7_reg_191[28]_i_1     | LUT.others.LUT3      |
+    | ref_tmp7_reg_191_reg[28]                                   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[20]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/ref_tmp7_reg_191_reg[28]_i_2 | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[22]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[22]                                       | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[12]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[12]                                       | FLOP_LATCH.flop.FDRE |
+    +------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                | Primitive Type       |
+    +------------------------------------------------------------+----------------------+
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[20]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[20]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[20]                                       | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[16]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[16]                                       | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[20]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/ref_tmp7_reg_191_reg[28]_i_2 | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/ref_tmp7_reg_191[28]_i_1     | LUT.others.LUT3      |
+    | ref_tmp7_reg_191_reg[28]                                   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[20]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/ref_tmp7_reg_191_reg[28]_i_2 | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[22]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[22]                                       | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[12]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[12]                                       | FLOP_LATCH.flop.FDRE |
+    +------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                | Primitive Type       |
+    +------------------------------------------------------------+----------------------+
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[20]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[20]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[20]                                       | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[16]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[16]                                       | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[20]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/ref_tmp7_reg_191_reg[28]_i_2 | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/ref_tmp7_reg_191[28]_i_1     | LUT.others.LUT3      |
+    | ref_tmp7_reg_191_reg[28]                                   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[16]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[20]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/ref_tmp7_reg_191_reg[28]_i_2 | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[22]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[22]                                       | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/trunc_ln188_reg_118_reg[5]   | FLOP_LATCH.flop.FDRE |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[4]_i_3          | LUT.others.LUT1      |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[4]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[8]_i_2      | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196_reg[12]_i_2     | CARRY.others.CARRY4  |
+    | grp_round_fixed_29_24_s_fu_74/tmp1_reg_196[12]_i_1         | LUT.others.LUT3      |
+    | tmp1_reg_196_reg[12]                                       | FLOP_LATCH.flop.FDRE |
+    +------------------------------------------------------------+----------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+--------------------------------------------------------------+
+| Report Type              | Report Location                                              |
++--------------------------+--------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/inter_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/inter_failfast_synth.rpt                 |
+| timing                   | impl/verilog/report/inter_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/inter_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/inter_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/inter_utilization_hierarchical_synth.rpt |
++--------------------------+--------------------------------------------------------------+
+
+

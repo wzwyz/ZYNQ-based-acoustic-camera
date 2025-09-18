@@ -1,0 +1,192 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xB2AE35A8EC9003FA",
+      "device": "xc7z020clg400-2",
+      "gen_directory": "../../../../project.gen/sources_1/bd/bd_0",
+      "name": "bd_0",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "hls_inst": ""
+    },
+    "ports": {
+      "addrs_left": {
+        "type": "data",
+        "direction": "O",
+        "left": "191",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "addrs_right": {
+        "type": "data",
+        "direction": "O",
+        "left": "191",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "addrs_signed": {
+        "type": "data",
+        "direction": "I",
+        "left": "39",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "ap_rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "bd_0_ap_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "359000000.0"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "now": {
+        "type": "data",
+        "direction": "I",
+        "left": "11",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "rates_left": {
+        "type": "data",
+        "direction": "O",
+        "left": "79",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "rates_right": {
+        "type": "data",
+        "direction": "O",
+        "left": "95",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "hls_inst": {
+        "vlnv": "xilinx.com:hls:delay:1.0",
+        "ip_revision": "2113838650",
+        "xci_name": "bd_0_hls_inst_0",
+        "xci_path": "ip\\bd_0_hls_inst_0\\bd_0_hls_inst_0.xci",
+        "inst_hier_path": "hls_inst"
+      }
+    },
+    "nets": {
+      "addrs_signed_0_1": {
+        "ports": [
+          "addrs_signed",
+          "hls_inst/addrs_signed"
+        ]
+      },
+      "ap_clk_0_1": {
+        "ports": [
+          "ap_clk",
+          "hls_inst/ap_clk"
+        ]
+      },
+      "ap_rst_0_1": {
+        "ports": [
+          "ap_rst",
+          "hls_inst/ap_rst"
+        ]
+      },
+      "hls_inst_addrs_left": {
+        "ports": [
+          "hls_inst/addrs_left",
+          "addrs_left"
+        ]
+      },
+      "hls_inst_addrs_right": {
+        "ports": [
+          "hls_inst/addrs_right",
+          "addrs_right"
+        ]
+      },
+      "hls_inst_rates_left": {
+        "ports": [
+          "hls_inst/rates_left",
+          "rates_left"
+        ]
+      },
+      "hls_inst_rates_right": {
+        "ports": [
+          "hls_inst/rates_right",
+          "rates_right"
+        ]
+      },
+      "now_0_1": {
+        "ports": [
+          "now",
+          "hls_inst/now"
+        ]
+      }
+    }
+  }
+}

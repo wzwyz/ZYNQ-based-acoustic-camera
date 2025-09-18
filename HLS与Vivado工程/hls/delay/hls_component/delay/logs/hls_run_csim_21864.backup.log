@@ -1,0 +1,149 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay\delay.hlsrun_csim_summary, at 11/25/24 11:08:17
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay -config C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg -cmdlineconfig C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Mon Nov 25 11:08:19 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source D:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'ban' on host 'ban' (Windows NT_amd64 version 10.0) on Mon Nov 25 11:08:19 +0800 2024
+INFO: [HLS 200-10] In directory 'C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component'
+INFO: [HLS 200-2005] Using work_dir C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/liboh/Desktop/mvdr/hls/delay/src/delay.cpp' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr/hls/delay/src/delay.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/liboh/Desktop/mvdr/hls/delay/src/delay.h' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr/hls/delay/src/delay.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/liboh/Desktop/mvdr/hls/delay/src/tb_delay.cpp' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/liboh/Desktop/mvdr/hls/delay/src/tb_delay.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=delay' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-2' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1465] Applying ini 'clock=360MHz' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(11)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.778ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../src/tb_delay.cpp in debug mode
+   Compiling ../../../../../src/delay.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../../src/tb_delay.cpp:2:
+In file included from ../../../../../src/delay.h:1:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/ap_int.h:10:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../src/delay.cpp:1:
+In file included from ../../../../../src/delay.h:1:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/ap_int.h:10:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+
+Cycle 0: Writing datas...
+Now pointer: 31
+Index: 0
+------------------------------------------------------------
+Sensor|signed_addr|addr_left|addr_right|rate_left|rate_right
+0     |7.5625     |8        |9         |0.46875  |0.53125   
+1     |14.90625   |1        |2         |0.8125   |0.1875    
+2     |13.53125   |2        |3         |0.4375   |0.5625    
+3     |4.21875    |11       |12        |0.125    |0.875     
+4     |-7.5625    |23       |24        |0.34375  |0.65625   
+5     |-14.90625  |30       |31        |0        |1         
+6     |-13.53125  |29       |30        |0.375    |0.625     
+7     |-4.21875   |20       |21        |0.6875   |0.3125    
+------------------------------------------------------------
+
+Cycle 1: Writing datas...
+Now pointer: 4
+Index: 9215
+------------------------------------------------------------
+Sensor|signed_addr|addr_left|addr_right|rate_left|rate_right
+0     |-7.5625    |4092     |4093      |0.34375  |0.65625   
+1     |-14.90625  |3        |4         |0        |1         
+2     |-13.53125  |2        |3         |0.375    |0.625     
+3     |-4.21875   |4089     |4090      |0.6875   |0.3125    
+4     |7.5625     |4077     |4078      |0.46875  |0.53125   
+5     |14.90625   |4070     |4071      |0.8125   |0.1875    
+6     |13.53125   |4071     |4072      |0.4375   |0.5625    
+7     |4.21875    |4080     |4081      |0.125    |0.875     
+------------------------------------------------------------
+
+Cycle 2: Writing datas...
+Now pointer: 4065
+Index: 4480
+------------------------------------------------------------
+Sensor|signed_addr|addr_left|addr_right|rate_left|rate_right
+0     |0.125      |4050     |4051      |0.15625  |0.84375   
+1     |10         |4040     |4041      |0.03125  |0.96875   
+2     |14.03125   |4036     |4037      |0.0625   |0.9375    
+3     |9.84375    |4041     |4042      |0.875    |0.125     
+4     |-0.125     |4051     |4052      |0.90625  |0.09375   
+5     |-10        |4060     |4061      |0.03125  |0.96875   
+6     |-14.03125  |4064     |4065      |0        |1         
+7     |-9.84375   |4060     |4061      |0.1875   |0.8125    
+------------------------------------------------------------
+
+Cycle 3: Writing datas...
+Now pointer: 2048
+Index: 4544
+------------------------------------------------------------
+Sensor|signed_addr|addr_left|addr_right|rate_left|rate_right
+0     |0.125      |2047     |2048      |0.3125   |0.6875    
+1     |0          |2047     |2048      |0.1875   |0.8125    
+2     |-0.125     |2047     |2048      |0.0625   |0.9375    
+3     |-0.1875    |2047     |2048      |0        |1         
+4     |-0.125     |2047     |2048      |0.0625   |0.9375    
+5     |0          |2047     |2048      |0.1875   |0.8125    
+6     |0.125      |2047     |2048      |0.3125   |0.6875    
+7     |0.1875     |2047     |2048      |0.375    |0.625     
+------------------------------------------------------------
+
+Cycle 4: Writing datas...
+Now pointer: 0
+Index: 4607
+------------------------------------------------------------
+Sensor|signed_addr|addr_left|addr_right|rate_left|rate_right
+0     |0.125      |4081     |4082      |0.15625  |0.84375   
+1     |-9.84375   |4091     |4092      |0.1875   |0.8125    
+2     |-14.03125  |4095     |0         |0        |1         
+3     |-10        |4091     |4092      |0.03125  |0.96875   
+4     |-0.125     |4082     |4083      |0.90625  |0.09375   
+5     |9.84375    |4072     |4073      |0.875    |0.125     
+6     |14.03125   |4067     |4068      |0.0625   |0.9375    
+7     |10         |4071     |4072      |0.03125  |0.96875   
+------------------------------------------------------------
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 15.487 seconds; peak allocated memory: 246.680 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 19s

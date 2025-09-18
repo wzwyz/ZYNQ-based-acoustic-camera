@@ -1,0 +1,14 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<66, true>::ap_int_base<64, false>(ap_int_base<64, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="vram_add.cpp" line="11" pragmaType="pipeline" parentfunction="vram_add" off="0" ii="-1" style=""/>
+<pragma file="vram_add.cpp" line="10" pragmaType="interface" parentfunction="vram_add" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base<66, true>(ap_int_base<66, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::RType<55, true>::plus operator+<64, false, 55, true>(ap_int_base<64, false> const&, ap_int_base<55, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<66, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<66>::ap_int<66, true>(ap_int_base<66, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<66, true>::ap_int_base<55, true>(ap_int_base<55, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\etc/ap_common.h" line="515" pragmaType="inline" parentfunction="_ZN8ssdm_intILi66ELb1EEC2EDq66_i" off="0" region="0" recursive="0"/>
+<pragma file="D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<64, false>::ssdm_int(unsigned long)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<64>::ap_uint<66>(ap_int<66> const&)" off="0" region="0" recursive="0"/>
+</pragmas>

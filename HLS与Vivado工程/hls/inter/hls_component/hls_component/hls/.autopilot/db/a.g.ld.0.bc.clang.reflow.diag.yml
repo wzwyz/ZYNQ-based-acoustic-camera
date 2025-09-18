@@ -1,0 +1,32 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_round_copysign_apfixed.h', 
+                   Line: 176, Column: 0 }
+Function:        _Z11round_fixedILi29ELi24EE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed<29, 24, (ap_q_mode)5, (ap_o_mode)3, 0> fabs_fixed<29, 24>(ap_fixed<29, 24, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_round_copysign_apfixed.h', 
+                       Line: 151, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_fixed<29, 24, (ap_q_mode)5, (ap_o_mode)3, 0> round_fixed<29, 24>(ap_fixed<29, 24, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_round_copysign_apfixed.h', 
+                       Line: 176, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../src/inter.cpp, Line: 6, Column: 0 }
+Function:        _Z5inter6ap_intILi24EE7ap_uintILi5EES0_S1_ILi6EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_fixed<29, 24, (ap_q_mode)5, (ap_o_mode)3, 0> hls::round<29, 24>(ap_fixed<29, 24, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\hls_math.h', 
+                       Line: 2158, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'inter(ap_int<24>, ap_uint<5>, ap_int<24>, ap_uint<6>)'
+    DebugLoc:        { File: ../src/inter.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...

@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 25,
+    "calls": "",
+    "file": "delay.cpp",
+    "fileloc": 4,
+    "instructions": 420,
+    "loads": {
+      "L": 32
+    },
+    "name": "delay",
+    "stores": {
+      "L": 34
+    },
+    "total_instructions": 1909
+  }
+}

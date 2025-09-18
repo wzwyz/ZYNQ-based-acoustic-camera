@@ -1,0 +1,271 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls_component.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "11/10/24 15:14:19",
+ "timestampMillis": "351039378",
+ "buildStep": {
+  "cmdId": "d2fcd419-5696-4228-9574-dee544ca86b9",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\logs\\hls_component.steps.log",
+  "commandLine": "D:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 15:14:19",
+ "timestampMillis": "351039379",
+ "status": {
+  "cmdId": "d2fcd419-5696-4228-9574-dee544ca86b9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "11/10/24 15:14:23",
+ "timestampMillis": "351043391",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "inter",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\src\\inter.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "11/10/24 15:14:23",
+ "timestampMillis": "351043392",
+ "buildStep": {
+  "cmdId": "6e87e8f5-da2c-4b08-9a60-1b00dca9abae",
+  "name": "export_design",
+  "logFile": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls\\hls.log",
+  "commandLine": "export_design -flow impl",
+  "args": [
+   "-flow",
+   "impl"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 15:14:23",
+ "timestampMillis": "351043392",
+ "status": {
+  "cmdId": "6e87e8f5-da2c-4b08-9a60-1b00dca9abae",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:14:23",
+ "timestampMillis": "351043393",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:14:23",
+ "timestampMillis": "351043394",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:14:23",
+ "timestampMillis": "351043394",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:14:23",
+ "timestampMillis": "351043394",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:14:23",
+ "timestampMillis": "351043394",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:14:23",
+ "timestampMillis": "351043395",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:17:34",
+ "timestampMillis": "351233784",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:17:34",
+ "timestampMillis": "351233785",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 15:17:34",
+ "timestampMillis": "351233785",
+ "status": {
+  "cmdId": "6e87e8f5-da2c-4b08-9a60-1b00dca9abae",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 15:17:34",
+ "timestampMillis": "351233932",
+ "status": {
+  "cmdId": "d2fcd419-5696-4228-9574-dee544ca86b9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:17:34",
+ "timestampMillis": "351233932",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:17:34",
+ "timestampMillis": "351233932",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

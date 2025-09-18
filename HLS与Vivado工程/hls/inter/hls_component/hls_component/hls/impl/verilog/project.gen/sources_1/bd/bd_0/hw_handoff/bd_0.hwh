@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Nov 10 15:14:50 2024" VIVADOVERSION="2024.1">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="bd_0" PACKAGE="clg400" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="239000000.0" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="External_Ports_ap_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="23" NAME="ap_return" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_ap_return">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_return"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ap_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_ap_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="23" NAME="data_left" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_data_left">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="data_left"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="23" NAME="data_right" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_data_right">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="data_right"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="4" NAME="rate_left" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_rate_left">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="rate_left"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="5" NAME="rate_right" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_rate_right">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="rate_right"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2113816634" FULLNAME="/hls_inst" HWVERSION="1.0" INSTANCE="hls_inst" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inter" VLNV="xilinx.com:hls:inter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="bd_0_hls_inst_0"/>
+        <PARAMETER NAME="II" VALUE="1"/>
+        <PARAMETER NAME="clk_period" VALUE="4.167"/>
+        <PARAMETER NAME="combinational" VALUE="0"/>
+        <PARAMETER NAME="latency" VALUE="10"/>
+        <PARAMETER NAME="machine" VALUE="64"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="239000000.0" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="External_Ports_ap_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ap_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="ap_return" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_ap_return">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ap_return"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ap_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_ap_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ap_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="data_left" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_data_left">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_left"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="data_right" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_data_right">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_right"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="rate_left" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_rate_left">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rate_left"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="5" NAME="rate_right" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_rate_right">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rate_right"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

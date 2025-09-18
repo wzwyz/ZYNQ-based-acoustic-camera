@@ -1,0 +1,35 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay\delay.hlsrun_csim_summary, at 11/25/24 11:08:05
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay -config C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg -cmdlineconfig C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Mon Nov 25 11:08:07 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source D:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'ban' on host 'ban' (Windows NT_amd64 version 10.0) on Mon Nov 25 11:08:08 +0800 2024
+INFO: [HLS 200-10] In directory 'C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component'
+INFO: [HLS 200-2005] Using work_dir C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/liboh/Desktop/mvdr/hls/delay/src/delay.cpp' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr/hls/delay/src/delay.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/liboh/Desktop/mvdr/hls/delay/src/delay.h' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr/hls/delay/src/delay.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/liboh/Desktop/mvdr/hls/delay/src/tb_delay.cpp' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/liboh/Desktop/mvdr/hls/delay/src/tb_delay.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=delay' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-2' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1465] Applying ini 'clock=360MHz' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(11)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.778ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries

@@ -1,0 +1,238 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Nov 25 22:14:00 2024
+| Host         : ban running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'delay_hls'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of delay_hls (xilinx.com:hls:delay:1.0) from (Rev. 2113838640) to (Rev. 2113838650)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'delay_hls'. These changes may impact your design.
+
+
+-Upgraded port 'addrs_left' width 192 differs from original width 176
+
+-Upgraded port 'addrs_right' width 192 differs from original width 176
+
+-Upgraded port 'now' width 12 differs from original width 11
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Nov 25 22:06:18 2024
+| Host         : ban running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'delay_hls'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of delay_hls (xilinx.com:hls:delay:1.0) from (Rev. 2113837991) to (Rev. 2113838640)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'delay_hls'. These changes may impact your design.
+
+
+-Upgraded port 'addrs_left' width 176 differs from original width 96
+
+-Upgraded port 'addrs_right' width 176 differs from original width 96
+
+-Upgraded port 'now' width 11 differs from original width 12
+
+-Upgraded port 'rates_left' width 80 differs from original width 40
+
+-Upgraded port 'rates_right' width 96 differs from original width 48
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Nov 25 20:46:39 2024
+| Host         : ban running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_calculate_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_calculate_0_0 (xilinx.com:hls:calculate:1.0) from (Rev. 2113812615) to (Rev. 2113838560)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_calculate_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'ap_return' width 55 differs from original width 53
+
+-Upgraded port 'data_new' width 384 differs from original width 192
+
+-Upgraded port 'data_old' width 384 differs from original width 192
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Nov 25 19:30:18 2024
+| Host         : ban running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vram_add_hls'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of vram_add_hls (xilinx.com:hls:vram_add:1.0) from (Rev. 2113816923) to (Rev. 2113838484)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'vram_add_hls'. These changes may impact your design.
+
+
+-Upgraded port 'indat' width 55 differs from original width 53
+
+-Upgrade has added port 'ap_clk'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Nov 25 11:14:44 2024
+| Host         : ban running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'delay_hls'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of delay_hls (xilinx.com:hls:delay:1.0) from (Rev. 2113829881) to (Rev. 2113837991)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'delay_hls'. These changes may impact your design.
+
+
+-Upgrade has removed port 'index'
+
+-Upgrade has added port 'addrs_signed'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Tue Nov 19 20:08:29 2024
+| Host         : ban running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'delay_hls'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of delay_hls (xilinx.com:hls:delay:1.0) from (Rev. 2113817078) to (Rev. 2113829881)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Sun Nov 10 22:49:25 2024
+| Host         : ban running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'delay_hls'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of delay_hls (xilinx.com:hls:delay:1.0) from (Rev. 2113816425) to (Rev. 2113817078)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Sun Nov 10 21:12:35 2024
+| Host         : ban running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_calculate_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_calculate_0_0 (xilinx.com:hls:calculate:1.0) from (Rev. 2113810927) to (Rev. 2113812615)
+

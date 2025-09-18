@@ -1,0 +1,117 @@
+<profile>
+<RunData>
+  <RUN_TYPE>impl</RUN_TYPE>
+  <VIVADO_VERSION>v.2024.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>2.778</TargetClockPeriod>
+  <AchievedClockPeriod>2.159</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>2.159</CP_FINAL>
+  <CP_ROUTE>2.159</CP_ROUTE>
+  <CP_SYNTH>2.133</CP_SYNTH>
+  <CP_TARGET>2.778</CP_TARGET>
+  <SLACK_FINAL>0.619</SLACK_FINAL>
+  <SLACK_ROUTE>0.619</SLACK_ROUTE>
+  <SLACK_SYNTH>0.645</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>0.000</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>0.619</WNS_FINAL>
+  <WNS_ROUTE>0.619</WNS_ROUTE>
+  <WNS_SYNTH>0.645</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>0</BRAM>
+    <CLB>0</CLB>
+    <DSP>0</DSP>
+    <FF>176</FF>
+    <LATCH>0</LATCH>
+    <LUT>64</LUT>
+    <SLICE>39</SLICE>
+    <SRL>0</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <SLICE>13300</SLICE>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="vram_add" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="1">add_64s_64ns_64_3_1_U1</SubModules>
+    <Resources FF="176" LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/add_64s_64ns_64_3_1_U1" DEPTH="1" FILE_NAME="vram_add.v" ORIG_REF_NAME="vram_add_add_64s_64ns_64_3_1">
+    <Resources FF="176" LUT="64" LogicLUT="64"/>
+    <LocalResources FF="176"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="2.144" DATAPATH_LOGIC_DELAY="1.586" DATAPATH_NET_DELAY="0.558" ENDPOINT_PIN="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/sum_s2_reg[42]/D" LOGIC_LEVELS="6" MAX_FANOUT="2" SLACK="0.619" STARTPOINT_PIN="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/ain_s1_reg[4]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/ain_s1_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2[28]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[28]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[32]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[36]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[40]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[42]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/sum_s2_reg[42]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="104"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.069" DATAPATH_LOGIC_DELAY="1.511" DATAPATH_NET_DELAY="0.558" ENDPOINT_PIN="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/carry_s2_reg/D" LOGIC_LEVELS="6" MAX_FANOUT="2" SLACK="0.681" STARTPOINT_PIN="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/ain_s1_reg[4]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/ain_s1_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2[28]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[28]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[32]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[36]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[40]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[42]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/carry_s2_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="105"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.060" DATAPATH_LOGIC_DELAY="1.502" DATAPATH_NET_DELAY="0.558" ENDPOINT_PIN="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/sum_s2_reg[41]/D" LOGIC_LEVELS="6" MAX_FANOUT="2" SLACK="0.703" STARTPOINT_PIN="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/ain_s1_reg[4]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/ain_s1_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2[28]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[28]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[32]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[36]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[40]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[42]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/sum_s2_reg[41]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="104"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.037" DATAPATH_LOGIC_DELAY="1.488" DATAPATH_NET_DELAY="0.549" ENDPOINT_PIN="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/sum_s2_reg[38]/D" LOGIC_LEVELS="5" MAX_FANOUT="2" SLACK="0.725" STARTPOINT_PIN="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/ain_s1_reg[4]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/ain_s1_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2[28]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[28]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[32]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[36]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[40]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/sum_s2_reg[38]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="104"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.032" DATAPATH_LOGIC_DELAY="1.483" DATAPATH_NET_DELAY="0.549" ENDPOINT_PIN="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/sum_s2_reg[40]/D" LOGIC_LEVELS="5" MAX_FANOUT="2" SLACK="0.730" STARTPOINT_PIN="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/ain_s1_reg[4]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/ain_s1_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2[28]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[28]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[32]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[36]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/u2/sum_s2_reg[40]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="155"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/add_64s_64ns_64_3_1_U1/sum_s2_reg[40]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="vram_add_add_64s_64ns_64_3_1.v" LINE_NUMBER="104"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/vram_add_design_analysis_routed.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/vram_add_failfast_routed.rpt"/>
+  <ReportFile TYPE="status" PATH="verilog/report/vram_add_status_routed.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/vram_add_timing_routed.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/vram_add_timing_paths_routed.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/vram_add_utilization_routed.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/vram_add_utilization_hierarchical_routed.rpt"/>
+</VivadoReportFiles>
+</profile>

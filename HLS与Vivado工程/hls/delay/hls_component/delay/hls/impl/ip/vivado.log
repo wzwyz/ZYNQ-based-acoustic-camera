@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Nov 25 22:10:11 2024
+# Process ID: 12384
+# Current directory: C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay/hls/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay/hls/impl/ip/vivado.log
+# Journal file: C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay/hls/impl/ip\vivado.jou
+# Running On        :ban
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency     :2304 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16910 MB
+# Swap memory       :1275 MB
+# Total Virtual     :18185 MB
+# Available Virtual :6734 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay/hls/hls_data.json outdir=C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay/hls/impl/ip srcdir=C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay/hls sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay/hls/impl/ip/misc
+INFO: Copied 1 verilog file(s) to C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay/hls/impl/ip/hdl/verilog
+INFO: Copied 1 vhdl file(s) to C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay/hls/impl/ip/hdl/vhdl
+ipx::create_core: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 650.668 ; gain = 194.383
+INFO: Import ports from HDL: C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay/hls/impl/ip/hdl/vhdl/delay.vhd (delay)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst
+INFO: Add data interface addrs_signed
+INFO: Add data interface now
+INFO: Add data interface addrs_left
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: Add data interface rates_left
+INFO: Add data interface addrs_right
+INFO: Add data interface rates_right
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay/hls/impl/ip/component.xml
+INFO: Created IP archive C:/Users/liboh/Desktop/mvdr/hls/delay/hls_component/delay/hls/impl/ip/xilinx_com_hls_delay_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 25 22:10:20 2024...

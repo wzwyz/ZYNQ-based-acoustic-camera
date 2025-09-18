@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\liboh\\Desktop\\mvdr\\hls\\calculate\\hls_component\\calculate\\calculate.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "11/07/24 20:13:05",
+ "timestampMillis": "109765426",
+ "buildStep": {
+  "cmdId": "a24e8c3c-eeff-4d21-9e4b-c4fe72cd5d5d",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\liboh\\Desktop\\mvdr\\hls\\calculate\\hls_component\\calculate\\logs\\calculate.steps.log",
+  "commandLine": "D:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\liboh\\Desktop\\mvdr\\hls\\calculate\\hls_component\\hls_config.cfg --work_dir calculate ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\liboh\\Desktop\\mvdr\\hls\\calculate\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "calculate"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\liboh\\Desktop\\mvdr\\hls\\calculate\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/07/24 20:13:05",
+ "timestampMillis": "109765426",
+ "status": {
+  "cmdId": "a24e8c3c-eeff-4d21-9e4b-c4fe72cd5d5d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "11/07/24 20:13:09",
+ "timestampMillis": "109769275",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "calculate",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\liboh\\Desktop\\mvdr\\hls\\calculate\\src\\calculate.cpp",
+     "C:/Users\\liboh\\Desktop\\mvdr\\hls\\calculate\\src\\calculate.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "11/07/24 20:13:09",
+ "timestampMillis": "109769276",
+ "buildStep": {
+  "cmdId": "9c6e89b5-529c-4c61-9cfe-f1aa404103f5",
+  "name": "csim_design",
+  "logFile": "C:/Users\\liboh\\Desktop\\mvdr\\hls\\calculate\\hls_component\\calculate\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\liboh\\Desktop\\mvdr\\hls\\calculate\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/07/24 20:13:09",
+ "timestampMillis": "109769277",
+ "status": {
+  "cmdId": "9c6e89b5-529c-4c61-9cfe-f1aa404103f5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/07/24 20:13:13",
+ "timestampMillis": "109772997",
+ "status": {
+  "cmdId": "9c6e89b5-529c-4c61-9cfe-f1aa404103f5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/07/24 20:13:13",
+ "timestampMillis": "109773134",
+ "status": {
+  "cmdId": "a24e8c3c-eeff-4d21-9e4b-c4fe72cd5d5d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/07/24 20:13:13",
+ "timestampMillis": "109773135",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/07/24 20:13:13",
+ "timestampMillis": "109773135",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

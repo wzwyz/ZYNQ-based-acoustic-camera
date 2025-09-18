@@ -1,0 +1,232 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2024.1</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>2.500</TargetClockPeriod>
+    <AchievedClockPeriod>2.376</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>2.376</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>2.376</CP_SYNTH>
+    <CP_TARGET>2.500</CP_TARGET>
+    <SLACK_FINAL>0.124</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>0.124</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>0.124</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>0.124</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>0</BRAM>
+      <CLB>0</CLB>
+      <DSP>12</DSP>
+      <FF>1484</FF>
+      <LATCH>0</LATCH>
+      <LUT>1114</LUT>
+      <SRL>91</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>280</BRAM>
+      <CLB>0</CLB>
+      <DSP>220</DSP>
+      <FF>106400</FF>
+      <LUT>53200</LUT>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="calculate" DISPNAME="inst" RTLNAME="calculate">
+      <SubModules count="17">add_38ns_38ns_38_2_1_U7 add_38ns_38ns_38_2_1_U8 add_54ns_54ns_54_2_1_U10 add_54ns_54ns_54_2_1_U9 mac_muladd_9ns_9ns_19ns_20_4_1_U12 mac_muladd_9ns_9ns_19ns_20_4_1_U15 mac_muladd_9ns_9ns_26ns_26_4_1_U14 mac_muladd_9ns_9ns_26ns_26_4_1_U17 mac_muladd_9ns_9ns_28ns_28_4_1_U13 mac_muladd_9ns_9ns_28ns_28_4_1_U16 mul_9ns_9ns_18_5_1_U1 mul_9ns_9ns_18_5_1_U2 mul_9ns_9ns_18_5_1_U3 mul_9ns_9ns_18_5_1_U4 mul_9ns_9ns_18_5_1_U5 mul_9ns_9ns_18_5_1_U6 sub_55ns_55ns_55_2_1_U11</SubModules>
+      <Resources DSP="12" FF="1484" LUT="1114"/>
+      <LocalResources FF="1251" LUT="955"/>
+    </RtlModule>
+    <RtlModule CELL="inst/add_38ns_38ns_38_2_1_U7" DEPTH="1" TYPE="resource" MODULENAME="add_38ns_38ns_38_2_1" DISPNAME="add_38ns_38ns_38_2_1_U7" RTLNAME="calculate_add_38ns_38ns_38_2_1">
+      <Resources FF="31" LUT="10"/>
+      <LocalResources FF="31"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="1" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_38ns_38ns_38_2_1_U7" SOURCE="../src/calculate.cpp:86" STORAGESUBTYPE="" URAM="0" VARIABLE="m2_hl_l2_ml" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/add_38ns_38ns_38_2_1_U8" DEPTH="1" TYPE="resource" MODULENAME="add_38ns_38ns_38_2_1" DISPNAME="add_38ns_38ns_38_2_1_U8" RTLNAME="calculate_add_38ns_38ns_38_2_1">
+      <Resources FF="31" LUT="10"/>
+      <LocalResources FF="31"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="1" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_38ns_38ns_38_2_1_U8" SOURCE="../src/calculate.cpp:86" STORAGESUBTYPE="" URAM="0" VARIABLE="m2_hl_l2_ml_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/add_54ns_54ns_54_2_1_U10" DEPTH="1" TYPE="resource" MODULENAME="add_54ns_54ns_54_2_1" DISPNAME="add_54ns_54ns_54_2_1_U10" RTLNAME="calculate_add_54ns_54ns_54_2_1">
+      <Resources FF="45" LUT="29"/>
+      <LocalResources FF="45" LUT="19"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="1" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_54ns_54ns_54_2_1_U10" SOURCE="../src/calculate.cpp:87" STORAGESUBTYPE="" URAM="0" VARIABLE="h2_hm_m2_hl_l2_ml_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/add_54ns_54ns_54_2_1_U9" DEPTH="1" TYPE="resource" MODULENAME="add_54ns_54ns_54_2_1" DISPNAME="add_54ns_54ns_54_2_1_U9" RTLNAME="calculate_add_54ns_54ns_54_2_1">
+      <Resources FF="44" LUT="29"/>
+      <LocalResources FF="44" LUT="19"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="1" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_54ns_54ns_54_2_1_U9" SOURCE="../src/calculate.cpp:87" STORAGESUBTYPE="" URAM="0" VARIABLE="h2_hm_m2_hl_l2_ml" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mac_muladd_9ns_9ns_19ns_20_4_1_U12" DEPTH="1" TYPE="resource" MODULENAME="mac_muladd_9ns_9ns_19ns_20_4_1" DISPNAME="mac_muladd_9ns_9ns_19ns_20_4_1_U12" RTLNAME="calculate_mac_muladd_9ns_9ns_19ns_20_4_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_19ns_20_4_1_U12" SOURCE="../src/calculate.cpp:76" STORAGESUBTYPE="" URAM="0" VARIABLE="m2" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_19ns_20_4_1_U12" SOURCE="../src/calculate.cpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln83_1" VISIBLE="false"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_19ns_20_4_1_U12" SOURCE="../src/calculate.cpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="m2_hl" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mac_muladd_9ns_9ns_19ns_20_4_1_U15" DEPTH="1" TYPE="resource" MODULENAME="mac_muladd_9ns_9ns_19ns_20_4_1" DISPNAME="mac_muladd_9ns_9ns_19ns_20_4_1_U15" RTLNAME="calculate_mac_muladd_9ns_9ns_19ns_20_4_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_19ns_20_4_1_U15" SOURCE="../src/calculate.cpp:76" STORAGESUBTYPE="" URAM="0" VARIABLE="m2_1" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_19ns_20_4_1_U15" SOURCE="../src/calculate.cpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln83_3" VISIBLE="false"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_19ns_20_4_1_U15" SOURCE="../src/calculate.cpp:83" STORAGESUBTYPE="" URAM="0" VARIABLE="m2_hl_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mac_muladd_9ns_9ns_26ns_26_4_1_U14" DEPTH="1" TYPE="resource" MODULENAME="mac_muladd_9ns_9ns_26ns_26_4_1" DISPNAME="mac_muladd_9ns_9ns_26ns_26_4_1_U14" RTLNAME="calculate_mac_muladd_9ns_9ns_26ns_26_4_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_26ns_26_4_1_U14" SOURCE="../src/calculate.cpp:78" STORAGESUBTYPE="" URAM="0" VARIABLE="hm" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_26ns_26_4_1_U14" SOURCE="../src/calculate.cpp:82" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln82" VISIBLE="false"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_26ns_26_4_1_U14" SOURCE="../src/calculate.cpp:82" STORAGESUBTYPE="" URAM="0" VARIABLE="h2_hm" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mac_muladd_9ns_9ns_26ns_26_4_1_U17" DEPTH="1" TYPE="resource" MODULENAME="mac_muladd_9ns_9ns_26ns_26_4_1" DISPNAME="mac_muladd_9ns_9ns_26ns_26_4_1_U17" RTLNAME="calculate_mac_muladd_9ns_9ns_26ns_26_4_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_26ns_26_4_1_U17" SOURCE="../src/calculate.cpp:78" STORAGESUBTYPE="" URAM="0" VARIABLE="hm_1" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_26ns_26_4_1_U17" SOURCE="../src/calculate.cpp:82" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln82_1" VISIBLE="false"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_26ns_26_4_1_U17" SOURCE="../src/calculate.cpp:82" STORAGESUBTYPE="" URAM="0" VARIABLE="h2_hm_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mac_muladd_9ns_9ns_28ns_28_4_1_U13" DEPTH="1" TYPE="resource" MODULENAME="mac_muladd_9ns_9ns_28ns_28_4_1" DISPNAME="mac_muladd_9ns_9ns_28ns_28_4_1_U13" RTLNAME="calculate_mac_muladd_9ns_9ns_28ns_28_4_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_28ns_28_4_1_U13" SOURCE="../src/calculate.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="l2" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_28ns_28_4_1_U13" SOURCE="../src/calculate.cpp:84" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln84" VISIBLE="false"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_28ns_28_4_1_U13" SOURCE="../src/calculate.cpp:84" STORAGESUBTYPE="" URAM="0" VARIABLE="l2_ml" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mac_muladd_9ns_9ns_28ns_28_4_1_U16" DEPTH="1" TYPE="resource" MODULENAME="mac_muladd_9ns_9ns_28ns_28_4_1" DISPNAME="mac_muladd_9ns_9ns_28ns_28_4_1_U16" RTLNAME="calculate_mac_muladd_9ns_9ns_28ns_28_4_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_28ns_28_4_1_U16" SOURCE="../src/calculate.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="l2_1" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_28ns_28_4_1_U16" SOURCE="../src/calculate.cpp:84" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln84_1" VISIBLE="false"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_9ns_9ns_28ns_28_4_1_U16" SOURCE="../src/calculate.cpp:84" STORAGESUBTYPE="" URAM="0" VARIABLE="l2_ml_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_9ns_9ns_18_5_1_U1" DEPTH="1" TYPE="resource" MODULENAME="mul_9ns_9ns_18_5_1" DISPNAME="mul_9ns_9ns_18_5_1_U1" RTLNAME="calculate_mul_9ns_9ns_18_5_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_9ns_18_5_1_U1" SOURCE="../src/calculate.cpp:75" STORAGESUBTYPE="" URAM="0" VARIABLE="h2" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_9ns_9ns_18_5_1_U2" DEPTH="1" TYPE="resource" MODULENAME="mul_9ns_9ns_18_5_1" DISPNAME="mul_9ns_9ns_18_5_1_U2" RTLNAME="calculate_mul_9ns_9ns_18_5_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_9ns_18_5_1_U2" SOURCE="../src/calculate.cpp:79" STORAGESUBTYPE="" URAM="0" VARIABLE="hl" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_9ns_9ns_18_5_1_U3" DEPTH="1" TYPE="resource" MODULENAME="mul_9ns_9ns_18_5_1" DISPNAME="mul_9ns_9ns_18_5_1_U3" RTLNAME="calculate_mul_9ns_9ns_18_5_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_9ns_18_5_1_U3" SOURCE="../src/calculate.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="ml" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_9ns_9ns_18_5_1_U4" DEPTH="1" TYPE="resource" MODULENAME="mul_9ns_9ns_18_5_1" DISPNAME="mul_9ns_9ns_18_5_1_U4" RTLNAME="calculate_mul_9ns_9ns_18_5_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_9ns_18_5_1_U4" SOURCE="../src/calculate.cpp:75" STORAGESUBTYPE="" URAM="0" VARIABLE="h2_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_9ns_9ns_18_5_1_U5" DEPTH="1" TYPE="resource" MODULENAME="mul_9ns_9ns_18_5_1" DISPNAME="mul_9ns_9ns_18_5_1_U5" RTLNAME="calculate_mul_9ns_9ns_18_5_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_9ns_18_5_1_U5" SOURCE="../src/calculate.cpp:79" STORAGESUBTYPE="" URAM="0" VARIABLE="hl_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_9ns_9ns_18_5_1_U6" DEPTH="1" TYPE="resource" MODULENAME="mul_9ns_9ns_18_5_1" DISPNAME="mul_9ns_9ns_18_5_1_U6" RTLNAME="calculate_mul_9ns_9ns_18_5_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_9ns_18_5_1_U6" SOURCE="../src/calculate.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="ml_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/sub_55ns_55ns_55_2_1_U11" DEPTH="1" TYPE="resource" MODULENAME="sub_55ns_55ns_55_2_1" DISPNAME="sub_55ns_55ns_55_2_1_U11" RTLNAME="calculate_sub_55ns_55ns_55_2_1">
+      <Resources FF="82" LUT="81"/>
+      <LocalResources FF="82" LUT="54"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="1" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_55ns_55ns_55_2_1_U11" SOURCE="../src/calculate.cpp:95" STORAGESUBTYPE="" URAM="0" VARIABLE="sub" VISIBLE="true"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="2.402" DATAPATH_LOGIC_DELAY="1.857" DATAPATH_NET_DELAY="0.545" ENDPOINT_PIN="sub_ln61_1_reg_1317_reg[25]/D" LOGIC_LEVELS="7" MAX_FANOUT="2" SLACK="0.124" STARTPOINT_PIN="add0F_1_reg_1296_reg[0]/C">
+      <CELL NAME="add0F_1_reg_1296_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="calculate.v" LINE_NUMBER="586"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1019"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1019"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1019"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1019"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[19]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1019"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[23]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1019"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[26]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1019"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[25]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="calculate.v" LINE_NUMBER="638"/>
+      <MODULE_INSTANCES>add_54ns_54ns_54_2_1_U10</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.402" DATAPATH_LOGIC_DELAY="1.857" DATAPATH_NET_DELAY="0.545" ENDPOINT_PIN="sub_ln61_reg_1312_reg[25]/D" LOGIC_LEVELS="7" MAX_FANOUT="2" SLACK="0.124" STARTPOINT_PIN="add0F_reg_1290_reg[0]/C">
+      <CELL NAME="add0F_reg_1290_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="calculate.v" LINE_NUMBER="588"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1021"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1021"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1021"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1021"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[19]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1021"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[23]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1021"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[26]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1021"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[25]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="calculate.v" LINE_NUMBER="639"/>
+      <MODULE_INSTANCES>add_54ns_54ns_54_2_1_U10</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.347" DATAPATH_LOGIC_DELAY="1.802" DATAPATH_NET_DELAY="0.545" ENDPOINT_PIN="sub_ln61_1_reg_1317_reg[26]/D" LOGIC_LEVELS="7" MAX_FANOUT="2" SLACK="0.179" STARTPOINT_PIN="add0F_1_reg_1296_reg[0]/C">
+      <CELL NAME="add0F_1_reg_1296_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="calculate.v" LINE_NUMBER="586"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1019"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1019"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1019"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1019"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[19]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1019"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[23]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1019"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[26]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1019"/>
+      <CELL NAME="sub_ln61_1_reg_1317_reg[26]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="calculate.v" LINE_NUMBER="638"/>
+      <MODULE_INSTANCES>add_54ns_54ns_54_2_1_U10</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.347" DATAPATH_LOGIC_DELAY="1.802" DATAPATH_NET_DELAY="0.545" ENDPOINT_PIN="sub_ln61_reg_1312_reg[26]/D" LOGIC_LEVELS="7" MAX_FANOUT="2" SLACK="0.179" STARTPOINT_PIN="add0F_reg_1290_reg[0]/C">
+      <CELL NAME="add0F_reg_1290_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="calculate.v" LINE_NUMBER="588"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1021"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1021"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1021"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1021"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[19]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1021"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[23]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1021"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[26]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate.v" LINE_NUMBER="1021"/>
+      <CELL NAME="sub_ln61_reg_1312_reg[26]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="calculate.v" LINE_NUMBER="639"/>
+      <MODULE_INSTANCES>add_54ns_54ns_54_2_1_U10</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.331" DATAPATH_LOGIC_DELAY="1.513" DATAPATH_NET_DELAY="0.818" ENDPOINT_PIN="h2_hm_m2_hl_l2_ml_1_reg_1545_reg[53]/D" LOGIC_LEVELS="5" MAX_FANOUT="1" SLACK="0.195" STARTPOINT_PIN="add_54ns_54ns_54_2_1_U10/ain_s1_reg[12]/C">
+      <CELL NAME="add_54ns_54ns_54_2_1_U10/ain_s1_reg[12]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="calculate_add_54ns_54ns_54_2_1.v" LINE_NUMBER="69" MODULE_INSTNAME="add_54ns_54ns_54_2_1_U10" IS_FUNCINST="0"/>
+      <CELL NAME="add_54ns_54ns_54_2_1_U10/u2/h2_hm_m2_hl_l2_ml_1_reg_1545_reg[39]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate_add_54ns_54ns_54_2_1.v" LINE_NUMBER="113" MODULE_INSTNAME="add_54ns_54ns_54_2_1_U10" IS_FUNCINST="0"/>
+      <CELL NAME="add_54ns_54ns_54_2_1_U10/u2/h2_hm_m2_hl_l2_ml_1_reg_1545_reg[43]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate_add_54ns_54ns_54_2_1.v" LINE_NUMBER="113" MODULE_INSTNAME="add_54ns_54ns_54_2_1_U10" IS_FUNCINST="0"/>
+      <CELL NAME="add_54ns_54ns_54_2_1_U10/u2/h2_hm_m2_hl_l2_ml_1_reg_1545_reg[47]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate_add_54ns_54ns_54_2_1.v" LINE_NUMBER="113" MODULE_INSTNAME="add_54ns_54ns_54_2_1_U10" IS_FUNCINST="0"/>
+      <CELL NAME="add_54ns_54ns_54_2_1_U10/u2/h2_hm_m2_hl_l2_ml_1_reg_1545_reg[51]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate_add_54ns_54ns_54_2_1.v" LINE_NUMBER="113" MODULE_INSTNAME="add_54ns_54ns_54_2_1_U10" IS_FUNCINST="0"/>
+      <CELL NAME="add_54ns_54ns_54_2_1_U10/u2/h2_hm_m2_hl_l2_ml_1_reg_1545_reg[53]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="calculate_add_54ns_54ns_54_2_1.v" LINE_NUMBER="113" MODULE_INSTNAME="add_54ns_54ns_54_2_1_U10" IS_FUNCINST="0"/>
+      <CELL NAME="h2_hm_m2_hl_l2_ml_1_reg_1545_reg[53]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="calculate.v" LINE_NUMBER="616"/>
+      <MODULE_INSTANCES>add_54ns_54ns_54_2_1_U10</MODULE_INSTANCES>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/calculate_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/calculate_failfast_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/calculate_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/calculate_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/calculate_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/calculate_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Mon Nov 25 20:43:56 +0800 2024"/>
+    <item NAME="Version" VALUE="2024.1 (Build 5069499 on May 21 2024)"/>
+    <item NAME="Project" VALUE="calculate"/>
+    <item NAME="Solution" VALUE="hls (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynq"/>
+    <item NAME="Target device" VALUE="xc7z020-clg400-2"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="2.5 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="2.5 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

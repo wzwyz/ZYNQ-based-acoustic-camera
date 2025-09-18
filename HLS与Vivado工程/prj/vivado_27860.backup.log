@@ -1,0 +1,294 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Nov 25 22:58:02 2024
+# Process ID: 27860
+# Current directory: C:/Users/16531/Desktop/mvdr_16/prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29592 C:\Users\16531\Desktop\mvdr_16\prj\ov5640_hdmi.xpr
+# Log file: C:/Users/16531/Desktop/mvdr_16/prj/vivado.log
+# Journal file: C:/Users/16531/Desktop/mvdr_16/prj\vivado.jou
+# Running On        :wyz
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22635
+# Processor Detail  :AMD Ryzen 5 5600H with Radeon Graphics         
+# CPU Frequency     :3294 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :16487 MB
+# Swap memory       :36507 MB
+# Total Virtual     :52995 MB
+# Available Virtual :36477 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/liboh/Desktop/mvdr/prj' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/16531/Desktop/mvdr_16/prj/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/16531/Desktop/mvdr_16/hls'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1677.160 ; gain = 551.516
+update_compile_order -fileset sources_1
+generate_target all [get_files  C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/bd/system/system.bd]
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/synth/system.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/sim/system.v
+Verilog Output written to : c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m03_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m04_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m05_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_3/system_auto_cc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m06_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_4/system_auto_cc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_5/system_auto_cc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s03_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ExtremalSearcher_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_2 .
+Exporting to file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/hw_handoff/system.hwh
+Generated Hardware Definition File c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 2084.992 ; gain = 377.484
+catch { config_ip_cache -export [get_ips -all system_xbar_5] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_xbar_5
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_pc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 0283769784df1a48 to dir: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/0/2/0283769784df1a48/system_auto_pc_1.dcp to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/0/2/0283769784df1a48/system_auto_pc_1_sim_netlist.v to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/0/2/0283769784df1a48/system_auto_pc_1_sim_netlist.vhdl to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/0/2/0283769784df1a48/system_auto_pc_1_stub.v to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/0/2/0283769784df1a48/system_auto_pc_1_stub.vhdl to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_0, cache-ID = 0283769784df1a48; cache size = 144.036 MB.
+catch { config_ip_cache -export [get_ips -all system_auto_cc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_cc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 8ca4ca16c8ae120f to dir: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/8/c/8ca4ca16c8ae120f/system_auto_cc_0.dcp to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/8/c/8ca4ca16c8ae120f/system_auto_cc_0_sim_netlist.v to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/8/c/8ca4ca16c8ae120f/system_auto_cc_0_sim_netlist.vhdl to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/8/c/8ca4ca16c8ae120f/system_auto_cc_0_stub.v to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/8/c/8ca4ca16c8ae120f/system_auto_cc_0_stub.vhdl to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_cc_0, cache-ID = 8ca4ca16c8ae120f; cache size = 144.036 MB.
+catch { config_ip_cache -export [get_ips -all system_auto_cc_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_cc_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 1ba9bbeee3fea0b0 to dir: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/1/b/1ba9bbeee3fea0b0/system_auto_cc_1.dcp to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/1/b/1ba9bbeee3fea0b0/system_auto_cc_1_sim_netlist.v to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/1/b/1ba9bbeee3fea0b0/system_auto_cc_1_sim_netlist.vhdl to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/1/b/1ba9bbeee3fea0b0/system_auto_cc_1_stub.v to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/1/b/1ba9bbeee3fea0b0/system_auto_cc_1_stub.vhdl to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_cc_1, cache-ID = 1ba9bbeee3fea0b0; cache size = 144.036 MB.
+catch { config_ip_cache -export [get_ips -all system_auto_cc_2] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_cc_2
+catch { config_ip_cache -export [get_ips -all system_auto_cc_3] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_cc_3
+catch { config_ip_cache -export [get_ips -all system_auto_cc_4] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_cc_4
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry c4edd9a090462a65 to dir: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_4
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/c/4/c4edd9a090462a65/system_auto_cc_0.dcp to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_4/system_auto_cc_4.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_4/system_auto_cc_4.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/c/4/c4edd9a090462a65/system_auto_cc_0_sim_netlist.v to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_4/system_auto_cc_4_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_4/system_auto_cc_4_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/c/4/c4edd9a090462a65/system_auto_cc_0_sim_netlist.vhdl to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_4/system_auto_cc_4_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_4/system_auto_cc_4_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/c/4/c4edd9a090462a65/system_auto_cc_0_stub.v to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_4/system_auto_cc_4_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_4/system_auto_cc_4_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/c/4/c4edd9a090462a65/system_auto_cc_0_stub.vhdl to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_4/system_auto_cc_4_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_4/system_auto_cc_4_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_cc_4, cache-ID = c4edd9a090462a65; cache size = 144.036 MB.
+catch { config_ip_cache -export [get_ips -all system_auto_cc_5] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_cc_5
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry c4edd9a090462a65 to dir: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_5
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/c/4/c4edd9a090462a65/system_auto_cc_0.dcp to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_5/system_auto_cc_5.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_5/system_auto_cc_5.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/c/4/c4edd9a090462a65/system_auto_cc_0_sim_netlist.v to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_5/system_auto_cc_5_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_5/system_auto_cc_5_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/c/4/c4edd9a090462a65/system_auto_cc_0_sim_netlist.vhdl to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_5/system_auto_cc_5_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_5/system_auto_cc_5_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/c/4/c4edd9a090462a65/system_auto_cc_0_stub.v to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_5/system_auto_cc_5_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_5/system_auto_cc_5_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/c/4/c4edd9a090462a65/system_auto_cc_0_stub.vhdl to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_5/system_auto_cc_5_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_cc_5/system_auto_cc_5_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_cc_5, cache-ID = c4edd9a090462a65; cache size = 144.036 MB.
+catch { config_ip_cache -export [get_ips -all system_auto_pc_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_pc_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry f31ab73c204abd55 to dir: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/f/3/f31ab73c204abd55/system_auto_pc_1.dcp to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/f/3/f31ab73c204abd55/system_auto_pc_1_sim_netlist.v to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/f/3/f31ab73c204abd55/system_auto_pc_1_sim_netlist.vhdl to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/f/3/f31ab73c204abd55/system_auto_pc_1_stub.v to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/f/3/f31ab73c204abd55/system_auto_pc_1_stub.vhdl to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_1, cache-ID = f31ab73c204abd55; cache size = 144.036 MB.
+catch { config_ip_cache -export [get_ips -all system_ExtremalSearcher_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_ExtremalSearcher_0_0
+catch { config_ip_cache -export [get_ips -all system_axi_gpio_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_gpio_0_0
+catch { config_ip_cache -export [get_ips -all system_util_vector_logic_1_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_util_vector_logic_1_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 432de984fac857a0 to dir: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_util_vector_logic_1_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/4/3/432de984fac857a0/system_util_vector_logic_0_0.dcp to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_util_vector_logic_1_0/system_util_vector_logic_1_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_util_vector_logic_1_0/system_util_vector_logic_1_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/4/3/432de984fac857a0/system_util_vector_logic_0_0_sim_netlist.v to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_util_vector_logic_1_0/system_util_vector_logic_1_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_util_vector_logic_1_0/system_util_vector_logic_1_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/4/3/432de984fac857a0/system_util_vector_logic_0_0_sim_netlist.vhdl to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_util_vector_logic_1_0/system_util_vector_logic_1_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_util_vector_logic_1_0/system_util_vector_logic_1_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/4/3/432de984fac857a0/system_util_vector_logic_0_0_stub.v to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_util_vector_logic_1_0/system_util_vector_logic_1_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_util_vector_logic_1_0/system_util_vector_logic_1_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/ip/2024.1/4/3/432de984fac857a0/system_util_vector_logic_0_0_stub.vhdl to c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_util_vector_logic_1_0/system_util_vector_logic_1_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.gen/sources_1/bd/system/ip/system_util_vector_logic_1_0/system_util_vector_logic_1_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_util_vector_logic_1_0, cache-ID = 432de984fac857a0; cache size = 144.036 MB.
+export_ip_user_files -of_objects [get_files C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/bd/system/system.bd]
+launch_runs system_ExtremalSearcher_0_0_synth_1 system_auto_cc_2_synth_1 system_auto_cc_3_synth_1 system_axi_gpio_0_0_synth_1 system_processing_system7_0_0_synth_1 system_xbar_5_synth_1 -jobs 12
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_ExtremalSearcher_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_cc_2
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_cc_3
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_gpio_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_xbar_5
+[Mon Nov 25 23:00:36 2024] Launched system_ExtremalSearcher_0_0_synth_1, system_auto_cc_2_synth_1, system_auto_cc_3_synth_1, system_axi_gpio_0_0_synth_1, system_processing_system7_0_0_synth_1, system_xbar_5_synth_1...
+Run output will be captured here:
+system_ExtremalSearcher_0_0_synth_1: C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.runs/system_ExtremalSearcher_0_0_synth_1/runme.log
+system_auto_cc_2_synth_1: C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.runs/system_auto_cc_2_synth_1/runme.log
+system_auto_cc_3_synth_1: C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.runs/system_auto_cc_3_synth_1/runme.log
+system_axi_gpio_0_0_synth_1: C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.runs/system_axi_gpio_0_0_synth_1/runme.log
+system_processing_system7_0_0_synth_1: C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.runs/system_processing_system7_0_0_synth_1/runme.log
+system_xbar_5_synth_1: C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.runs/system_xbar_5_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/bd/system/system.bd] -directory C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.ip_user_files -ipstatic_source_dir C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/compile_simlib/modelsim} {questa=C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/compile_simlib/questa} {riviera=C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/compile_simlib/riviera} {activehdl=C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/bd/system/system.bd] -top
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/ip/vram_64x9216/vram_64x9216.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/ip/vram_add_hls/vram_add_hls.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/ip/vram_64x9216/vram_64x9216.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/ip/inter_hls/inter_hls.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/ip/bram_24x4096/bram_24x4096.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/ip/delay_hls/delay_hls.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci' is already up-to-date
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_ExtremalSearcher_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_auto_cc_2
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_auto_cc_3
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_gpio_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_xbar_5
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_ExtremalSearcher_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_cc_2
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_cc_3
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_gpio_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_xbar_5
+[Mon Nov 25 23:01:55 2024] Launched system_processing_system7_0_0_synth_1, system_xbar_5_synth_1, system_auto_cc_2_synth_1, system_auto_cc_3_synth_1, system_ExtremalSearcher_0_0_synth_1, system_axi_gpio_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.runs/system_processing_system7_0_0_synth_1/runme.log
+system_xbar_5_synth_1: C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.runs/system_xbar_5_synth_1/runme.log
+system_auto_cc_2_synth_1: C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.runs/system_auto_cc_2_synth_1/runme.log
+system_auto_cc_3_synth_1: C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.runs/system_auto_cc_3_synth_1/runme.log
+system_ExtremalSearcher_0_0_synth_1: C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.runs/system_ExtremalSearcher_0_0_synth_1/runme.log
+system_axi_gpio_0_0_synth_1: C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.runs/system_axi_gpio_0_0_synth_1/runme.log
+synth_1: C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.runs/synth_1/runme.log
+[Mon Nov 25 23:01:56 2024] Launched impl_1...
+Run output will be captured here: C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 2098.105 ; gain = 0.000
+write_hw_platform -fixed -include_bit -force -file C:/Users/16531/Desktop/mvdr_16/vitis/system_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/16531/Desktop/mvdr_16/vitis/system_wrapper.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/16531/Desktop/mvdr_16/vitis/system_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2024.1/data/embeddedsw) loading 0 seconds

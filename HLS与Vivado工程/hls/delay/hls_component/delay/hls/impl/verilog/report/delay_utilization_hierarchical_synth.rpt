@@ -1,0 +1,32 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Nov 25 22:12:09 2024
+| Host         : ban running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/delay_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------+-----------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|     Instance     |         Module        | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++------------------+-----------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper     |                 (top) |        926 |        838 |       0 |   88 | 975 |      0 |      0 |          0 |
+|   bd_0_i         |                  bd_0 |        926 |        838 |       0 |   88 | 975 |      0 |      0 |          0 |
+|     hls_inst     |       bd_0_hls_inst_0 |        926 |        838 |       0 |   88 | 975 |      0 |      0 |          0 |
+|       (hls_inst) |       bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|       inst       | bd_0_hls_inst_0_delay |        926 |        838 |       0 |   88 | 975 |      0 |      0 |          0 |
++------------------+-----------------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

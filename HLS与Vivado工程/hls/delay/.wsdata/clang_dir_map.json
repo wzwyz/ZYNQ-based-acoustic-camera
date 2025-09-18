@@ -1,0 +1,8 @@
+{
+  "workspaceRoot": "C:\\Users\\liboh\\Desktop\\mvdr\\hls\\delay",
+  "mapping": {
+    "src\\tb_delay.cpp": "hls_component",
+    "src\\delay.cpp": "hls_component",
+    "src\\delay.h": "hls_component"
+  }
+}

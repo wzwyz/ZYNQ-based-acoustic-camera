@@ -1,0 +1,7 @@
+{
+  "workspaceRoot": "C:\\Users\\liboh\\Desktop\\mvdr\\hls\\vram_add",
+  "mapping": {
+    "hls_component\\tb_vram_add.cpp": "hls_component",
+    "hls_component\\vram_add.cpp": "hls_component"
+  }
+}

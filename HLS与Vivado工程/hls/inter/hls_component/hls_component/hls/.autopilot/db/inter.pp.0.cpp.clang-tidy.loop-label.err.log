@@ -1,0 +1,4 @@
+1 warning and 26 errors generated.
+Error while processing C:\Users\liboh\Desktop\mvdr0\hls\inter\hls_component\hls_component\hls\.autopilot\db\inter.pp.0.cpp.
+clang-tidy applied 130 of 130 suggested fixes.
+Suppressed 1 warnings (1 with check filters).

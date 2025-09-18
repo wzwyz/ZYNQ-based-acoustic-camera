@@ -1,0 +1,116 @@
+
+
+================================================================
+== Synthesis Summary Report of 'inter'
+================================================================
++ General Information: 
+    * Date:           Sun Nov 10 15:13:25 2024
+    * Version:        2024.1 (Build 5069499 on May 21 2024)
+    * Project:        hls_component
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |         Modules        | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |         |           |           |     |
+    |         & Loops        | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ inter                 |    II|  0.22|       10|  41.670|         -|        1|     -|       yes|     -|  2 (~0%)|  496 (~0%)|  294 (~0%)|    -|
+    | + round_fixed_29_24_s  |    II|  0.48|        2|   8.334|         -|        1|     -|       yes|     -|        -|   92 (~0%)|  148 (~0%)|    -|
+    +------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------------+---------+-----------+----------+
+| Port       | Mode    | Direction | Bitwidth |
++------------+---------+-----------+----------+
+| ap_return  |         | out       | 24       |
+| data_left  | ap_none | in        | 24       |
+| data_right | ap_none | in        | 24       |
+| rate_left  | ap_none | in        | 5        |
+| rate_right | ap_none | in        | 6        |
++------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_clk    | clock        | ap_clk |
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+------------+
+| Argument   | Direction | Datatype   |
++------------+-----------+------------+
+| data_left  | in        | ap_int<24> |
+| rate_left  | in        | ap_uint<5> |
+| data_right | in        | ap_int<24> |
+| rate_right | in        | ap_uint<6> |
+| return     | out       | ap_int<24> |
++------------+-----------+------------+
+
+* SW-to-HW Mapping
++------------+--------------+---------+
+| Argument   | HW Interface | HW Type |
++------------+--------------+---------+
+| data_left  | data_left    | port    |
+| rate_left  | rate_left    | port    |
+| data_right | data_right   | port    |
+| rate_right | rate_right   | port    |
+| return     | ap_return    | port    |
++------------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------+-----+--------+--------------+--------+-----------+---------+
+| Name                               | DSP | Pragma | Variable     | Op     | Impl      | Latency |
++------------------------------------+-----+--------+--------------+--------+-----------+---------+
+| + inter                            | 2   |        |              |        |           |         |
+|   mac_muladd_24s_5ns_29s_29_4_1_U3 | 1   |        | left         | mul    | dsp_slice | 3       |
+|   mul_24s_6ns_29_5_1_U2            | 1   |        | right        | mul    | auto      | 4       |
+|   mac_muladd_24s_5ns_29s_29_4_1_U3 | 1   |        | tmp2         | add    | dsp_slice | 3       |
+|   icmp_ln13_fu_120_p2              |     |        | icmp_ln13    | setne  | auto      | 0       |
+|   add_ln13_fu_125_p2               |     |        | add_ln13     | add    | fabric    | 0       |
+|   select_ln13_fu_130_p3            |     |        | select_ln13  | select | auto_sel  | 0       |
+|   ap_return                        |     |        | rst          | select | auto_sel  | 0       |
+|  + round_fixed_29_24_s             | 0   |        |              |        |           |         |
+|    sub_ln152_fu_36_p2              |     |        | sub_ln152    | sub    | fabric    | 0       |
+|    x_pos_fu_59_p3                  |     |        | x_pos        | select | auto_sel  | 0       |
+|    r_fu_69_p2                      |     |        | r            | add    | fabric    | 0       |
+|    sub_ln188_fu_91_p2              |     |        | sub_ln188    | sub    | fabric    | 0       |
+|    ap_return                       |     |        | select_ln188 | select | auto_sel  | 0       |
++------------------------------------+-----+--------+--------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-------------------------------+-------------------------------------+
+| Type      | Options                       | Location                            |
++-----------+-------------------------------+-------------------------------------+
+| interface | mode=ap_ctrl_none port=return | ../src/inter.cpp:7 in inter, return |
+| pipeline  |                               | ../src/inter.cpp:8 in inter         |
++-----------+-------------------------------+-------------------------------------+
+
+

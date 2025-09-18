@@ -1,0 +1,133 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component\hls_component.hlsrun_cosim_summary, at 11/09/24 21:38:10
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run cosim -work_dir C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component -config C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg -cmdlineconfig C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sat Nov  9 21:38:12 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source D:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'ban' on host 'ban' (Windows NT_amd64 version 10.0) on Sat Nov 09 21:38:12 +0800 2024
+INFO: [HLS 200-10] In directory 'C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component'
+INFO: [HLS 200-2005] Using work_dir C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/liboh/Desktop/mvdr0/hls/inter/src/inter.cpp' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr0/hls/inter/src/inter.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/liboh/Desktop/mvdr0/hls/inter/src/tb_inter.cpp' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/liboh/Desktop/mvdr0/hls/inter/src/tb_inter.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=inter' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-2' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'clock=185MHz' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(8)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5.405ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_config.cfg(5)
+WARNING: [COSIM] found non-self-synchronizing top I/O data_left
+WARNING: [COSIM] found non-self-synchronizing top I/O ap_return
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "D:/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang++"
+   Compiling tb_inter.cpp_pre.cpp.tb.cpp
+   Compiling inter.cpp_pre.cpp.tb.cpp
+   Compiling apatb_inter.cpp
+   Compiling apatb_inter_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+data_left: 10745875 data_right: 4344505 rate_left: 0.03125 rate_right: 0.96875
+ rst: 4544547
+data_left: 14164142 data_right: 9652941 rate_left: 0 rate_right: 1
+ rst: 9652941
+data_left: 0 data_right: 3355154 rate_left: 0.5 rate_right: 0.5
+ rst: 1677577
+data_left: 15051 data_right: 12002433 rate_left: 0.8125 rate_right: 0.1875
+ rst: 2262685
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+C:\Users\liboh\Desktop\mvdr0\hls\inter\hls_component\hls_component\hls\sim\verilog>set PATH= 
+
+C:\Users\liboh\Desktop\mvdr0\hls\inter\hls_component\hls_component\hls\sim\verilog>call D:/Xilinx/Vivado/2024.1/bin/xelab xil_defaultlib.apatb_inter_top glbl -Oenable_linking_all_libraries  -prj inter.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_23 -L floating_point_v7_1_18 --lib "ieee_proposed=./ieee_proposed" -s inter  
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_inter_top glbl -Oenable_linking_all_libraries -prj inter.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_23 -L floating_point_v7_1_18 --lib ieee_proposed=./ieee_proposed -s inter 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/sim/verilog/inter.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_inter_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/sim/verilog/inter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/sim/verilog/inter_mac_muladd_24ns_5ns_29ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inter_mac_muladd_24ns_5ns_29ns_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module inter_mac_muladd_24ns_5ns_29ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/sim/verilog/inter_mul_24ns_6ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inter_mul_24ns_6ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.inter_mul_24ns_6ns_29_4_1(NUM_ST...
+Compiling module xil_defaultlib.inter_mac_muladd_24ns_5ns_29ns_2...
+Compiling module xil_defaultlib.inter_mac_muladd_24ns_5ns_29ns_2...
+Compiling module xil_defaultlib.inter
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.dataflow_monitor
+Compiling module xil_defaultlib.apatb_inter_top
+Compiling module work.glbl
+Built simulation snapshot inter
+
+****** xsim v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sat Nov  9 21:38:30 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/inter/xsim_script.tcl
+# xsim {inter} -autoloadwcfg -tclbatch {inter.tcl}
+Time resolution is 1 ps
+source inter.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 4 [0.00%] @ "116000"
+// RTL Simulation : 1 / 4 [60.00%] @ "149000"
+// RTL Simulation : 2 / 4 [60.00%] @ "154000"
+// RTL Simulation : 3 / 4 [60.00%] @ "159000"
+// RTL Simulation : 4 / 4 [100.00%] @ "165000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 197100 ps : File "C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/sim/verilog/inter.autotb.v" Line 415
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Nov  9 21:38:32 2024...
+INFO: [COSIM 212-316] Starting C post checking ...
+data_left: 10745875 data_right: 4344505 rate_left: 0.03125 rate_right: 0.96875
+ rst: 4544547
+data_left: 14164142 data_right: 9652941 rate_left: 0 rate_right: 1
+ rst: 9652941
+data_left: 0 data_right: 3355154 rate_left: 0.5 rate_right: 0.5
+ rst: 1677577
+data_left: 15051 data_right: 12002433 rate_left: 0.8125 rate_right: 0.1875
+ rst: 2262685
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 20.375 seconds; peak allocated memory: 308.355 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 24s

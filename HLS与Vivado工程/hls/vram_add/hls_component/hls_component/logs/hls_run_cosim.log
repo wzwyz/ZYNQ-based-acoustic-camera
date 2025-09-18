@@ -1,0 +1,115 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_component\hls_component.hlsrun_cosim_summary, at 11/10/24 20:02:06
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run cosim -work_dir C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_component -config C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_config.cfg -cmdlineconfig C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_component/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sun Nov 10 20:02:07 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source D:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'ban' on host 'ban' (Windows NT_amd64 version 10.0) on Sun Nov 10 20:02:08 +0800 2024
+INFO: [HLS 200-10] In directory 'C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component'
+INFO: [HLS 200-2005] Using work_dir C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_component 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=vram_add.cpp' from C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/vram_add.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb_vram_add.cpp' from C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/tb_vram_add.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=vram_add' from C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-2' from C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'clock=240MHz' from C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.167ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_config.cfg(5)
+WARNING: [COSIM] found non-self-synchronizing top I/O vram_read
+WARNING: [COSIM] found non-self-synchronizing top I/O ap_return
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "D:/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang++"
+   Compiling vram_add.cpp_pre.cpp.tb.cpp
+   Compiling tb_vram_add.cpp_pre.cpp.tb.cpp
+   Compiling apatb_vram_add.cpp
+   Compiling apatb_vram_add_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+                                                 
+          vram_read|           indat|         vram_write
+
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+C:\Users\liboh\Desktop\mvdr0\hls\vram_add\hls_component\hls_component\hls\sim\verilog>set PATH= 
+
+C:\Users\liboh\Desktop\mvdr0\hls\vram_add\hls_component\hls_component\hls\sim\verilog>call D:/Xilinx/Vivado/2024.1/bin/xelab xil_defaultlib.apatb_vram_add_top glbl -Oenable_linking_all_libraries  -prj vram_add.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_23 -L floating_point_v7_1_18 --lib "ieee_proposed=./ieee_proposed" -s vram_add  
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_vram_add_top glbl -Oenable_linking_all_libraries -prj vram_add.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_23 -L floating_point_v7_1_18 --lib ieee_proposed=./ieee_proposed -s vram_add 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_component/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_component/hls/sim/verilog/vram_add.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_vram_add_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_component/hls/sim/verilog/vram_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vram_add
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_component/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.vram_add
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.dataflow_monitor
+Compiling module xil_defaultlib.apatb_vram_add_top
+Compiling module work.glbl
+Built simulation snapshot vram_add
+
+****** xsim v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sun Nov 10 20:02:23 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/vram_add/xsim_script.tcl
+# xsim {vram_add} -autoloadwcfg -tclbatch {vram_add.tcl}
+Time resolution is 1 ps
+source vram_add.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 3 [n/a] @ "110000"
+// RTL Simulation : 1 / 3 [n/a] @ "119000"
+// RTL Simulation : 2 / 3 [n/a] @ "123000"
+// RTL Simulation : 3 / 3 [n/a] @ "127000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 147680 ps : File "C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_component/hls/sim/verilog/vram_add.autotb.v" Line 292
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Nov 10 20:02:25 2024...
+INFO: [COSIM 212-316] Starting C post checking ...
+                                                 
+          vram_read|           indat|         vram_write
+
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-210] Design is translated to an combinational logic. II and Latency will be marked as all 0.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 17.921 seconds; peak allocated memory: 308.551 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 22s

@@ -1,0 +1,2 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate\calculate.hlsrun_impl_summary, at 11/25/24 20:38:13
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run vivado -work_dir C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate -config C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg -cmdlineconfig C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/config.cmdline

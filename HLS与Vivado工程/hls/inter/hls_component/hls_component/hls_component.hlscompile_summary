@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls_component.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "11/10/24 15:12:52",
+ "timestampMillis": "350952314",
+ "buildStep": {
+  "cmdId": "30b6cb2c-6d33-44ea-bb9b-4e001ef4eb4f",
+  "name": "v++",
+  "logFile": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\logs\\hls_component.steps.log",
+  "commandLine": "D:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_config.cfg",
+    "content": "part=xc7z020clg400-2\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\ntb.file=C:/Users/liboh/Desktop/mvdr0/hls/inter/src/tb_inter.cpp\nclock=240MHz\nsyn.file=C:/Users/liboh/Desktop/mvdr0/hls/inter/src/inter.cpp\nsyn.top=inter\ncosim.trace_level=all\ncosim.wave_debug=1"
+   }
+  ],
+  "cwd": "C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 15:12:52",
+ "timestampMillis": "350952314",
+ "status": {
+  "cmdId": "30b6cb2c-6d33-44ea-bb9b-4e001ef4eb4f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "11/10/24 15:12:56",
+ "timestampMillis": "350956242",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "inter",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\src\\inter.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "11/10/24 15:12:56",
+ "timestampMillis": "350956243",
+ "buildStep": {
+  "cmdId": "eb872a0f-0218-45eb-9f6c-57c022312b1d",
+  "name": "csynth_design",
+  "logFile": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls\\hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 15:12:56",
+ "timestampMillis": "350956243",
+ "status": {
+  "cmdId": "eb872a0f-0218-45eb-9f6c-57c022312b1d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:12:56",
+ "timestampMillis": "350956244",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:12:56",
+ "timestampMillis": "350956244",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:12:56",
+ "timestampMillis": "350956244",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:13:26",
+ "timestampMillis": "350986303",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:13:26",
+ "timestampMillis": "350986304",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:13:26",
+ "timestampMillis": "350986304",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 15:13:26",
+ "timestampMillis": "350986305",
+ "status": {
+  "cmdId": "eb872a0f-0218-45eb-9f6c-57c022312b1d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 15:13:26",
+ "timestampMillis": "350986448",
+ "status": {
+  "cmdId": "30b6cb2c-6d33-44ea-bb9b-4e001ef4eb4f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:13:26",
+ "timestampMillis": "350986466",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\reports\\v++_compile_hls_component_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:13:26",
+ "timestampMillis": "350986467",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\reports\\.db\\v++_compile_hls_component_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

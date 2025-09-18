@@ -1,0 +1,96 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2024.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>2.778</TargetClockPeriod>
+  <AchievedClockPeriod>2.021</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>2.021</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>2.021</CP_SYNTH>
+  <CP_TARGET>2.778</CP_TARGET>
+  <SLACK_FINAL>0.757</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>0.757</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>0.757</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>0.757</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>0</BRAM>
+    <CLB>0</CLB>
+    <DSP>0</DSP>
+    <FF>975</FF>
+    <LATCH>0</LATCH>
+    <LUT>926</LUT>
+    <SRL>88</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="delay" TOP_CELL="bd_0_i/hls_inst/inst">
+    <Resources FF="975" LUT="926" LogicLUT="838" SRL="88"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="2.035" DATAPATH_LOGIC_DELAY="1.400" DATAPATH_NET_DELAY="0.635" ENDPOINT_PIN="bd_0_i/hls_inst/inst/icmp_ln247_1_reg_1330_reg[0]/D" LOGIC_LEVELS="3" MAX_FANOUT="5" SLACK="0.757" STARTPOINT_PIN="bd_0_i/hls_inst/inst/addr_signed_6_reg_1255_reg[0]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/addr_signed_6_reg_1255_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="delay.v" LINE_NUMBER="460"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_1_reg_1330[0]_i_8" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="delay.v" LINE_NUMBER="825"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_1_reg_1330_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="delay.v" LINE_NUMBER="825"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_1_reg_1330_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="delay.v" LINE_NUMBER="825"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_1_reg_1330_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="delay.v" LINE_NUMBER="625"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.035" DATAPATH_LOGIC_DELAY="1.400" DATAPATH_NET_DELAY="0.635" ENDPOINT_PIN="bd_0_i/hls_inst/inst/icmp_ln247_2_reg_1335_reg[0]/D" LOGIC_LEVELS="3" MAX_FANOUT="5" SLACK="0.757" STARTPOINT_PIN="bd_0_i/hls_inst/inst/addr_signed_4_reg_1241_reg[0]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/addr_signed_4_reg_1241_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="delay.v" LINE_NUMBER="460"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_2_reg_1335[0]_i_8" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="delay.v" LINE_NUMBER="827"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_2_reg_1335_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="delay.v" LINE_NUMBER="827"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_2_reg_1335_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="delay.v" LINE_NUMBER="827"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_2_reg_1335_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="delay.v" LINE_NUMBER="626"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.035" DATAPATH_LOGIC_DELAY="1.400" DATAPATH_NET_DELAY="0.635" ENDPOINT_PIN="bd_0_i/hls_inst/inst/icmp_ln247_3_reg_1340_reg[0]/D" LOGIC_LEVELS="3" MAX_FANOUT="5" SLACK="0.757" STARTPOINT_PIN="bd_0_i/hls_inst/inst/addr_signed_6_reg_1255_reg[0]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/addr_signed_6_reg_1255_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="delay.v" LINE_NUMBER="460"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_3_reg_1340[0]_i_8" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="delay.v" LINE_NUMBER="829"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_3_reg_1340_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="delay.v" LINE_NUMBER="825"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_3_reg_1340_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="delay.v" LINE_NUMBER="825"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_3_reg_1340_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="delay.v" LINE_NUMBER="627"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.035" DATAPATH_LOGIC_DELAY="1.400" DATAPATH_NET_DELAY="0.635" ENDPOINT_PIN="bd_0_i/hls_inst/inst/icmp_ln247_4_reg_1345_reg[0]/D" LOGIC_LEVELS="3" MAX_FANOUT="5" SLACK="0.757" STARTPOINT_PIN="bd_0_i/hls_inst/inst/addr_signed_reg_1213_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/addr_signed_reg_1213_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="delay.v" LINE_NUMBER="460"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_4_reg_1345[0]_i_8" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="delay.v" LINE_NUMBER="831"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_4_reg_1345_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="delay.v" LINE_NUMBER="827"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_4_reg_1345_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="delay.v" LINE_NUMBER="827"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_4_reg_1345_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="delay.v" LINE_NUMBER="628"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.035" DATAPATH_LOGIC_DELAY="1.400" DATAPATH_NET_DELAY="0.635" ENDPOINT_PIN="bd_0_i/hls_inst/inst/icmp_ln247_5_reg_1350_reg[0]/D" LOGIC_LEVELS="3" MAX_FANOUT="5" SLACK="0.757" STARTPOINT_PIN="bd_0_i/hls_inst/inst/addr_signed_2_reg_1227_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/addr_signed_2_reg_1227_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="delay.v" LINE_NUMBER="460"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_5_reg_1350[0]_i_8" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="delay.v" LINE_NUMBER="833"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_5_reg_1350_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="delay.v" LINE_NUMBER="825"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_5_reg_1350_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="delay.v" LINE_NUMBER="825"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/icmp_ln247_5_reg_1350_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="delay.v" LINE_NUMBER="629"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/delay_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/delay_failfast_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/delay_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/delay_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/delay_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/delay_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

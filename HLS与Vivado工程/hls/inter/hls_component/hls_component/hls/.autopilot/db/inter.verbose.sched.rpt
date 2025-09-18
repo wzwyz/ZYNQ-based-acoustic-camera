@@ -1,0 +1,233 @@
+
+
+================================================================
+== Vitis HLS Report for 'inter'
+================================================================
+* Date:           Sun Nov 10 15:13:24 2024
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        hls_component
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  4.17 ns|  2.817 ns|     1.13 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |       10|       10|  41.670 ns|  41.670 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 11
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 11
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 11, States = { 1 2 3 4 5 6 7 8 9 10 11 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.75>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%rate_right_read = read i6 @_ssdm_op_Read.ap_auto.i6, i6 %rate_right" [../src/inter.cpp:5]   --->   Operation 12 'read' 'rate_right_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%data_right_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %data_right" [../src/inter.cpp:5]   --->   Operation 13 'read' 'data_right_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%rate_left_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %rate_left" [../src/inter.cpp:5]   --->   Operation 14 'read' 'rate_left_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%data_left_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %data_left" [../src/inter.cpp:5]   --->   Operation 15 'read' 'data_left_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln10 = zext i6 %rate_right_read" [../src/inter.cpp:10]   --->   Operation 16 'zext' 'zext_ln10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%sext_ln10 = sext i24 %data_right_read" [../src/inter.cpp:10]   --->   Operation 17 'sext' 'sext_ln10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [5/5] (1.75ns)   --->   "%right = mul i29 %sext_ln10, i29 %zext_ln10" [../src/inter.cpp:10]   --->   Operation 18 'mul' 'right' <Predicate = true> <Delay = 1.75> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 1.75> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 1.75>
+ST_2 : Operation 19 [4/5] (1.75ns)   --->   "%right = mul i29 %sext_ln10, i29 %zext_ln10" [../src/inter.cpp:10]   --->   Operation 19 'mul' 'right' <Predicate = true> <Delay = 1.75> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 1.75> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 1.75>
+ST_3 : Operation 20 [3/5] (1.75ns)   --->   "%right = mul i29 %sext_ln10, i29 %zext_ln10" [../src/inter.cpp:10]   --->   Operation 20 'mul' 'right' <Predicate = true> <Delay = 1.75> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 1.75> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 1.75>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln9 = zext i5 %rate_left_read" [../src/inter.cpp:9]   --->   Operation 21 'zext' 'zext_ln9' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%sext_ln9 = sext i24 %data_left_read" [../src/inter.cpp:9]   --->   Operation 22 'sext' 'sext_ln9' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [3/3] (0.98ns) (grouped into DSP with root node tmp2)   --->   "%left = mul i29 %sext_ln9, i29 %zext_ln9" [../src/inter.cpp:9]   --->   Operation 23 'mul' 'left' <Predicate = true> <Delay = 0.98> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 24 [2/5] (1.75ns)   --->   "%right = mul i29 %sext_ln10, i29 %zext_ln10" [../src/inter.cpp:10]   --->   Operation 24 'mul' 'right' <Predicate = true> <Delay = 1.75> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 1.75> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 1.75>
+ST_5 : Operation 25 [2/3] (0.98ns) (grouped into DSP with root node tmp2)   --->   "%left = mul i29 %sext_ln9, i29 %zext_ln9" [../src/inter.cpp:9]   --->   Operation 25 'mul' 'left' <Predicate = true> <Delay = 0.98> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 26 [1/5] (1.75ns)   --->   "%right = mul i29 %sext_ln10, i29 %zext_ln10" [../src/inter.cpp:10]   --->   Operation 26 'mul' 'right' <Predicate = true> <Delay = 1.75> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 4> <II = 1> <Delay = 1.75> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 1.76>
+ST_6 : Operation 27 [1/3] (0.00ns) (grouped into DSP with root node tmp2)   --->   "%left = mul i29 %sext_ln9, i29 %zext_ln9" [../src/inter.cpp:9]   --->   Operation 27 'mul' 'left' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 28 [2/2] (1.76ns) (root node of the DSP)   --->   "%tmp2 = add i29 %right, i29 %left" [../src/inter.cpp:12]   --->   Operation 28 'add' 'tmp2' <Predicate = true> <Delay = 1.76> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 7 <SV = 6> <Delay = 1.76>
+ST_7 : Operation 29 [1/2] (1.76ns) (root node of the DSP)   --->   "%tmp2 = add i29 %right, i29 %left" [../src/inter.cpp:12]   --->   Operation 29 'add' 'tmp2' <Predicate = true> <Delay = 1.76> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 8 <SV = 7> <Delay = 1.82>
+ST_8 : Operation 30 [3/3] (1.82ns)   --->   "%ref_tmp7 = call i29 @round_fixed<29, 24>, i29 %tmp2" [D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\hls_math.h:2159->../src/inter.cpp:13]   --->   Operation 30 'call' 'ref_tmp7' <Predicate = true> <Delay = 1.82> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 2.56>
+ST_9 : Operation 31 [2/3] (2.56ns)   --->   "%ref_tmp7 = call i29 @round_fixed<29, 24>, i29 %tmp2" [D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\hls_math.h:2159->../src/inter.cpp:13]   --->   Operation 31 'call' 'ref_tmp7' <Predicate = true> <Delay = 2.56> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 2.56>
+ST_10 : Operation 32 [1/3] (2.56ns)   --->   "%ref_tmp7 = call i29 @round_fixed<29, 24>, i29 %tmp2" [D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\hls_math.h:2159->../src/inter.cpp:13]   --->   Operation 32 'call' 'ref_tmp7' <Predicate = true> <Delay = 2.56> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 33 [1/1] (0.00ns)   --->   "%tmp1 = partselect i24 @_ssdm_op_PartSelect.i24.i29.i32.i32, i29 %ref_tmp7, i32 5, i32 28" [../src/inter.cpp:13]   --->   Operation 33 'partselect' 'tmp1' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 34 [1/1] (0.00ns)   --->   "%trunc_ln13 = trunc i29 %ref_tmp7" [../src/inter.cpp:13]   --->   Operation 34 'trunc' 'trunc_ln13' <Predicate = true> <Delay = 0.00>
+
+State 11 <SV = 10> <Delay = 2.81>
+ST_11 : Operation 35 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i24 0"   --->   Operation 35 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 36 [1/1] (0.00ns)   --->   "%specpipeline_ln8 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [../src/inter.cpp:8]   --->   Operation 36 'specpipeline' 'specpipeline_ln8' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 37 [1/1] (0.00ns)   --->   "%spectopmodule_ln5 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [../src/inter.cpp:5]   --->   Operation 37 'spectopmodule' 'spectopmodule_ln5' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 38 [1/1] (0.00ns)   --->   "%specinterface_ln5 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_2, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0" [../src/inter.cpp:5]   --->   Operation 38 'specinterface' 'specinterface_ln5' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 39 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i24 %data_left"   --->   Operation 39 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 40 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %data_left, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 40 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 41 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %rate_left"   --->   Operation 41 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 42 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i5 %rate_left, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 42 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 43 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i24 %data_right"   --->   Operation 43 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %data_right, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 45 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i6 %rate_right"   --->   Operation 45 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 46 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i6 %rate_right, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 46 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 47 [1/1] (0.00ns) (grouped into LUT with out node rst)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i29.i32, i29 %ref_tmp7, i32 28" [../src/inter.cpp:13]   --->   Operation 47 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 48 [1/1] (1.02ns)   --->   "%icmp_ln13 = icmp_ne  i5 %trunc_ln13, i5 0" [../src/inter.cpp:13]   --->   Operation 48 'icmp' 'icmp_ln13' <Predicate = true> <Delay = 1.02> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.02> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 49 [1/1] (1.68ns)   --->   "%add_ln13 = add i24 %tmp1, i24 1" [../src/inter.cpp:13]   --->   Operation 49 'add' 'add_ln13' <Predicate = true> <Delay = 1.68> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.68> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 50 [1/1] (0.00ns) (grouped into LUT with out node rst)   --->   "%select_ln13 = select i1 %icmp_ln13, i24 %add_ln13, i24 %tmp1" [../src/inter.cpp:13]   --->   Operation 50 'select' 'select_ln13' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.12> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 51 [1/1] (1.12ns) (out node of the LUT)   --->   "%rst = select i1 %tmp, i24 %select_ln13, i24 %tmp1" [../src/inter.cpp:13]   --->   Operation 51 'select' 'rst' <Predicate = true> <Delay = 1.12> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.12> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 52 [1/1] (0.00ns)   --->   "%ret_ln15 = ret i24 %rst" [../src/inter.cpp:15]   --->   Operation 52 'ret' 'ret_ln15' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4.167ns, clock uncertainty: 1.125ns.
+
+ <State 1>: 1.755ns
+The critical path consists of the following:
+	wire read operation ('rate_right_read', ../src/inter.cpp:5) on port 'rate_right' (../src/inter.cpp:5) [17]  (0.000 ns)
+	'mul' operation 29 bit ('right', ../src/inter.cpp:10) [26]  (1.755 ns)
+
+ <State 2>: 1.755ns
+The critical path consists of the following:
+	'mul' operation 29 bit ('right', ../src/inter.cpp:10) [26]  (1.755 ns)
+
+ <State 3>: 1.755ns
+The critical path consists of the following:
+	'mul' operation 29 bit ('right', ../src/inter.cpp:10) [26]  (1.755 ns)
+
+ <State 4>: 1.755ns
+The critical path consists of the following:
+	'mul' operation 29 bit ('right', ../src/inter.cpp:10) [26]  (1.755 ns)
+
+ <State 5>: 1.755ns
+The critical path consists of the following:
+	'mul' operation 29 bit ('right', ../src/inter.cpp:10) [26]  (1.755 ns)
+
+ <State 6>: 1.760ns
+The critical path consists of the following:
+	'mul' operation 29 bit of DSP[27] ('left', ../src/inter.cpp:9) [23]  (0.000 ns)
+	'add' operation 29 bit of DSP[27] ('tmp2', ../src/inter.cpp:12) [27]  (1.760 ns)
+
+ <State 7>: 1.760ns
+The critical path consists of the following:
+	'add' operation 29 bit of DSP[27] ('tmp2', ../src/inter.cpp:12) [27]  (1.760 ns)
+
+ <State 8>: 1.823ns
+The critical path consists of the following:
+	'call' operation 29 bit ('ref_tmp7', D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\hls_math.h:2159->../src/inter.cpp:13) to 'round_fixed<29, 24>' [28]  (1.823 ns)
+
+ <State 9>: 2.561ns
+The critical path consists of the following:
+	'call' operation 29 bit ('ref_tmp7', D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\hls_math.h:2159->../src/inter.cpp:13) to 'round_fixed<29, 24>' [28]  (2.561 ns)
+
+ <State 10>: 2.561ns
+The critical path consists of the following:
+	'call' operation 29 bit ('ref_tmp7', D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\hls_math.h:2159->../src/inter.cpp:13) to 'round_fixed<29, 24>' [28]  (2.561 ns)
+
+ <State 11>: 2.817ns
+The critical path consists of the following:
+	'add' operation 24 bit ('add_ln13', ../src/inter.cpp:13) [33]  (1.688 ns)
+	'select' operation 24 bit ('select_ln13', ../src/inter.cpp:13) [34]  (0.000 ns)
+	'select' operation 24 bit ('rst', ../src/inter.cpp:13) [35]  (1.129 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

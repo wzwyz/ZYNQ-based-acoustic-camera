@@ -1,0 +1,14 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../../src/inter.cpp in debug mode
+   Generating csim.exe
+data_left: 10745875 data_right: 4344505 rate_left: 0.03125 rate_right: 0.96875
+ rst: 4544547
+data_left: 14164142 data_right: 9652941 rate_left: 0 rate_right: 1
+ rst: 9652941
+data_left: 0 data_right: 3355154 rate_left: 0.5 rate_right: 0.5
+ rst: 1677577
+data_left: 15051 data_right: 12002433 rate_left: 0.8125 rate_right: 0.1875
+ rst: 2262685
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

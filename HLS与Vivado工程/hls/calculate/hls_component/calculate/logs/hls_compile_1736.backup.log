@@ -1,0 +1,99 @@
+INFO: [v++ 60-1548] Creating build summary session with primary output C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate\calculate.hlscompile_summary, at 11/07/24 20:13:23
+INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate -config C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg -cmdlineconfig C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Nov  7 20:13:25 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source D:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'ban' on host 'ban' (Windows NT_amd64 version 10.0) on Thu Nov 07 20:13:26 +0800 2024
+INFO: [HLS 200-10] In directory 'C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component'
+INFO: [HLS 200-2005] Using work_dir C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/liboh/Desktop/mvdr/hls/calculate/src/calculate.cpp' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr/hls/calculate/src/calculate.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/liboh/Desktop/mvdr/hls/calculate/src/calculate.h' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr/hls/calculate/src/calculate.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/liboh/Desktop/mvdr/hls/calculate/src/tb_calculate.cpp' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/liboh/Desktop/mvdr/hls/calculate/src/tb_calculate.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=calculate' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-2' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1465] Applying ini 'clock=180MHz' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(11)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5.556ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.355 seconds; current allocated memory: 245.477 MB.
+INFO: [HLS 200-10] Analyzing design file '../src/calculate.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.369 seconds; current allocated memory: 248.238 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 3,683 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 318 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 214 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 187 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 166 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 166 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 166 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 166 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 166 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 166 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 166 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 166 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 166 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 166 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 169 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 169 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_45_1' is marked as complete unroll implied by the pipeline pragma (../src/calculate.cpp:45:22)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_45_1' (../src/calculate.cpp:45:22) in function 'calculate_add' completely with a factor of 8 (../src/calculate.cpp:43:0)
+INFO: [HLS 214-178] Inlining function 'calculate_add(ap_uint<192>)' into 'calculate(ap_uint<192>, ap_uint<192>)' (../src/calculate.cpp:4:0)
+INFO: [HLS 214-178] Inlining function 'calculate_abs(ap_int<27>)' into 'calculate(ap_uint<192>, ap_uint<192>)' (../src/calculate.cpp:4:0)
+INFO: [HLS 214-178] Inlining function 'calculate_square(ap_uint<26>)' into 'calculate(ap_uint<192>, ap_uint<192>)' (../src/calculate.cpp:4:0)
+INFO: [HLS 214-178] Inlining function 'calculate_sub(ap_uint<52>, ap_uint<52>)' into 'calculate(ap_uint<192>, ap_uint<192>)' (../src/calculate.cpp:4:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.883 seconds; current allocated memory: 249.977 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 249.984 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.014 seconds; current allocated memory: 254.258 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.011 seconds; current allocated memory: 256.234 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../src/calculate.cpp:40:1) in function 'calculate'... converting 5 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 277.676 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 277.688 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'calculate' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'calculate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'calculate'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, function 'calculate'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 277.688 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 277.688 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'calculate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculate/data_new' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'calculate/data_old' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'calculate' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'mul_13ns_13ns_26_2_1': 6 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'calculate'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.053 seconds; current allocated memory: 279.395 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.322 seconds; current allocated memory: 284.586 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.336 seconds; current allocated memory: 286.270 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for calculate.
+INFO: [VLOG 209-307] Generating Verilog RTL for calculate.
+INFO: [HLS 200-789] **** Estimated Fmax: 268.82 MHz
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 16.244 seconds; peak allocated memory: 286.336 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 20s

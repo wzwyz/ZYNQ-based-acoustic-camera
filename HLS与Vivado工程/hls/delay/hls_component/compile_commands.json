@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "C:\\Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component",
+    "arguments": [
+      "D:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/Users/liboh/Desktop/mvdr/hls/delay/src/delay.cpp"
+    ],
+    "file": "C:/Users/liboh/Desktop/mvdr/hls/delay/src/delay.cpp"
+  },
+  {
+    "directory": "C:\\Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component",
+    "arguments": [
+      "D:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=D:\\Xilinx\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "C:/Users/liboh/Desktop/mvdr/hls/delay/src/tb_delay.cpp"
+    ],
+    "file": "C:/Users/liboh/Desktop/mvdr/hls/delay/src/tb_delay.cpp"
+  }
+]

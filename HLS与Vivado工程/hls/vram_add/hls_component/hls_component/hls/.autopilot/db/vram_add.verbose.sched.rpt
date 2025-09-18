@@ -1,0 +1,140 @@
+
+
+================================================================
+== Vitis HLS Report for 'vram_add'
+================================================================
+* Date:           Mon Nov 25 19:23:46 2024
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        hls_component
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.78 ns|  2.151 ns|     0.75 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        2|        2|  5.556 ns|  5.556 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.15>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%indat_read = read i55 @_ssdm_op_Read.ap_auto.i55, i55 %indat" [vram_add.cpp:8]   --->   Operation 4 'read' 'indat_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%vram_read_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %vram_read" [vram_add.cpp:8]   --->   Operation 5 'read' 'vram_read_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%sext_ln12 = sext i55 %indat_read" [vram_add.cpp:12]   --->   Operation 6 'sext' 'sext_ln12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [3/3] (2.15ns)   --->   "%vram_write = add i64 %sext_ln12, i64 %vram_read_read" [vram_add.cpp:12]   --->   Operation 7 'add' 'vram_write' <Predicate = true> <Delay = 2.15> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 2> <II = 1> <Delay = 2.15> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 2.15>
+ST_2 : Operation 8 [2/3] (2.15ns)   --->   "%vram_write = add i64 %sext_ln12, i64 %vram_read_read" [vram_add.cpp:12]   --->   Operation 8 'add' 'vram_write' <Predicate = true> <Delay = 2.15> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 2> <II = 1> <Delay = 2.15> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 2.15>
+ST_3 : Operation 9 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 0"   --->   Operation 9 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 10 [1/1] (0.00ns)   --->   "%specpipeline_ln11 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [vram_add.cpp:11]   --->   Operation 10 'specpipeline' 'specpipeline_ln11' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 11 [1/1] (0.00ns)   --->   "%spectopmodule_ln8 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [vram_add.cpp:8]   --->   Operation 11 'spectopmodule' 'spectopmodule_ln8' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln8 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_2, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0" [vram_add.cpp:8]   --->   Operation 12 'specinterface' 'specinterface_ln8' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %vram_read"   --->   Operation 13 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %vram_read, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i55 %indat"   --->   Operation 15 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i55 %indat, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/3] (2.15ns)   --->   "%vram_write = add i64 %sext_ln12, i64 %vram_read_read" [vram_add.cpp:12]   --->   Operation 17 'add' 'vram_write' <Predicate = true> <Delay = 2.15> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 2> <II = 1> <Delay = 2.15> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%ret_ln18 = ret i64 %vram_write" [vram_add.cpp:18]   --->   Operation 18 'ret' 'ret_ln18' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 2.778ns, clock uncertainty: 0.750ns.
+
+ <State 1>: 2.151ns
+The critical path consists of the following:
+	wire read operation ('indat_read', vram_add.cpp:8) on port 'indat' (vram_add.cpp:8) [11]  (0.000 ns)
+	'add' operation 64 bit ('vram_write', vram_add.cpp:12) [14]  (2.151 ns)
+
+ <State 2>: 2.151ns
+The critical path consists of the following:
+	'add' operation 64 bit ('vram_write', vram_add.cpp:12) [14]  (2.151 ns)
+
+ <State 3>: 2.151ns
+The critical path consists of the following:
+	'add' operation 64 bit ('vram_write', vram_add.cpp:12) [14]  (2.151 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

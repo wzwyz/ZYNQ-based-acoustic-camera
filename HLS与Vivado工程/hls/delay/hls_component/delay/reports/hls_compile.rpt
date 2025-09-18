@@ -1,0 +1,211 @@
+
+
+================================================================
+== Synthesis Summary Report of 'delay'
+================================================================
++ General Information: 
+    * Date:           Mon Nov 25 22:09:18 2024
+    * Version:        2024.1 (Build 5069499 on May 21 2024)
+    * Project:        delay
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    | Modules | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |           |           |     |
+    | & Loops | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +---------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ delay  |    II|  0.48|       11|  30.558|         -|        1|     -|       yes|     -|   -|  1976 (1%)|  1526 (2%)|    -|
+    +---------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++--------------+---------+-----------+----------+
+| Port         | Mode    | Direction | Bitwidth |
++--------------+---------+-----------+----------+
+| addrs_left   | ap_none | out       | 192      |
+| addrs_right  | ap_none | out       | 192      |
+| addrs_signed | ap_none | in        | 40       |
+| now          | ap_none | in        | 12       |
+| rates_left   | ap_none | out       | 80       |
+| rates_right  | ap_none | out       | 96       |
++--------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_clk    | clock        | ap_clk |
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++--------------+-----------+---------------+
+| Argument     | Direction | Datatype      |
++--------------+-----------+---------------+
+| addrs_signed | in        | ap_uint<40>   |
+| now          | in        | ap_uint<12>   |
+| addrs_left   | out       | ap_uint<192>& |
+| rates_left   | out       | ap_uint<80>&  |
+| addrs_right  | out       | ap_uint<192>& |
+| rates_right  | out       | ap_uint<96>&  |
++--------------+-----------+---------------+
+
+* SW-to-HW Mapping
++--------------+--------------+---------+
+| Argument     | HW Interface | HW Type |
++--------------+--------------+---------+
+| addrs_signed | addrs_signed | port    |
+| now          | now          | port    |
+| addrs_left   | addrs_left   | port    |
+| rates_left   | rates_left   | port    |
+| addrs_right  | addrs_right  | port    |
+| rates_right  | rates_right  | port    |
++--------------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------+-----+--------+----------------+--------+----------+---------+
+| Name                       | DSP | Pragma | Variable       | Op     | Impl     | Latency |
++----------------------------+-----+--------+----------------+--------+----------+---------+
+| + delay                    | 0   |        |                |        |          |         |
+|   addr_signed_4_fu_162_p2  |     |        | addr_signed_4  | sub    | fabric   | 0       |
+|   addr_signed_5_fu_168_p2  |     |        | addr_signed_5  | sub    | fabric   | 0       |
+|   addr_signed_6_fu_174_p2  |     |        | addr_signed_6  | sub    | fabric   | 0       |
+|   addr_signed_7_fu_180_p2  |     |        | addr_signed_7  | sub    | fabric   | 0       |
+|   icmp_ln247_fu_266_p2     |     |        | icmp_ln247     | setlt  | auto     | 0       |
+|   min01_fu_298_p3          |     |        | min01          | select | auto_sel | 0       |
+|   icmp_ln247_1_fu_270_p2   |     |        | icmp_ln247_1   | setlt  | auto     | 0       |
+|   min23_fu_303_p3          |     |        | min23          | select | auto_sel | 0       |
+|   icmp_ln247_2_fu_274_p2   |     |        | icmp_ln247_2   | setlt  | auto     | 0       |
+|   min45_fu_308_p3          |     |        | min45          | select | auto_sel | 0       |
+|   icmp_ln247_3_fu_278_p2   |     |        | icmp_ln247_3   | setlt  | auto     | 0       |
+|   min67_fu_313_p3          |     |        | min67          | select | auto_sel | 0       |
+|   icmp_ln247_4_fu_282_p2   |     |        | icmp_ln247_4   | setlt  | auto     | 0       |
+|   select_ln247_fu_318_p3   |     |        | select_ln247   | select | auto_sel | 0       |
+|   icmp_ln247_5_fu_286_p2   |     |        | icmp_ln247_5   | setlt  | auto     | 0       |
+|   select_ln247_1_fu_323_p3 |     |        | select_ln247_1 | select | auto_sel | 0       |
+|   icmp_ln247_6_fu_290_p2   |     |        | icmp_ln247_6   | setlt  | auto     | 0       |
+|   select_ln247_2_fu_328_p3 |     |        | select_ln247_2 | select | auto_sel | 0       |
+|   icmp_ln247_7_fu_294_p2   |     |        | icmp_ln247_7   | setlt  | auto     | 0       |
+|   select_ln247_3_fu_333_p3 |     |        | select_ln247_3 | select | auto_sel | 0       |
+|   icmp_ln247_8_fu_338_p2   |     |        | icmp_ln247_8   | setlt  | auto     | 0       |
+|   min03_fu_354_p3          |     |        | min03          | select | auto_sel | 0       |
+|   icmp_ln247_9_fu_342_p2   |     |        | icmp_ln247_9   | setlt  | auto     | 0       |
+|   min47_fu_359_p3          |     |        | min47          | select | auto_sel | 0       |
+|   icmp_ln247_10_fu_346_p2  |     |        | icmp_ln247_10  | setlt  | auto     | 0       |
+|   select_ln247_6_fu_364_p3 |     |        | select_ln247_6 | select | auto_sel | 0       |
+|   icmp_ln247_11_fu_350_p2  |     |        | icmp_ln247_11  | setlt  | auto     | 0       |
+|   select_ln247_7_fu_369_p3 |     |        | select_ln247_7 | select | auto_sel | 0       |
+|   icmp_ln247_12_fu_374_p2  |     |        | icmp_ln247_12  | setlt  | auto     | 0       |
+|   min07_fu_382_p3          |     |        | min07          | select | auto_sel | 0       |
+|   icmp_ln247_13_fu_378_p2  |     |        | icmp_ln247_13  | setlt  | auto     | 0       |
+|   min8F_fu_387_p3          |     |        | min8F          | select | auto_sel | 0       |
+|   icmp_ln247_14_fu_395_p2  |     |        | icmp_ln247_14  | setlt  | auto     | 0       |
+|   min_value_fu_400_p3      |     |        | min_value      | select | auto_sel | 0       |
+|   tmp2_fu_429_p2           |     |        | tmp2           | sub    | fabric   | 0       |
+|   addr_right_fu_728_p2     |     |        | addr_right     | sub    | fabric   | 0       |
+|   addr_left_fu_853_p2      |     |        | addr_left      | add    | fabric   | 0       |
+|   rate_right_fu_861_p2     |     |        | rate_right     | sub    | fabric   | 0       |
+|   tmp2_1_fu_447_p2         |     |        | tmp2_1         | sub    | fabric   | 0       |
+|   addr_right_1_fu_736_p2   |     |        | addr_right_1   | sub    | fabric   | 0       |
+|   addr_left_1_fu_867_p2    |     |        | addr_left_1    | add    | fabric   | 0       |
+|   rate_right_1_fu_875_p2   |     |        | rate_right_1   | sub    | fabric   | 0       |
+|   tmp2_2_fu_465_p2         |     |        | tmp2_2         | sub    | fabric   | 0       |
+|   addr_right_2_fu_744_p2   |     |        | addr_right_2   | sub    | fabric   | 0       |
+|   addr_left_2_fu_881_p2    |     |        | addr_left_2    | add    | fabric   | 0       |
+|   rate_right_2_fu_889_p2   |     |        | rate_right_2   | sub    | fabric   | 0       |
+|   tmp2_3_fu_483_p2         |     |        | tmp2_3         | sub    | fabric   | 0       |
+|   addr_right_3_fu_752_p2   |     |        | addr_right_3   | sub    | fabric   | 0       |
+|   addr_left_3_fu_895_p2    |     |        | addr_left_3    | add    | fabric   | 0       |
+|   rate_right_3_fu_903_p2   |     |        | rate_right_3   | sub    | fabric   | 0       |
+|   tmp2_4_fu_501_p2         |     |        | tmp2_4         | sub    | fabric   | 0       |
+|   addr_right_4_fu_760_p2   |     |        | addr_right_4   | sub    | fabric   | 0       |
+|   addr_left_4_fu_909_p2    |     |        | addr_left_4    | add    | fabric   | 0       |
+|   rate_right_4_fu_917_p2   |     |        | rate_right_4   | sub    | fabric   | 0       |
+|   tmp2_5_fu_519_p2         |     |        | tmp2_5         | sub    | fabric   | 0       |
+|   addr_right_5_fu_768_p2   |     |        | addr_right_5   | sub    | fabric   | 0       |
+|   addr_left_5_fu_923_p2    |     |        | addr_left_5    | add    | fabric   | 0       |
+|   rate_right_5_fu_931_p2   |     |        | rate_right_5   | sub    | fabric   | 0       |
+|   tmp2_6_fu_537_p2         |     |        | tmp2_6         | sub    | fabric   | 0       |
+|   addr_right_6_fu_776_p2   |     |        | addr_right_6   | sub    | fabric   | 0       |
+|   addr_left_6_fu_937_p2    |     |        | addr_left_6    | add    | fabric   | 0       |
+|   rate_right_6_fu_945_p2   |     |        | rate_right_6   | sub    | fabric   | 0       |
+|   tmp2_7_fu_555_p2         |     |        | tmp2_7         | sub    | fabric   | 0       |
+|   addr_right_7_fu_784_p2   |     |        | addr_right_7   | sub    | fabric   | 0       |
+|   addr_left_7_fu_951_p2    |     |        | addr_left_7    | add    | fabric   | 0       |
+|   rate_right_7_fu_959_p2   |     |        | rate_right_7   | sub    | fabric   | 0       |
+|   tmp2_8_fu_573_p2         |     |        | tmp2_8         | sub    | fabric   | 0       |
+|   addr_right_8_fu_792_p2   |     |        | addr_right_8   | sub    | fabric   | 0       |
+|   addr_left_8_fu_965_p2    |     |        | addr_left_8    | add    | fabric   | 0       |
+|   rate_right_8_fu_973_p2   |     |        | rate_right_8   | sub    | fabric   | 0       |
+|   tmp2_9_fu_592_p2         |     |        | tmp2_9         | sub    | fabric   | 0       |
+|   addr_right_9_fu_800_p2   |     |        | addr_right_9   | sub    | fabric   | 0       |
+|   addr_left_9_fu_979_p2    |     |        | addr_left_9    | add    | fabric   | 0       |
+|   rate_right_9_fu_987_p2   |     |        | rate_right_9   | sub    | fabric   | 0       |
+|   tmp2_10_fu_611_p2        |     |        | tmp2_10        | sub    | fabric   | 0       |
+|   addr_right_10_fu_808_p2  |     |        | addr_right_10  | sub    | fabric   | 0       |
+|   addr_left_10_fu_993_p2   |     |        | addr_left_10   | add    | fabric   | 0       |
+|   rate_right_10_fu_1001_p2 |     |        | rate_right_10  | sub    | fabric   | 0       |
+|   tmp2_11_fu_630_p2        |     |        | tmp2_11        | sub    | fabric   | 0       |
+|   addr_right_11_fu_816_p2  |     |        | addr_right_11  | sub    | fabric   | 0       |
+|   addr_left_11_fu_1007_p2  |     |        | addr_left_11   | add    | fabric   | 0       |
+|   rate_right_11_fu_1015_p2 |     |        | rate_right_11  | sub    | fabric   | 0       |
+|   tmp2_12_fu_649_p2        |     |        | tmp2_12        | sub    | fabric   | 0       |
+|   addr_right_12_fu_824_p2  |     |        | addr_right_12  | sub    | fabric   | 0       |
+|   addr_left_12_fu_1021_p2  |     |        | addr_left_12   | add    | fabric   | 0       |
+|   rate_right_12_fu_1029_p2 |     |        | rate_right_12  | sub    | fabric   | 0       |
+|   tmp2_13_fu_668_p2        |     |        | tmp2_13        | sub    | fabric   | 0       |
+|   addr_right_13_fu_832_p2  |     |        | addr_right_13  | sub    | fabric   | 0       |
+|   addr_left_13_fu_1035_p2  |     |        | addr_left_13   | add    | fabric   | 0       |
+|   rate_right_13_fu_1043_p2 |     |        | rate_right_13  | sub    | fabric   | 0       |
+|   tmp2_14_fu_687_p2        |     |        | tmp2_14        | sub    | fabric   | 0       |
+|   addr_right_14_fu_840_p2  |     |        | addr_right_14  | sub    | fabric   | 0       |
+|   addr_left_14_fu_1049_p2  |     |        | addr_left_14   | add    | fabric   | 0       |
+|   rate_right_14_fu_1057_p2 |     |        | rate_right_14  | sub    | fabric   | 0       |
+|   tmp2_15_fu_706_p2        |     |        | tmp2_15        | sub    | fabric   | 0       |
+|   addr_right_15_fu_848_p2  |     |        | addr_right_15  | sub    | fabric   | 0       |
+|   addr_left_15_fu_1063_p2  |     |        | addr_left_15   | add    | fabric   | 0       |
+|   rate_right_15_fu_1071_p2 |     |        | rate_right_15  | sub    | fabric   | 0       |
++----------------------------+-----+--------+----------------+--------+----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-------------------------------+-------------------------------------------+
+| Type      | Options                       | Location                                  |
++-----------+-------------------------------+-------------------------------------------+
+| pipeline  |                               | ../src/delay.cpp:6 in delay               |
+| interface | mode=ap_ctrl_none port=return | ../src/delay.cpp:7 in delay, return       |
+| interface | mode=ap_none port=addrs_left  | ../src/delay.cpp:8 in delay, addrs_left   |
+| interface | mode=ap_none port=rates_left  | ../src/delay.cpp:9 in delay, rates_left   |
+| interface | mode=ap_none port=addrs_right | ../src/delay.cpp:10 in delay, addrs_right |
+| interface | mode=ap_none port=rates_right | ../src/delay.cpp:11 in delay, rates_right |
+| unroll    |                               | ../src/delay.cpp:17 in delay              |
+| unroll    |                               | ../src/delay.cpp:21 in delay              |
+| unroll    |                               | ../src/delay.cpp:25 in delay              |
+| unroll    |                               | ../src/delay.cpp:52 in delay              |
++-----------+-------------------------------+-------------------------------------------+
+
+

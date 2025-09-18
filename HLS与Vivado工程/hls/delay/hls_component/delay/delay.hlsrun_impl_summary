@@ -1,0 +1,272 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component\\delay\\delay.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "11/25/24 22:10:05",
+ "timestampMillis": "1671985067",
+ "buildStep": {
+  "cmdId": "c9cdd399-706f-4752-b79b-35817148da6e",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component\\delay\\logs\\delay.steps.log",
+  "commandLine": "D:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config C:\\Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component\\hls_config.cfg --work_dir delay ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "C:\\Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "delay"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/25/24 22:10:05",
+ "timestampMillis": "1671985068",
+ "status": {
+  "cmdId": "c9cdd399-706f-4752-b79b-35817148da6e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "11/25/24 22:10:09",
+ "timestampMillis": "1671989175",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "delay",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\liboh\\Desktop\\mvdr\\hls\\delay\\src\\delay.cpp",
+     "C:/Users\\liboh\\Desktop\\mvdr\\hls\\delay\\src\\delay.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "11/25/24 22:10:09",
+ "timestampMillis": "1671989177",
+ "buildStep": {
+  "cmdId": "8902e242-d29f-42c0-8571-4d2e01109cd4",
+  "name": "export_design",
+  "logFile": "C:/Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component\\delay\\hls\\hls.log",
+  "commandLine": "export_design -flow impl",
+  "args": [
+   "-flow",
+   "impl"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/25/24 22:10:09",
+ "timestampMillis": "1671989177",
+ "status": {
+  "cmdId": "8902e242-d29f-42c0-8571-4d2e01109cd4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/25/24 22:10:09",
+ "timestampMillis": "1671989178",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component\\delay\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/25/24 22:10:09",
+ "timestampMillis": "1671989179",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component\\delay\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/25/24 22:10:09",
+ "timestampMillis": "1671989179",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component\\delay\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/25/24 22:10:09",
+ "timestampMillis": "1671989180",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component\\delay\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/25/24 22:10:09",
+ "timestampMillis": "1671989180",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component\\delay\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/25/24 22:10:09",
+ "timestampMillis": "1671989180",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component\\delay\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/25/24 22:13:27",
+ "timestampMillis": "1672186972",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component\\delay\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/25/24 22:13:27",
+ "timestampMillis": "1672186973",
+ "report": {
+  "path": "C:/Users\\liboh\\Desktop\\mvdr\\hls\\delay\\hls_component\\delay\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/25/24 22:13:27",
+ "timestampMillis": "1672186974",
+ "status": {
+  "cmdId": "8902e242-d29f-42c0-8571-4d2e01109cd4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/25/24 22:13:27",
+ "timestampMillis": "1672187121",
+ "status": {
+  "cmdId": "c9cdd399-706f-4752-b79b-35817148da6e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/25/24 22:13:27",
+ "timestampMillis": "1672187122",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/25/24 22:13:27",
+ "timestampMillis": "1672187122",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

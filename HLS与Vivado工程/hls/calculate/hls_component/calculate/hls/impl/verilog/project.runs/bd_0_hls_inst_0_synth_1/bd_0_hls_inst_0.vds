@@ -1,0 +1,494 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Nov 25 20:41:06 2024
+# Process ID: 11248
+# Current directory: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line: vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+# Running On        :ban
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency     :2304 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16910 MB
+# Swap memory       :1275 MB
+# Total Virtual     :18185 MB
+# Available Virtual :8639 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 8842
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 644.531 ; gain = 198.637
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg400-2 -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Device 21-9227] Part: xc7z020clg400-2 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1616
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1536.438 ; gain = 447.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'calculate' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate.v:9]
+INFO: [Synth 8-6157] synthesizing module 'calculate_mul_9ns_9ns_18_5_1' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mul_9ns_9ns_18_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'calculate_mul_9ns_9ns_18_5_1' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mul_9ns_9ns_18_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'calculate_add_38ns_38ns_38_2_1' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_add_38ns_38ns_38_2_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'calculate_add_38ns_38ns_38_2_1_comb_adder' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_add_38ns_38ns_38_2_1.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'calculate_add_38ns_38ns_38_2_1_comb_adder' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_add_38ns_38ns_38_2_1.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'calculate_add_38ns_38ns_38_2_1' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_add_38ns_38ns_38_2_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'calculate_add_54ns_54ns_54_2_1' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_add_54ns_54ns_54_2_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'calculate_add_54ns_54ns_54_2_1_comb_adder' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_add_54ns_54ns_54_2_1.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'calculate_add_54ns_54ns_54_2_1_comb_adder' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_add_54ns_54ns_54_2_1.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'calculate_add_54ns_54ns_54_2_1' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_add_54ns_54ns_54_2_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'calculate_sub_55ns_55ns_55_2_1' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_sub_55ns_55ns_55_2_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'calculate_sub_55ns_55ns_55_2_1_comb_adder' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_sub_55ns_55ns_55_2_1.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'calculate_sub_55ns_55ns_55_2_1_comb_adder' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_sub_55ns_55ns_55_2_1.v:103]
+INFO: [Synth 8-6157] synthesizing module 'calculate_sub_55ns_55ns_55_2_1_comb_adder__parameterized0' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_sub_55ns_55ns_55_2_1.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'calculate_sub_55ns_55ns_55_2_1_comb_adder__parameterized0' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_sub_55ns_55ns_55_2_1.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'calculate_sub_55ns_55ns_55_2_1' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_sub_55ns_55ns_55_2_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'calculate_mac_muladd_9ns_9ns_19ns_20_4_1' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_19ns_20_4_1.v:55]
+INFO: [Synth 8-6157] synthesizing module 'calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_19ns_20_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_19ns_20_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'calculate_mac_muladd_9ns_9ns_19ns_20_4_1' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_19ns_20_4_1.v:55]
+INFO: [Synth 8-6157] synthesizing module 'calculate_mac_muladd_9ns_9ns_28ns_28_4_1' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_28ns_28_4_1.v:55]
+INFO: [Synth 8-6157] synthesizing module 'calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_28ns_28_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_28ns_28_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'calculate_mac_muladd_9ns_9ns_28ns_28_4_1' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_28ns_28_4_1.v:55]
+INFO: [Synth 8-6157] synthesizing module 'calculate_mac_muladd_9ns_9ns_26ns_26_4_1' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_26ns_26_4_1.v:55]
+INFO: [Synth 8-6157] synthesizing module 'calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0' [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_26ns_26_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_26ns_26_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'calculate_mac_muladd_9ns_9ns_26ns_26_4_1' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_26ns_26_4_1.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'calculate' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-7129] Port rst in module calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module calculate_sub_55ns_55ns_55_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module calculate_add_54ns_54ns_54_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module calculate_add_38ns_38ns_38_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module calculate_mul_9ns_9ns_18_5_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1655.355 ; gain = 566.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1655.355 ; gain = 566.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1655.355 ; gain = 566.727
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1655.355 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/calculate_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/calculate_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1759.180 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1759.215 ; gain = 0.035
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1759.215 ; gain = 670.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1759.215 ; gain = 670.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1759.215 ; gain = 670.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1759.215 ; gain = 670.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   29 Bit       Adders := 1     
+	   3 Input   28 Bit       Adders := 5     
+	   2 Input   28 Bit       Adders := 2     
+	   2 Input   27 Bit       Adders := 6     
+	   2 Input   26 Bit       Adders := 8     
+	   2 Input   25 Bit       Adders := 16    
+	   3 Input   20 Bit       Adders := 4     
++---Registers : 
+	               54 Bit    Registers := 2     
+	               38 Bit    Registers := 2     
+	               28 Bit    Registers := 4     
+	               27 Bit    Registers := 17    
+	               26 Bit    Registers := 14    
+	               25 Bit    Registers := 16    
+	               20 Bit    Registers := 2     
+	               19 Bit    Registers := 6     
+	               18 Bit    Registers := 12    
+	               10 Bit    Registers := 6     
+	                9 Bit    Registers := 24    
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input   27 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '28' bits. [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_28ns_28_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '20' bits. [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_19ns_20_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '28' bits. [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_28ns_28_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '26' bits. [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_26ns_26_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '26' bits. [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_26ns_26_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '20' bits. [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_19ns_20_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '28' bits. [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_28ns_28_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '20' bits. [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_19ns_20_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '28' bits. [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_28ns_28_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '26' bits. [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_26ns_26_4_1.v:45]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '26' bits. [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_26ns_26_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '20' bits. [c:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/5a69/hdl/verilog/calculate_mac_muladd_9ns_9ns_19ns_20_4_1.v:37]
+DSP Report: Generating DSP mul_9ns_9ns_18_5_1_U6/buff2_reg, operation Mode is: (A''*B'')'.
+DSP Report: register mul_9ns_9ns_18_5_1_U6/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U6/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U6/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U6/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U6/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U6/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U6/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U6/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U6/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U6/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U6/buff1_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U6/buff2_reg.
+DSP Report: operator mul_9ns_9ns_18_5_1_U6/tmp_product is absorbed into DSP mul_9ns_9ns_18_5_1_U6/buff2_reg.
+DSP Report: Generating DSP mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C'+(A''*B'')')'.
+DSP Report: register mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_9ns_9ns_18_5_1_U5/buff2_reg, operation Mode is: (A''*B'')'.
+DSP Report: register mul_9ns_9ns_18_5_1_U5/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U5/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U5/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U5/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U5/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U5/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U5/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U5/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U5/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U5/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U5/buff1_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U5/buff2_reg.
+DSP Report: operator mul_9ns_9ns_18_5_1_U5/tmp_product is absorbed into DSP mul_9ns_9ns_18_5_1_U5/buff2_reg.
+DSP Report: Generating DSP mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C'+(A''*B'')')'.
+DSP Report: register mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_9ns_9ns_18_5_1_U4/buff2_reg, operation Mode is: (A''*B'')'.
+DSP Report: register mul_9ns_9ns_18_5_1_U4/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U4/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U4/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U4/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U4/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U4/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U4/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U4/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U4/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U4/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U4/buff1_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U4/buff2_reg.
+DSP Report: operator mul_9ns_9ns_18_5_1_U4/tmp_product is absorbed into DSP mul_9ns_9ns_18_5_1_U4/buff2_reg.
+DSP Report: Generating DSP mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C'+(A''*B'')')'.
+DSP Report: register mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_9ns_9ns_18_5_1_U3/buff2_reg, operation Mode is: (A''*B'')'.
+DSP Report: register mul_9ns_9ns_18_5_1_U3/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U3/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U3/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U3/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U3/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U3/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U3/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U3/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U3/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U3/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U3/buff1_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U3/buff2_reg.
+DSP Report: operator mul_9ns_9ns_18_5_1_U3/tmp_product is absorbed into DSP mul_9ns_9ns_18_5_1_U3/buff2_reg.
+DSP Report: Generating DSP mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C'+(A''*B'')')'.
+DSP Report: register mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_9ns_9ns_18_5_1_U2/buff2_reg, operation Mode is: (A''*B'')'.
+DSP Report: register mul_9ns_9ns_18_5_1_U2/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U2/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U2/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U2/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U2/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U2/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U2/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U2/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U2/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U2/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U2/buff1_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U2/buff2_reg.
+DSP Report: operator mul_9ns_9ns_18_5_1_U2/tmp_product is absorbed into DSP mul_9ns_9ns_18_5_1_U2/buff2_reg.
+DSP Report: Generating DSP mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C'+(A''*B'')')'.
+DSP Report: register mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_9ns_9ns_18_5_1_U1/buff2_reg, operation Mode is: (A''*B'')'.
+DSP Report: register mul_9ns_9ns_18_5_1_U1/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U1/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U1/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U1/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U1/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U1/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U1/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U1/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U1/buff2_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U1/buff2_reg.
+DSP Report: register mul_9ns_9ns_18_5_1_U1/buff1_reg is absorbed into DSP mul_9ns_9ns_18_5_1_U1/buff2_reg.
+DSP Report: operator mul_9ns_9ns_18_5_1_U1/tmp_product is absorbed into DSP mul_9ns_9ns_18_5_1_U1/buff2_reg.
+DSP Report: Generating DSP mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C'+(A''*B'')')'.
+DSP Report: register mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg.
+WARNING: [Synth 8-7129] Port ap_rst in module calculate is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1759.215 ; gain = 670.586
+---------------------------------------------------------------------------------
+ Sort Area is  mac_muladd_9ns_9ns_28ns_28_4_1_U13/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg_5 : 0 0 : 3476 3476 : Used 1 time 0
+ Sort Area is  mac_muladd_9ns_9ns_28ns_28_4_1_U16/calculate_mac_muladd_9ns_9ns_28ns_28_4_1_DSP48_0_U/p_reg_reg_d : 0 0 : 3476 3476 : Used 1 time 0
+ Sort Area is  mac_muladd_9ns_9ns_26ns_26_4_1_U14/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg_8 : 0 0 : 3464 3464 : Used 1 time 0
+ Sort Area is  mac_muladd_9ns_9ns_26ns_26_4_1_U17/calculate_mac_muladd_9ns_9ns_26ns_26_4_1_DSP48_0_U/p_reg_reg_f : 0 0 : 3464 3464 : Used 1 time 0
+ Sort Area is  mac_muladd_9ns_9ns_19ns_20_4_1_U12/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg_2 : 0 0 : 2888 2888 : Used 1 time 0
+ Sort Area is  mac_muladd_9ns_9ns_19ns_20_4_1_U15/calculate_mac_muladd_9ns_9ns_19ns_20_4_1_DSP48_0_U/p_reg_reg_b : 0 0 : 2888 2888 : Used 1 time 0
+ Sort Area is  mul_9ns_9ns_18_5_1_U1/buff2_reg_7 : 0 0 : 789 789 : Used 1 time 0
+ Sort Area is  mul_9ns_9ns_18_5_1_U2/buff2_reg_0 : 0 0 : 789 789 : Used 1 time 0
+ Sort Area is  mul_9ns_9ns_18_5_1_U3/buff2_reg_4 : 0 0 : 789 789 : Used 1 time 0
+ Sort Area is  mul_9ns_9ns_18_5_1_U4/buff2_reg_e : 0 0 : 789 789 : Used 1 time 0
+ Sort Area is  mul_9ns_9ns_18_5_1_U5/buff2_reg_a : 0 0 : 789 789 : Used 1 time 0
+ Sort Area is  mul_9ns_9ns_18_5_1_U6/buff2_reg_c : 0 0 : 789 789 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|calculate   | (A''*B'')'       | 10     | 10     | -      | -      | 20     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|calculate   | (C'+(A''*B'')')' | 25     | 18     | 28     | -      | 28     | 2    | 2    | 1    | -    | -     | 1    | 1    | 
+|calculate   | (A''*B'')'       | 10     | 10     | -      | -      | 20     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|calculate   | (C'+(A''*B'')')' | 20     | 18     | 20     | -      | 20     | 2    | 2    | 1    | -    | -     | 1    | 1    | 
+|calculate   | (A''*B'')'       | 10     | 10     | -      | -      | 20     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|calculate   | (C'+(A''*B'')')' | 25     | 18     | 26     | -      | 26     | 2    | 2    | 1    | -    | -     | 1    | 1    | 
+|calculate   | (A''*B'')'       | 10     | 10     | -      | -      | 20     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|calculate   | (C'+(A''*B'')')' | 25     | 18     | 28     | -      | 28     | 2    | 2    | 1    | -    | -     | 1    | 1    | 
+|calculate   | (A''*B'')'       | 10     | 10     | -      | -      | 20     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|calculate   | (C'+(A''*B'')')' | 20     | 18     | 20     | -      | 20     | 2    | 2    | 1    | -    | -     | 1    | 1    | 
+|calculate   | (A''*B'')'       | 10     | 10     | -      | -      | 20     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|calculate   | (C'+(A''*B'')')' | 25     | 18     | 26     | -      | 26     | 2    | 2    | 1    | -    | -     | 1    | 1    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1759.215 ; gain = 670.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1759.215 ; gain = 670.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1759.215 ; gain = 670.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1759.215 ; gain = 670.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1759.215 ; gain = 670.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1759.215 ; gain = 670.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1759.215 ; gain = 670.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1759.215 ; gain = 670.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1759.215 ; gain = 670.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|calculate   | add_54ns_54ns_54_2_1_U10/ain_s1_reg[26] | 4      | 26    | NO           | NO                 | YES               | 26     | 0       | 
+|calculate   | h2_hm_m2_hl_l2_ml_1_reg_1545_reg[18]    | 4      | 2     | NO           | YES                | YES               | 2      | 0       | 
+|calculate   | h2_hm_m2_hl_l2_ml_1_reg_1545_reg[16]    | 5      | 17    | NO           | NO                 | YES               | 17     | 0       | 
+|calculate   | add_54ns_54ns_54_2_1_U9/ain_s1_reg[26]  | 4      | 26    | NO           | NO                 | YES               | 26     | 0       | 
+|calculate   | h2_hm_m2_hl_l2_ml_reg_1540_reg[18]      | 4      | 2     | NO           | YES                | YES               | 2      | 0       | 
+|calculate   | h2_hm_m2_hl_l2_ml_reg_1540_reg[16]      | 5      | 17    | NO           | NO                 | YES               | 17     | 0       | 
+|calculate   | sub_55ns_55ns_55_2_1_U11/ain_s1_reg[0]  | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
++------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|calculate   | (C'+(A''*B'')')' | 9      | 9      | 19     | -      | 20     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|calculate   | (C'+(A''*B'')')' | 9      | 9      | 19     | -      | 20     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|calculate   | (C'+(A''*B'')')' | 9      | 9      | 26     | -      | 26     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|calculate   | (C'+(A''*B'')')' | 9      | 9      | 26     | -      | 26     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|calculate   | (C'+(A''*B'')')' | 9      | 9      | 28     | -      | 28     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|calculate   | (C'+(A''*B'')')' | 9      | 9      | 28     | -      | 28     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|calculate   | ((A''*B'')')'    | 9      | 9      | -      | -      | 18     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|calculate   | ((A''*B'')')'    | 9      | 9      | -      | -      | 18     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|calculate   | ((A''*B'')')'    | 9      | 9      | -      | -      | 18     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|calculate   | ((A''*B'')')'    | 9      | 9      | -      | -      | 18     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|calculate   | ((A''*B'')')'    | 9      | 9      | -      | -      | 18     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|calculate   | ((A''*B'')')'    | 9      | 9      | -      | -      | 18     | 2    | 2    | -    | -    | -     | 1    | 1    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   278|
+|2     |DSP48E1 |    12|
+|3     |LUT1    |   109|
+|4     |LUT2    |   890|
+|5     |LUT3    |    54|
+|6     |SRL16E  |    91|
+|7     |FDRE    |  1484|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1759.215 ; gain = 670.586
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1759.215 ; gain = 566.727
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1759.215 ; gain = 670.586
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1759.215 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 290 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'bd_0_hls_inst_0' is not ideal for floorplanning, since the cellview 'calculate' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1759.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3a422207
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1759.215 ; gain = 1099.734
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1759.215 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = d266e951fa5a20fa
+INFO: [Coretcl 2-1174] Renamed 31 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1759.215 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 25 20:41:48 2024...

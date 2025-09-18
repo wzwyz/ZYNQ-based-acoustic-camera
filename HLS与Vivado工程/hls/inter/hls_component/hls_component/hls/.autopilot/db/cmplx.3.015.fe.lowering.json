@@ -1,0 +1,26 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "1",
+    "file": "inter.cpp",
+    "fileloc": 5,
+    "instructions": 42,
+    "loads": {
+      "L": 1
+    },
+    "name": "inter",
+    "total_instructions": 65
+  },
+  "1": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "hls_round_copysign_apfixed.h",
+    "fileloc": 175,
+    "instructions": 23,
+    "name": "round_fixed<29, 24>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 23
+  }
+}

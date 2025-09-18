@@ -1,0 +1,26 @@
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+// --------------------------------------------------------------------------------
+// Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+// Date        : Mon Nov 25 19:25:46 2024
+// Host        : ban running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               c:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0_stub.v
+// Design      : bd_0_hls_inst_0
+// Purpose     : Stub declaration of top-level module interface
+// Device      : xc7z020clg400-2
+// --------------------------------------------------------------------------------
+
+// This empty module with port declaration file causes synthesis tools to infer a black box for IP.
+// The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
+// Please paste the declaration into a Verilog source file or add the file as an additional source.
+(* X_CORE_INFO = "vram_add,Vivado 2024.1" *)
+module bd_0_hls_inst_0(ap_clk, ap_rst, ap_return, vram_read, indat)
+/* synthesis syn_black_box black_box_pad_pin="ap_rst,ap_return[63:0],vram_read[63:0],indat[54:0]" */
+/* synthesis syn_force_seq_prim="ap_clk" */;
+  input ap_clk /* synthesis syn_isclock = 1 */;
+  input ap_rst;
+  output [63:0]ap_return;
+  input [63:0]vram_read;
+  input [54:0]indat;
+endmodule

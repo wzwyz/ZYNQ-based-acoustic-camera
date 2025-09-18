@@ -1,0 +1,185 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate\calculate.hlsrun_cosim_summary, at 11/07/24 20:13:50
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run cosim -work_dir C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate -config C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg -cmdlineconfig C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Nov  7 20:13:52 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source D:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'ban' on host 'ban' (Windows NT_amd64 version 10.0) on Thu Nov 07 20:13:52 +0800 2024
+INFO: [HLS 200-10] In directory 'C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component'
+INFO: [HLS 200-2005] Using work_dir C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/liboh/Desktop/mvdr/hls/calculate/src/calculate.cpp' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr/hls/calculate/src/calculate.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/liboh/Desktop/mvdr/hls/calculate/src/calculate.h' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr/hls/calculate/src/calculate.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/liboh/Desktop/mvdr/hls/calculate/src/tb_calculate.cpp' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/liboh/Desktop/mvdr/hls/calculate/src/tb_calculate.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=calculate' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-2' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'clock=180MHz' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(11)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5.556ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/hls_config.cfg(5)
+WARNING: [COSIM] found non-self-synchronizing top I/O data_new
+WARNING: [COSIM] found non-self-synchronizing top I/O ap_return
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "D:/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang++"
+   Compiling calculate.cpp_pre.cpp.tb.cpp
+   Compiling apatb_calculate.cpp
+   Compiling tb_calculate.cpp_pre.cpp.tb.cpp
+   Compiling apatb_calculate_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Cycle 0: Writing datas...
+New datas: 
+1602211 3699363 5796515 7893667 -6786397 -4689245 -2592093 -494941 
+Old datas: 
+-8388608 -8388607 -8388606 -8388605 -8388604 -8388603 -8388602 -8388601 
+Result: -4483979119628496
+
+Cycle 1: Writing datas...
+New datas: 
+0 1 2 3 4 5 6 7 
+Old datas: 
+8388600 8388601 8388602 8388603 8388604 8388605 8388606 8388607 
+Result: -4503594795532800
+
+Cycle 2: Writing datas...
+New datas: 
+-8 -7 -6 -5 -4 -3 -2 -1 
+Old datas: 
+-8 -7 -6 -5 -4 -3 -2 -1 
+Result: 0
+
+Cycle 3: Writing datas...
+New datas: 
+8388600 8388601 8388602 8388603 8388604 8388605 8388606 8388607 
+Old datas: 
+0 1 2 3 4 5 6 7 
+Result: 4503594795532800
+
+Cycle 4: Writing datas...
+New datas: 
+-8388608 -8388607 -8388606 -8388605 -8388604 -8388603 -8388602 -8388601 
+Old datas: 
+1602211 3699363 5796515 7893667 -6786397 -4689245 -2592093 -494941 
+Result: 4483979119628496
+
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+C:\Users\liboh\Desktop\mvdr\hls\calculate\hls_component\calculate\hls\sim\verilog>set PATH= 
+
+C:\Users\liboh\Desktop\mvdr\hls\calculate\hls_component\calculate\hls\sim\verilog>call D:/Xilinx/Vivado/2024.1/bin/xelab xil_defaultlib.apatb_calculate_top glbl -Oenable_linking_all_libraries  -prj calculate.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_23 -L floating_point_v7_1_18 --lib "ieee_proposed=./ieee_proposed" -s calculate  
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_calculate_top glbl -Oenable_linking_all_libraries -prj calculate.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_23 -L floating_point_v7_1_18 --lib ieee_proposed=./ieee_proposed -s calculate 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/sim/verilog/calculate.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_calculate_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/sim/verilog/calculate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculate
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/sim/verilog/calculate_mul_13ns_13ns_26_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculate_mul_13ns_13ns_26_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.calculate_mul_13ns_13ns_26_2_1(N...
+Compiling module xil_defaultlib.calculate
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.dataflow_monitor
+Compiling module xil_defaultlib.apatb_calculate_top
+Compiling module work.glbl
+Built simulation snapshot calculate
+
+****** xsim v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Nov  7 20:14:08 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/calculate/xsim_script.tcl
+# xsim {calculate} -autoloadwcfg -tclbatch {calculate.tcl}
+Time resolution is 1 ps
+source calculate.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 5 [0.00%] @ "114000"
+// RTL Simulation : 1 / 5 [60.00%] @ "147000"
+// RTL Simulation : 2 / 5 [60.00%] @ "153000"
+// RTL Simulation : 3 / 5 [60.00%] @ "158000"
+// RTL Simulation : 4 / 5 [60.00%] @ "164000"
+// RTL Simulation : 5 / 5 [100.00%] @ "170000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 202940 ps : File "C:/Users/liboh/Desktop/mvdr/hls/calculate/hls_component/calculate/hls/sim/verilog/calculate.autotb.v" Line 295
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Nov  7 20:14:10 2024...
+INFO: [COSIM 212-316] Starting C post checking ...
+Cycle 0: Writing datas...
+New datas: 
+1602211 3699363 5796515 7893667 -6786397 -4689245 -2592093 -494941 
+Old datas: 
+-8388608 -8388607 -8388606 -8388605 -8388604 -8388603 -8388602 -8388601 
+Result: -4483979119628496
+
+Cycle 1: Writing datas...
+New datas: 
+0 1 2 3 4 5 6 7 
+Old datas: 
+8388600 8388601 8388602 8388603 8388604 8388605 8388606 8388607 
+Result: -4503594795532800
+
+Cycle 2: Writing datas...
+New datas: 
+-8 -7 -6 -5 -4 -3 -2 -1 
+Old datas: 
+-8 -7 -6 -5 -4 -3 -2 -1 
+Result: 0
+
+Cycle 3: Writing datas...
+New datas: 
+8388600 8388601 8388602 8388603 8388604 8388605 8388606 8388607 
+Old datas: 
+0 1 2 3 4 5 6 7 
+Result: 4503594795532800
+
+Cycle 4: Writing datas...
+New datas: 
+-8388608 -8388607 -8388606 -8388605 -8388604 -8388603 -8388602 -8388601 
+Old datas: 
+1602211 3699363 5796515 7893667 -6786397 -4689245 -2592093 -494941 
+Result: 4483979119628496
+
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 18.691 seconds; peak allocated memory: 310.133 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 22s

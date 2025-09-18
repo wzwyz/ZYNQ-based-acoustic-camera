@@ -1,0 +1,812 @@
+INFO-FLOW: Workspace C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls opened at Mon Nov 25 19:23:31 +0800 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=vram_add.cpp' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=vram_add.cpp' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(8)
+Execute     add_files C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/vram_add.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/vram_add.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=tb_vram_add.cpp' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb_vram_add.cpp' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(9)
+Execute     add_files -tb C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/tb_vram_add.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/tb_vram_add.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=vram_add' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=vram_add' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(10)
+Execute     set_top vram_add 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-2' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-2' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-2 
+Execute       create_platform xc7z020clg400-2 -board  
+DBG:HLSDevice: Trying to load device library: D:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+Command       create_platform done; 1.54 sec.
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.661 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=360MHz' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'clock=360MHz' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(7)
+Execute     create_clock -period 360MHz 
+Execute       ap_set_clock -name default -period 2.778 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.778ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 1.686 sec.
+Execute   apply_ini C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/config.cmdline 
+Execute   csynth_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.621 seconds; current allocated memory: 245.828 MB.
+Execute       set_directive_top vram_add -name=vram_add 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+INFO: [HLS 200-10] Analyzing design file 'vram_add.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling vram_add.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: D:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang vram_add.cpp -foptimization-record-file=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot D:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -insert-hls-directive=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=2.778 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot -I D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp {-hls-platform-db-name=D:/Xilinx\Vitis_HLS\2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_medium -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-2 > C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.cpp.clang.out.log 2> C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.cpp.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 0.4 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: D:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp {-hls-platform-db-name=D:/Xilinx\Vitis_HLS\2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_medium -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-2 > C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/clang.out.log 2> C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/clang.err.log
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/.systemc_flag -fix-errors C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.364 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/all.directive.json -fix-errors C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.548 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.5 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: run_clang exec: D:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp.clang-tidy.loop-label.err.log
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command       clang_tidy done; 0.683 sec.
+INFO-FLOW: run_clang exec: D:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp.xilinx-dataflow-lawyer.err.log
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: D:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=2.778 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot -I D:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.bc {-hls-platform-db-name=D:/Xilinx\Vitis_HLS\2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_medium -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-2 > C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp.clang.out.log 2> C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.pp.0.cpp.clang.err.log
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.776 seconds; current allocated memory: 248.711 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.0.bc -args  "C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.g.bc"  
+INFO-FLOW: run_clang exec: D:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.g.bc -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.0.bc > C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.1.lower.bc -args C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+INFO-FLOW: run_clang exec: D:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.1.lower.bc > C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.2.m1.bc -args C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed D:/Xilinx/Vitis_HLS/2024.1/win64/lib/libhlsm_39.bc D:/Xilinx/Vitis_HLS/2024.1/win64/lib/libhlsmc++_39.bc 
+INFO-FLOW: run_clang exec: D:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed D:/Xilinx/Vitis_HLS/2024.1/win64/lib/libhlsm_39.bc D:/Xilinx/Vitis_HLS/2024.1/win64/lib/libhlsmc++_39.bc -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.2.m1.bc > C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.622 sec.
+Execute       run_link_or_opt -opt -out C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.3.fpc.bc -args C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=vram_add -reflow-float-conversion 
+INFO-FLOW: run_clang exec: D:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=vram_add -reflow-float-conversion -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.3.fpc.bc > C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 0.692 sec.
+Execute       run_link_or_opt -out C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.4.m2.bc -args C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed D:/Xilinx/Vitis_HLS/2024.1/win64/lib/libfloatconversion_39.bc 
+INFO-FLOW: run_clang exec: D:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed D:/Xilinx/Vitis_HLS/2024.1/win64/lib/libfloatconversion_39.bc -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.4.m2.bc > C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.5.gdce.bc -args C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=vram_add 
+INFO-FLOW: run_clang exec: D:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=vram_add -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.5.gdce.bc > C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+INFO-FLOW: run_clang (background poll_ms 5000) exec: D:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=vram_add -mllvm -hls-db-dir -mllvm C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -enable-fp-thr=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -reflow-complete-threshold=4 -mllvm -reflow-array-promotion-threshold=64 -mllvm -assume-maxi-align=1 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-small-array-partition=true -mllvm -reflow-enable-auto-array-partition-for-flatten=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -auto-unroll-tripcount-threshold=0 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -reflow-enable-codegen-with-if=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=2.778 -mllvm -use_read_first_ram_in_loop=1 -mllvm -default-clock-uncertainty=0.75 -x ir C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.5.gdce.bc -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.lto.bc {-hls-platform-db-name=D:/Xilinx\Vitis_HLS\2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_medium -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-2 2> C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 127 Compile/Link C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 127 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 7 Unroll/Inline (step 1) C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 7 Unroll/Inline (step 2) C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 7 Unroll/Inline (step 3) C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 7 Unroll/Inline (step 4) C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 7 Array/Struct (step 1) C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 7 Array/Struct (step 2) C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 7 Array/Struct (step 3) C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 7 Array/Struct (step 4) C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 7 Array/Struct (step 5) C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 7 Performance (step 1) C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 7 Performance (step 2) C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 7 Performance (step 3) C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 7 Performance (step 4) C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 10 HW Transforms (step 1) C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 10 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 10 HW Transforms (step 2) C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 10 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Command       send_msg_by_id done; 1.515 sec.
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.051 seconds; current allocated memory: 250.551 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 250.551 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top vram_add -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.0.bc -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.152 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.157 seconds; current allocated memory: 254.211 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.1.bc -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.2.prechk.bc -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 255.512 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.g.1.bc to C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -lcssa -loop-simplify -phi-select-elim -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -scalar-stream -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -clean-array-spec -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.o.1.bc -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.o.1.tmp.bc -f 
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.o.1.tmp.bc -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 275.906 MB.
+Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.o.2.bc -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Execute           auto_get_db
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -cdfg-build C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.o.3.bc -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.047 seconds; current allocated memory: 275.922 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 0.277 sec.
+Command     elaborate done; 13.125 sec.
+Execute     ap_eval exec zip -j C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'vram_add' ...
+Execute       ap_set_top_model vram_add 
+Execute       get_model_list vram_add -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model vram_add 
+Execute       get_model_list vram_add -filter all-wo-channel 
+INFO-FLOW: Model list for configure: vram_add
+INFO-FLOW: Configuring Module : vram_add ...
+Execute       set_default_model vram_add 
+Execute       apply_spec_resource_limit vram_add 
+INFO-FLOW: Model list for preprocess: vram_add
+INFO-FLOW: Preprocessing Module: vram_add ...
+Execute       set_default_model vram_add 
+Execute       cdfg_preprocess -model vram_add 
+Execute       rtl_gen_preprocess vram_add 
+INFO-FLOW: Model list for synthesis: vram_add
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'vram_add' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model vram_add 
+Execute       schedule -model vram_add 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'vram_add'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, function 'vram_add'
+WARNING: [HLS 200-871] Estimated clock period (2.151 ns) exceeds the target (target clock period: 2.778 ns, clock uncertainty: 0.750 ns, effective delay budget: 2.028 ns).
+WARNING: [HLS 200-1016] The critical path in module 'vram_add' consists of the following:
+	wire read operation ('indat_read', vram_add.cpp:8) on port 'indat' (vram_add.cpp:8) [11]  (0.000 ns)
+	'add' operation 64 bit ('vram_write', vram_add.cpp:12) [14]  (2.151 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.129 seconds; current allocated memory: 275.922 MB.
+Execute       syn_report -verbosereport -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg400-2 
+Execute           ap_family_info -name xc7z020-clg400-2 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-2 -data family 
+Execute       db_write -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.sched.adb -f 
+INFO-FLOW: Finish scheduling vram_add.
+Execute       set_default_model vram_add 
+Execute       bind -model vram_add 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.043 seconds; current allocated memory: 275.922 MB.
+Execute       syn_report -verbosereport -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg400-2 
+Execute           ap_family_info -name xc7z020-clg400-2 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-2 -data family 
+Execute       db_write -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.bind.adb -f 
+INFO-FLOW: Finish binding vram_add.
+Execute       get_model_list vram_add -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess vram_add 
+INFO-FLOW: Model list for RTL generation: vram_add
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'vram_add' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model vram_add -top_prefix  -sub_prefix vram_add_ -mg_file C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'vram_add/vram_read' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'vram_add/indat' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'vram_add' to 'ap_ctrl_none'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'vram_add' pipeline 'vram_add' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'add_64s_64ns_64_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'vram_add'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 276.711 MB.
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.rtl_wrap.cfg.tcl 
+Execute       gen_rtl vram_add -istop -style xilinx -f -lang vhdl -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/vhdl/vram_add 
+Execute       gen_rtl vram_add -istop -style xilinx -f -lang vlog -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/verilog/vram_add 
+Execute       syn_report -csynth -model vram_add -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/vram_add_csynth.rpt 
+Execute         list_part -family xc7z020-clg400-2 
+Execute           ap_family_info -name xc7z020-clg400-2 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-2 -data family 
+Execute       syn_report -rtlxml -model vram_add -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/vram_add_csynth.xml 
+Execute         list_part -family xc7z020-clg400-2 
+Execute           ap_family_info -name xc7z020-clg400-2 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-2 -data family 
+Execute       syn_report -verbosereport -model vram_add -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.verbose.rpt 
+Execute         list_part -family xc7z020-clg400-2 
+Execute           ap_family_info -name xc7z020-clg400-2 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-2 -data family 
+Execute       db_write -model vram_add -f -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.adb 
+Execute       db_write -model vram_add -bindview -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info vram_add -p C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add 
+Execute       export_constraint_db -f -tool general -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.constraint.tcl 
+Execute       syn_report -designview -model vram_add -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.design.xml 
+Execute       syn_report -csynthDesign -model vram_add -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth.rpt -MHOut C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/kernel_module_hierarchy.tcl 
+Execute         list_part -family xc7z020-clg400-2 
+Execute           ap_family_info -name xc7z020-clg400-2 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-2 -data family 
+Execute       syn_report -wcfg -model vram_add -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model vram_add -o C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.protoinst 
+Execute       sc_get_clocks vram_add 
+Execute       sc_get_portdomain vram_add 
+INFO-FLOW: Model list for RTL component generation: vram_add
+INFO-FLOW: Handling components in module [vram_add] ... 
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.compgen.tcl 
+INFO-FLOW: Found component vram_add_add_64s_64ns_64_3_1.
+INFO-FLOW: Append model vram_add_add_64s_64ns_64_3_1
+INFO-FLOW: Append model vram_add
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: vram_add_add_64s_64ns_64_3_1 vram_add
+INFO-FLOW: Generating C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model vram_add_add_64s_64ns_64_3_1
+INFO-FLOW: To file: write model vram_add
+INFO-FLOW: Generating C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=2.778 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vhdl' dstVlogDir='C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vlog' tclDir='C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db' modelList='vram_add_add_64s_64ns_64_3_1
+vram_add
+' expOnly='0'
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.compgen.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 279.629 MB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='vram_add_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0.2 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='vram_add_add_64s_64ns_64_3_1
+vram_add
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/top-io-be.tcl 
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.compgen.dataonly.tcl 
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.constraint.tcl 
+Execute       sc_get_clocks vram_add 
+Execute       source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {} cache_nodes {} report_dict {TOPINST vram_add MODULE2INSTS {vram_add vram_add} INST2MODULE {vram_add vram_add} INSTDATA {vram_add {DEPTH 1 CHILDREN {}}} MODULEDATA {vram_add {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 2 OPTYPE add PRAGMA {} RTLNAME add_64s_64ns_64_3_1_U1 SOURCE vram_add.cpp:12 VARIABLE vram_write LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 0 BRAM 0 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.356 seconds; current allocated memory: 280.301 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for vram_add.
+INFO: [VLOG 209-307] Generating Verilog RTL for vram_add.
+Execute       syn_report -model vram_add -printsummary 
+INFO: [HLS 200-789] **** Estimated Fmax: 464.90 MHz
+Command     autosyn done; 2.04 sec.
+Command   csynth_design done; 15.268 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls opened at Mon Nov 25 19:24:08 +0800 2024
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     set_part xc7z020-clg400-2 
+Execute       create_platform xc7z020-clg400-2 -board  
+DBG:HLSDevice: Trying to load device library: D:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+Command       create_platform done; 1.432 sec.
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.534 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Command   open_solution done; 1.545 sec.
+Execute   apply_ini C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=vram_add.cpp' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=vram_add.cpp' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(8)
+Execute     add_files C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/vram_add.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/vram_add.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=tb_vram_add.cpp' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb_vram_add.cpp' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(9)
+Execute     add_files -tb C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/tb_vram_add.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/tb_vram_add.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=vram_add' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=vram_add' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(10)
+Execute     set_top vram_add 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-2' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-2' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-2 
+Execute       create_platform xc7z020clg400-2 -board  
+Command       create_platform done; 0.112 sec.
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.209 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=360MHz' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'clock=360MHz' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(7)
+Execute     create_clock -period 360MHz 
+Execute       ap_set_clock -name default -period 2.778 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.778ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.228 sec.
+Execute   apply_ini C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/config.cmdline 
+Execute   export_design -flow none 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::get_vpp_package_output_file
+Execute     config_export -flow=none 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=2.778 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=vram_add xml_exists=0
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to vram_add
+INFO-FLOW: DBG:PUTS:       generate_datafile_ip_script ip_types={vitis sysgen} #gSsdmPorts=0
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=2 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='vram_add_add_64s_64ns_64_3_1
+vram_add
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/top-io-be.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.compgen.dataonly.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.constraint.tcl 
+Execute     sc_get_clocks vram_add 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.constraint.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:     IP package: success C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/ip/pack.bat
+Execute     send_msg_by_id INFO @200-802@%s hls_component/vram_add.zip 
+INFO: [HLS 200-802] Generated output file hls_component/vram_add.zip
+Command   export_design done; 12.337 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls opened at Mon Nov 25 19:24:32 +0800 2024
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     set_part xc7z020-clg400-2 
+Execute       create_platform xc7z020-clg400-2 -board  
+DBG:HLSDevice: Trying to load device library: D:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+Command       create_platform done; 1.427 sec.
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.527 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Command   open_solution done; 1.538 sec.
+Execute   apply_ini C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=vram_add.cpp' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=vram_add.cpp' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(8)
+Execute     add_files C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/vram_add.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/vram_add.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=tb_vram_add.cpp' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb_vram_add.cpp' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(9)
+Execute     add_files -tb C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/tb_vram_add.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/tb_vram_add.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=vram_add' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=vram_add' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(10)
+Execute     set_top vram_add 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-2' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-2' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-2 
+Execute       create_platform xc7z020clg400-2 -board  
+Command       create_platform done; 0.112 sec.
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.211 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=360MHz' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'clock=360MHz' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(7)
+Execute     create_clock -period 360MHz 
+Execute       ap_set_clock -name default -period 2.778 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.778ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.228 sec.
+Execute   apply_ini C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/config.cmdline 
+Execute   export_design -flow impl 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     config_export -flow=impl 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -flow impl -format ip_catalog -rtl verilog
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=2.778 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=vram_add xml_exists=1
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to vram_add
+INFO-FLOW: DBG:PUTS:       generate_datafile_ip_script ip_types={vitis sysgen} #gSsdmPorts=0
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=2 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='vram_add_add_64s_64ns_64_3_1
+vram_add
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/top-io-be.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.compgen.dataonly.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.constraint.tcl 
+Execute     sc_get_clocks vram_add 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.constraint.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:     IP package: success C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:   auto_impl: eval: -flow impl -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-flow impl -rtl verilog'
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO-FLOW: DBG:PUTS: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.constraint.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/vram_add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/autopilot.rtl.models.tcl 
+Execute     source C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog exec C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/verilog/impl.bat
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report topinfo_dict='RtlTopPrefix {} RtlSubPrefix vram_add_ TopModuleNoPrefix vram_add TopModuleWithPrefix vram_add' export_design_flow='impl' impl_dir='C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl' lang='verilog' out_dir=''
+INFO-FLOW: DBG:PUTS:     auto_impl_report: impl processing xml
+Execute     ap_part_info -quiet -data family -name xc7z020-clg400-2 
+INFO-FLOW: DBG:PUTS:     writing export xml file: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/report/verilog/export_impl.xml
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode000002BD61F6AEFC' export_design_flow='impl' export_rpt='C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/report/verilog/export_impl.rpt' rpt_txt_var=''
+INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_impl.rpt
+INFO-FLOW: DBG:PUTS:     auto_impl_report: syn processing xml
+Execute     ap_part_info -quiet -data family -name xc7z020-clg400-2 
+INFO-FLOW: DBG:PUTS:     writing export xml file: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/report/verilog/export_syn.xml
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode000002BD6BA8C694' export_design_flow='syn' export_rpt='C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/report/verilog/export_syn.rpt' rpt_txt_var=''
+INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_syn.rpt
+Execute     send_msg_by_id INFO @200-802@%s hls_component/vram_add.zip 
+INFO: [HLS 200-802] Generated output file hls_component/vram_add.zip
+Command   export_design done; 194.452 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

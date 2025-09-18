@@ -1,0 +1,44 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "inter.cpp",
+    "fileloc": 5,
+    "instructions": 41,
+    "loads": {
+      "L": 1
+    },
+    "name": "inter",
+    "total_instructions": 83
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_round_copysign_apfixed.h",
+    "fileloc": 150,
+    "instructions": 17,
+    "loads": {
+      "L": 1
+    },
+    "name": "fabs_fixed<29, 24>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 17
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "1",
+    "file": "hls_round_copysign_apfixed.h",
+    "fileloc": 175,
+    "instructions": 23,
+    "loads": {
+      "L": 1
+    },
+    "name": "round_fixed<29, 24>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 40
+  }
+}

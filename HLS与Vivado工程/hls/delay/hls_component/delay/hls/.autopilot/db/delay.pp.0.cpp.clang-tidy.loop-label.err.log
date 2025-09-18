@@ -1,0 +1,5 @@
+26 errors generated.
+Error while processing C:\Users\liboh\Desktop\mvdr\hls\delay\hls_component\delay\hls\.autopilot\db\delay.pp.0.cpp.
+clang-tidy applied 133 of 133 suggested fixes.
+Suppressed 115 warnings (115 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

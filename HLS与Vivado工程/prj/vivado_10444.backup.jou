@@ -1,0 +1,109 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Nov 25 22:37:35 2024
+# Process ID: 10444
+# Current directory: C:/Users/16531/Desktop/mvdr_16/prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4452 C:\Users\16531\Desktop\mvdr_16\prj\ov5640_hdmi.xpr
+# Log file: C:/Users/16531/Desktop/mvdr_16/prj/vivado.log
+# Journal file: C:/Users/16531/Desktop/mvdr_16/prj\vivado.jou
+# Running On        :wyz
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22635
+# Processor Detail  :AMD Ryzen 5 5600H with Radeon Graphics         
+# CPU Frequency     :3294 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :16487 MB
+# Swap memory       :36507 MB
+# Total Virtual     :52995 MB
+# Available Virtual :36627 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.xpr
+update_compile_order -fileset sources_1
+open_run impl_1
+open_bd_design {C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list \
+  CONFIG.DIN_FROM {51} \
+  CONFIG.DIN_TO {28} \
+] [get_bd_cells xlslice_0]
+endgroup
+update_ip_catalog -rebuild
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:ExtremalSearcher:1.0 ExtremalSearcher_0
+endgroup
+set_property location {8 2611 138} [get_bd_cells ExtremalSearcher_0]
+connect_bd_net [get_bd_pins ExtremalSearcher_0/monitor_aclk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins ExtremalSearcher_0/monitor_aresetn] [get_bd_pins clk_wiz_0/locked]
+connect_bd_net [get_bd_pins ExtremalSearcher_0/vsync] [get_bd_pins video_driver_0/video_vs]
+connect_bd_net [get_bd_pins ExtremalSearcher_0/val] [get_bd_pins xlslice_0/Dout]
+startgroup
+set_property CONFIG.NUM_MI {7} [get_bd_cells ps7_0_axi_periph]
+endgroup
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M05_AXI] [get_bd_intf_pins ExtremalSearcher_0/Monitor]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M05_ACLK] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M05_ARESETN] [get_bd_pins clk_wiz_0/locked]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {11 3880 1273} [get_bd_cells axi_gpio_0]
+set_property location {10 3826 1267} [get_bd_cells axi_gpio_0]
+set_property location {10.5 4231 1333} [get_bd_cells axi_gpio_0]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M06_AXI] [get_bd_intf_pins axi_gpio_0/S_AXI]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK1] [get_bd_pins axi_gpio_0/s_axi_aclk]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M06_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK1]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M06_ARESETN] [get_bd_pins rst_ps7_0_150M/peripheral_aresetn]
+connect_bd_net [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins rst_ps7_0_150M/peripheral_aresetn]
+startgroup
+set_property -dict [list \
+  CONFIG.C_GPIO_WIDTH {1} \
+  CONFIG.C_INTERRUPT_PRESENT {1} \
+] [get_bd_cells axi_gpio_0]
+endgroup
+startgroup
+set_property CONFIG.C_ALL_INPUTS {1} [get_bd_cells axi_gpio_0]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_gpio_0/GPIO]
+endgroup
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_IRQ_F2P_INTR {1} \
+  CONFIG.PCW_USE_FABRIC_INTERRUPT {1} \
+] [get_bd_cells processing_system7_0]
+endgroup
+connect_bd_net [get_bd_pins axi_gpio_0/ip2intc_irpt] [get_bd_pins processing_system7_0/IRQ_F2P]
+startgroup
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO]
+startgroup
+make_bd_pins_external  [get_bd_pins axi_gpio_0/gpio_io_i]
+endgroup
+set_property name IRQ [get_bd_ports gpio_io_i_0]
+copy_bd_objs /  [get_bd_cells {util_vector_logic_1}]
+set_property location {10 3843 195} [get_bd_cells util_vector_logic_2]
+connect_bd_net [get_bd_pins video_driver_0/video_vs] [get_bd_pins util_vector_logic_2/Op1]
+startgroup
+make_bd_pins_external  [get_bd_pins util_vector_logic_2/Res]
+endgroup
+set_property name RES [get_bd_ports Res_0]
+delete_bd_objs [get_bd_intf_ports GPIO_0]
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+assign_bd_address
+validate_bd_design
+set_property location {5721 -460} [get_bd_ports mic_ws]
+set_property location {5741 129} [get_bd_ports mic_ws]
+set_property location {5713 107} [get_bd_ports mic_sck]
+set_property location {5715 -506} [get_bd_ports RES]
+set_property location {5709 276} [get_bd_ports RES]
+set_property location {5727 230} [get_bd_ports RES]
+set_property location {5714 202} [get_bd_ports RES]
+set_property location {5708 191} [get_bd_ports RES]
+save_bd_design
+generate_target all [get_files  C:/Users/16531/Desktop/mvdr_16/prj/ov5640_hdmi.srcs/sources_1/bd/system/system.bd]

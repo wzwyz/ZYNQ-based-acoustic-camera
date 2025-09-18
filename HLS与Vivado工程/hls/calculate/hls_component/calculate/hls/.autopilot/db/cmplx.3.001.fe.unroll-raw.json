@@ -1,0 +1,65 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "2 2 3 3 4 4 1",
+    "file": "calculate.cpp",
+    "fileloc": 3,
+    "instructions": 26,
+    "loads": {
+      "L": 7
+    },
+    "name": "calculate",
+    "total_instructions": 580
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "calculate.cpp",
+    "fileloc": 93,
+    "instructions": 12,
+    "name": "calculate_sub",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 12
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "calculate.cpp",
+    "fileloc": 29,
+    "instructions": 176,
+    "loads": {
+      "L": 16
+    },
+    "name": "calculate_add",
+    "stores": {
+      "L": 17
+    },
+    "total_instructions": 176
+  },
+  "3": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "calculate.cpp",
+    "fileloc": 58,
+    "instructions": 16,
+    "name": "calculate_abs",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 16
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "calculate.cpp",
+    "fileloc": 66,
+    "instructions": 79,
+    "name": "calculate_square",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 79
+  }
+}

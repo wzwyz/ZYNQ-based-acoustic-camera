@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="2" OPTYPE="add" PRAGMA="" RTLNAME="add_64s_64ns_64_3_1_U1" SOURCE="vram_add.cpp:12" VARIABLE="vram_write" MODULE="vram_add" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+</BindInfo>

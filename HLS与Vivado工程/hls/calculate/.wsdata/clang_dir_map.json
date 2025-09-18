@@ -1,0 +1,8 @@
+{
+  "workspaceRoot": "C:\\Users\\liboh\\Desktop\\mvdr\\hls\\calculate",
+  "mapping": {
+    "src\\tb_calculate.cpp": "hls_component",
+    "src\\calculate.h": "hls_component",
+    "src\\calculate.cpp": "hls_component"
+  }
+}

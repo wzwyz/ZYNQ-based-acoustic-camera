@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Nov 10 15:15:38 2024
+# Process ID: 10680
+# Current directory: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/impl/verilog/project.runs/synth_1
+# Command line: vivado.exe -log bd_0_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_wrapper.tcl
+# Log file: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/impl/verilog/project.runs/synth_1/bd_0_wrapper.vds
+# Journal file: C:/Users/liboh/Desktop/mvdr0/hls/inter/hls_component/hls_component/hls/impl/verilog/project.runs/synth_1\vivado.jou
+# Running On        :ban
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency     :2304 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16910 MB
+# Swap memory       :2153 MB
+# Total Virtual     :19063 MB
+# Available Virtual :2474 MB
+#-----------------------------------------------------------
+source bd_0_wrapper.tcl -notrace

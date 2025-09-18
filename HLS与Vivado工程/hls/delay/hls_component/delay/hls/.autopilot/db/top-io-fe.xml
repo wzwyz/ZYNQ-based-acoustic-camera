@@ -1,0 +1,39 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel src_name="delay" language="c" hwCtrl="ap_ctrl_none" mem_layout="fpga64-xilinx-none">
+    <args>
+      <arg id="0" access_type="r" src_name="addrs_signed" src_type="ap_uint&lt;40&gt;" src_isptr="1" src_bitwidth="64" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="addrs_signed" hw_bitwidth="40" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="1" access_type="r" src_name="now" src_type="ap_uint&lt;12&gt;" src_isptr="1" src_bitwidth="16" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="now" hw_bitwidth="12" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="2" access_type="w" src_name="addrs_left" src_type="ap_uint&lt;192&gt;&amp;" src_isptr="1" src_bitwidth="256" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="addrs_left" hw_bitwidth="192" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="3" access_type="w" src_name="rates_left" src_type="ap_uint&lt;80&gt;&amp;" src_isptr="1" src_bitwidth="128" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="rates_left" hw_bitwidth="80" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="4" access_type="w" src_name="addrs_right" src_type="ap_uint&lt;192&gt;&amp;" src_isptr="1" src_bitwidth="256" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="addrs_right" hw_bitwidth="192" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="5" access_type="w" src_name="rates_right" src_type="ap_uint&lt;96&gt;&amp;" src_isptr="1" src_bitwidth="128" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="rates_right" hw_bitwidth="96" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+    </args>
+    <return src_type="void" src_bitwidth="0" offset="0x0">
+      <hw hw_usage="data" hw_interface="" hw_name="" hw_bitwidth="0" hw_kernel_support="true"/>
+    </return>
+  </kernel>
+</root>

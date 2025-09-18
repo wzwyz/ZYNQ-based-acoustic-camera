@@ -1,0 +1,75 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_component\hls_component.hlsrun_csim_summary, at 11/10/24 19:57:06
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_component -config C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_config.cfg -cmdlineconfig C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_component/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sun Nov 10 19:57:07 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source D:/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'ban' on host 'ban' (Windows NT_amd64 version 10.0) on Sun Nov 10 19:57:08 +0800 2024
+INFO: [HLS 200-10] In directory 'C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component'
+INFO: [HLS 200-2005] Using work_dir C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_component 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=vram_add.cpp' from C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/vram_add.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb_vram_add.cpp' from C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/tb_vram_add.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-2' from C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1465] Applying ini 'clock=240MHz' from C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.167ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/liboh/Desktop/mvdr0/hls/vram_add/hls_component/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../tb_vram_add.cpp in debug mode
+   Compiling ../../../../vram_add.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../tb_vram_add.cpp:1:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/ap_int.h:10:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../vram_add.cpp:1:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/ap_int.h:10:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/hls_half.h:26:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h:140:
+In file included from D:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/Xilinx/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+                                                 
+          vram_read|           indat|         vram_write
+   0x2b9ef6a72b9ef6|0x0b9ef6a72b9ef6|   0x373ded4e573dec
+ 0xa72b99261bce9ef6|-0xb99261bce9ef6| 0xa720000000000000
+ 0x9d9261ba72bce9ef|0x0d9e458d431611| 0x9da0000000000000
+
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.29 seconds; peak allocated memory: 246.230 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 9s

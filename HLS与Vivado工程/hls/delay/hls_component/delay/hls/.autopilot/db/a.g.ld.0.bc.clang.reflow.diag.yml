@@ -1,0 +1,104 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../src/delay.cpp, Line: 50, Column: 5 }
+Function:        _Z5delay7ap_uintILi40EES_ILi12EERS_ILi192EERS_ILi80EES3_RS_ILi96EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        loop2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../src/delay.cpp, Line: 24, Column: 22 }
+Function:        _Z5delay7ap_uintILi40EES_ILi12EERS_ILi192EERS_ILi80EES3_RS_ILi96EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_24_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../src/delay.cpp, Line: 20, Column: 22 }
+Function:        _Z5delay7ap_uintILi40EES_ILi12EERS_ILi192EERS_ILi80EES3_RS_ILi96EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_20_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../src/delay.cpp, Line: 16, Column: 22 }
+Function:        _Z5delay7ap_uintILi40EES_ILi12EERS_ILi192EERS_ILi80EES3_RS_ILi96EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_16_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../src/delay.cpp, Line: 5, Column: 0 }
+Function:        _Z5delay7ap_uintILi40EES_ILi12EERS_ILi192EERS_ILi80EES3_RS_ILi96EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        loop2
+  - String:          ''' ('
+  - LoopLoc:         '../src/delay.cpp:50:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          delay
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../src/delay.cpp, Line: 5, Column: 0 }
+Function:        _Z5delay7ap_uintILi40EES_ILi12EERS_ILi192EERS_ILi80EES3_RS_ILi96EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_24_3
+  - String:          ''' ('
+  - LoopLoc:         '../src/delay.cpp:24:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          delay
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../src/delay.cpp, Line: 5, Column: 0 }
+Function:        _Z5delay7ap_uintILi40EES_ILi12EERS_ILi192EERS_ILi80EES3_RS_ILi96EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_20_2
+  - String:          ''' ('
+  - LoopLoc:         '../src/delay.cpp:20:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          delay
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../src/delay.cpp, Line: 5, Column: 0 }
+Function:        _Z5delay7ap_uintILi40EES_ILi12EERS_ILi192EERS_ILi80EES3_RS_ILi96EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_16_1
+  - String:          ''' ('
+  - LoopLoc:         '../src/delay.cpp:16:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          delay
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...

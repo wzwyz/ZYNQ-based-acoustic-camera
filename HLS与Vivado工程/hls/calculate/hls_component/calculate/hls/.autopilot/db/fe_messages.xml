@@ -1,0 +1,33 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="calculate" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=calculate" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/calculate.cpp:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculate" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/calculate.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculate" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/calculate.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="calculate_add" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/calculate.cpp:32:22" msg_body="Loop 'VITIS_LOOP_32_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_32_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/calculate.cpp:30:0" msg_body="Unrolling loop 'VITIS_LOOP_32_1' (../src/calculate.cpp:32:22) in function 'calculate_add' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../src/calculate.cpp:32:22" LoopName="VITIS_LOOP_32_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/calculate.cpp:4:0" msg_body="Inlining function 'calculate_add(ap_uint&lt;384&gt;)' into 'calculate(ap_uint&lt;384&gt;, ap_uint&lt;384&gt;)'">
+        <args Callee="calculate_add(ap_uint&lt;384&gt;)" Callee-DebugLoc="File ../src/calculate.cpp Line 30 Column 0" Caller="calculate(ap_uint&lt;384&gt;, ap_uint&lt;384&gt;)" Caller-DebugLoc="File ../src/calculate.cpp Line 4 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/calculate.cpp:4:0" msg_body="Inlining function 'calculate_abs(ap_int&lt;28&gt;)' into 'calculate(ap_uint&lt;384&gt;, ap_uint&lt;384&gt;)'">
+        <args Callee="calculate_abs(ap_int&lt;28&gt;)" Callee-DebugLoc="File ../src/calculate.cpp Line 59 Column 0" Caller="calculate(ap_uint&lt;384&gt;, ap_uint&lt;384&gt;)" Caller-DebugLoc="File ../src/calculate.cpp Line 4 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/calculate.cpp:4:0" msg_body="Inlining function 'calculate_square(ap_uint&lt;27&gt;)' into 'calculate(ap_uint&lt;384&gt;, ap_uint&lt;384&gt;)'">
+        <args Callee="calculate_square(ap_uint&lt;27&gt;)" Callee-DebugLoc="File ../src/calculate.cpp Line 67 Column 0" Caller="calculate(ap_uint&lt;384&gt;, ap_uint&lt;384&gt;)" Caller-DebugLoc="File ../src/calculate.cpp Line 4 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/calculate.cpp:4:0" msg_body="Inlining function 'calculate_sub(ap_uint&lt;54&gt;, ap_uint&lt;54&gt;)' into 'calculate(ap_uint&lt;384&gt;, ap_uint&lt;384&gt;)'">
+        <args Callee="calculate_sub(ap_uint&lt;54&gt;, ap_uint&lt;54&gt;)" Callee-DebugLoc="File ../src/calculate.cpp Line 94 Column 0" Caller="calculate(ap_uint&lt;384&gt;, ap_uint&lt;384&gt;)" Caller-DebugLoc="File ../src/calculate.cpp Line 4 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

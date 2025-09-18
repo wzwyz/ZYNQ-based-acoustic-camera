@@ -1,0 +1,7 @@
+{
+  "workspaceRoot": "C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\inter",
+  "mapping": {
+    "src\\inter.cpp": "hls_component",
+    "src\\tb_inter.cpp": "hls_component"
+  }
+}

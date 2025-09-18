@@ -1,0 +1,82 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../src/calculate.cpp, Line: 32, Column: 22 }
+Function:        _Z13calculate_add7ap_uintILi384EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_32_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../src/calculate.cpp, Line: 30, Column: 0 }
+Function:        _Z13calculate_add7ap_uintILi384EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_32_1
+  - String:          ''' ('
+  - LoopLoc:         '../src/calculate.cpp:32:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculate_add
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../src/calculate.cpp, Line: 4, Column: 0 }
+Function:        _Z9calculate7ap_uintILi384EES0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'calculate_add(ap_uint<384>)'
+    DebugLoc:        { File: ../src/calculate.cpp, Line: 30, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'calculate(ap_uint<384>, ap_uint<384>)'
+    DebugLoc:        { File: ../src/calculate.cpp, Line: 4, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../src/calculate.cpp, Line: 4, Column: 0 }
+Function:        _Z9calculate7ap_uintILi384EES0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'calculate_abs(ap_int<28>)'
+    DebugLoc:        { File: ../src/calculate.cpp, Line: 59, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'calculate(ap_uint<384>, ap_uint<384>)'
+    DebugLoc:        { File: ../src/calculate.cpp, Line: 4, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../src/calculate.cpp, Line: 4, Column: 0 }
+Function:        _Z9calculate7ap_uintILi384EES0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'calculate_square(ap_uint<27>)'
+    DebugLoc:        { File: ../src/calculate.cpp, Line: 67, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'calculate(ap_uint<384>, ap_uint<384>)'
+    DebugLoc:        { File: ../src/calculate.cpp, Line: 4, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../src/calculate.cpp, Line: 4, Column: 0 }
+Function:        _Z9calculate7ap_uintILi384EES0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'calculate_sub(ap_uint<54>, ap_uint<54>)'
+    DebugLoc:        { File: ../src/calculate.cpp, Line: 94, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'calculate(ap_uint<384>, ap_uint<384>)'
+    DebugLoc:        { File: ../src/calculate.cpp, Line: 4, Column: 0 }
+  - String:          ''''
+...

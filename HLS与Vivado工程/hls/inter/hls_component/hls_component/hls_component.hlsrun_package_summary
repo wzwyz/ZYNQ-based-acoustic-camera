@@ -1,0 +1,159 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls_component.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "11/10/24 15:13:50",
+ "timestampMillis": "351010350",
+ "buildStep": {
+  "cmdId": "fe91f2c8-b5b5-4416-b504-97312bb1e962",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\logs\\hls_component.steps.log",
+  "commandLine": "D:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 15:13:50",
+ "timestampMillis": "351010351",
+ "status": {
+  "cmdId": "fe91f2c8-b5b5-4416-b504-97312bb1e962",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "11/10/24 15:13:54",
+ "timestampMillis": "351014405",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "inter",
+     "file": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\inter.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\src\\inter.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "11/10/24 15:13:54",
+ "timestampMillis": "351014407",
+ "buildStep": {
+  "cmdId": "eff19cad-1fb6-423a-a91e-3c1d53eaa202",
+  "name": "export_design",
+  "logFile": "C:/Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component\\hls_component\\hls\\hls.log",
+  "commandLine": "export_design -flow none",
+  "args": [
+   "-flow",
+   "none"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\liboh\\Desktop\\mvdr0\\hls\\inter\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 15:13:54",
+ "timestampMillis": "351014407",
+ "status": {
+  "cmdId": "eff19cad-1fb6-423a-a91e-3c1d53eaa202",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 15:14:05",
+ "timestampMillis": "351025576",
+ "status": {
+  "cmdId": "eff19cad-1fb6-423a-a91e-3c1d53eaa202",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/10/24 15:14:06",
+ "timestampMillis": "351025730",
+ "status": {
+  "cmdId": "fe91f2c8-b5b5-4416-b504-97312bb1e962",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:14:06",
+ "timestampMillis": "351025730",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/10/24 15:14:06",
+ "timestampMillis": "351025731",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Nov 25 19:24:37 2024
+# Process ID: 8080
+# Current directory: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/ip/vivado.log
+# Journal file: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/ip\vivado.jou
+# Running On        :ban
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency     :2304 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16910 MB
+# Swap memory       :2612 MB
+# Total Virtual     :19522 MB
+# Available Virtual :1291 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/hls_data.json outdir=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/ip srcdir=C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/ip/misc
+INFO: Copied 2 verilog file(s) to C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/ip/hdl/verilog
+INFO: Copied 2 vhdl file(s) to C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/ip/hdl/vhdl
+ipx::create_core: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 650.613 ; gain = 194.605
+INFO: Import ports from HDL: C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/ip/hdl/vhdl/vram_add.vhd (vram_add)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst
+INFO: Add data interface ap_return
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: Add data interface vram_read
+INFO: Add data interface indat
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/ip/component.xml
+INFO: Created IP archive C:/Users/liboh/Desktop/mvdr/hls/vram_add/hls_component/hls_component/hls/impl/ip/xilinx_com_hls_vram_add_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 25 19:24:46 2024...
